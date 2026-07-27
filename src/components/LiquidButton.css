@@ -1,0 +1,90 @@
+.liquid-btn {
+  position: relative;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.liquid-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.liquid-btn:not(:disabled):active {
+  transform: scale(0.98);
+}
+
+/* The Liquid Container */
+.liquid-fill {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0%; /* Dynamic based on percentage */
+  background-color: #3b82f6; /* Tailwind blue-500 */
+  z-index: -1;
+  transition: height 1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* The Waves */
+.liquid-fill::before,
+.liquid-fill::after {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  top: -400px; /* Sit right on top of the fill level */
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 40%; /* Irregular circle */
+  background-color: rgba(255, 255, 255, 1); /* White matches the button bg */
+  animation: liquid-wave 5s linear infinite;
+}
+
+.liquid-fill::after {
+  border-radius: 45%;
+  background-color: rgba(255, 255, 255, 0.9);
+  animation: liquid-wave 10s linear infinite;
+}
+
+/* Since the fill is expanding up, the waves (which are white and sit ON TOP of the blue fill) need to mask it. 
+Wait, a better approach for button fill:
+Button is white. Liquid is blue, sliding up from the bottom.
+The waves are just pseudo elements on top of the blue fill that are WHITE, rotating to make it look like the blue has a wavy top. */
+
+@keyframes liquid-wave {
+  0% {
+    transform: translateX(-50%) rotate(0deg);
+  }
+  100% {
+    transform: translateX(-50%) rotate(360deg);
+  }
+}
+
+/* Text color transition based on fill */
+.liquid-text {
+  position: relative;
+  z-index: 10;
+  transition: color 0.5s ease;
+}
+
+/* When fill is high, make text white so it's readable over blue */
+.liquid-btn.filled-high .liquid-text {
+  color: white;
+}
+.liquid-btn.filled-high svg {
+  color: white;
+}
