@@ -1,4 +1,7 @@
-# ShrinkToken ⚡
+<div align="center">
+  <img src="public/favicon.svg" width="120" alt="ShrinkToken Logo" />
+  <h1>ShrinkToken ⚡</h1>
+</div>
 
 ShrinkToken is a local NLP-powered prompt compressor built with React and Vite. It drastically reduces the token size of massive prompts, context blocks, and code snippets *before* you send them to LLMs like ChatGPT or Claude, saving you up to 50% on API token costs.
 
