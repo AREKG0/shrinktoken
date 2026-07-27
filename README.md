@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="public/favicon.svg" width="120" alt="ShrinkToken Logo" />
+  <img src="public/icon.png" width="120" alt="ShrinkToken Logo" />
   <h1>ShrinkToken ⚡</h1>
 </div>
 

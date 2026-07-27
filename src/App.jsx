@@ -75,69 +75,69 @@ function App() {
   const percentageSaved = originalTokens > 0 ? Math.round((tokensSaved / originalTokens) * 100) : 0
 
   return (
-    <div className="min-h-screen flex flex-col bg-darker p-8 text-white selection:bg-accent/30">
+    <div className="min-h-screen flex flex-col bg-darker p-4 md:p-8 text-white selection:bg-accent/30">
       
       {/* Header */}
-      <header className="w-full max-w-6xl mx-auto flex items-center justify-between mb-12 relative h-16">
+      <header className="w-full max-w-6xl mx-auto flex items-center justify-between mb-8 md:mb-12 relative h-16">
         <div className="flex items-center gap-4">
           <div className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-lg bg-accent flex items-center justify-center">
+            <div className="w-8 h-8 rounded-lg bg-accent flex items-center justify-center shrink-0">
               <Zap size={20} className="text-white" />
             </div>
-            <h1 className="text-2xl font-bold tracking-tight">ShrinkToken</h1>
+            <h1 className="text-xl md:text-2xl font-bold tracking-tight">ShrinkToken</h1>
           </div>
           
           {/* Lifetime Savings Badge */}
           {lifetimeSaved > 0 && (
-            <div className="hidden md:flex px-3 py-1.5 bg-green-500/10 border border-green-500/20 text-green-400 rounded-full text-xs font-bold uppercase tracking-wider items-center gap-1.5 shadow-inner">
+            <div className="hidden lg:flex px-3 py-1.5 bg-green-500/10 border border-green-500/20 text-green-400 rounded-full text-xs font-bold uppercase tracking-wider items-center gap-1.5 shadow-inner">
               <Zap size={12} className="text-green-400" />
               {lifetimeSaved.toLocaleString()} Lifetime Tokens Saved
             </div>
           )}
         </div>
-        <div className="z-50">
+        <div className="z-50 scale-75 md:scale-100 origin-right">
           <ProductsWallet />
         </div>
       </header>
 
       {/* Main Content */}
-      <main className="w-full max-w-6xl mx-auto flex-1 flex flex-col gap-8">
+      <main className="w-full max-w-6xl mx-auto flex-1 flex flex-col gap-6 md:gap-8">
         
         {/* Metrics Dashboard */}
-        <section className="w-full bg-[#111113] border border-white/5 rounded-2xl p-6 flex flex-wrap gap-8 items-center shadow-xl">
-          <div className="flex-1 min-w-[200px]">
-            <h3 className="text-sm font-medium text-white/50 mb-1 uppercase tracking-wider">Original Tokens</h3>
-            <div className="text-4xl font-mono text-white/90">{originalTokens.toLocaleString()}</div>
+        <section className="w-full bg-[#111113] border border-white/5 rounded-2xl p-4 md:p-6 flex flex-col md:flex-row flex-wrap gap-4 md:gap-8 items-center shadow-xl text-center md:text-left">
+          <div className="flex-1 min-w-[120px] md:min-w-[200px]">
+            <h3 className="text-xs md:text-sm font-medium text-white/50 mb-1 uppercase tracking-wider">Original Tokens</h3>
+            <div className="text-3xl md:text-4xl font-mono text-white/90">{originalTokens.toLocaleString()}</div>
           </div>
           
-          <div className="flex items-center justify-center text-white/20 px-4">
+          <div className="hidden md:flex items-center justify-center text-white/20 px-4">
             <ArrowRight size={32} />
           </div>
 
-          <div className="flex-1 min-w-[200px]">
-            <h3 className="text-sm font-medium text-white/50 mb-1 uppercase tracking-wider">Compressed Tokens</h3>
-            <div className="text-4xl font-mono text-white">{isCompressed ? compressedTokens.toLocaleString() : '0'}</div>
+          <div className="flex-1 min-w-[120px] md:min-w-[200px]">
+            <h3 className="text-xs md:text-sm font-medium text-white/50 mb-1 uppercase tracking-wider">Compressed Tokens</h3>
+            <div className="text-3xl md:text-4xl font-mono text-white">{isCompressed ? compressedTokens.toLocaleString() : '0'}</div>
           </div>
 
-          <div className="flex-1 min-w-[200px] bg-accent/10 border border-accent/20 rounded-xl p-4 shadow-inner">
-            <h3 className="text-sm font-medium text-accent mb-1 uppercase tracking-wider">Tokens Saved</h3>
-            <div className="text-3xl font-mono font-bold text-accent">
+          <div className="w-full md:flex-1 min-w-[120px] md:min-w-[200px] bg-accent/10 border border-accent/20 rounded-xl p-3 md:p-4 shadow-inner mt-2 md:mt-0">
+            <h3 className="text-xs md:text-sm font-medium text-accent mb-1 uppercase tracking-wider">Tokens Saved</h3>
+            <div className="text-2xl md:text-3xl font-mono font-bold text-accent">
               {isCompressed ? `-${tokensSaved.toLocaleString()}` : '0'} 
-              <span className="text-lg ml-2 opacity-80">({isCompressed ? percentageSaved : 0}%)</span>
+              <span className="text-sm md:text-lg ml-2 opacity-80">({isCompressed ? percentageSaved : 0}%)</span>
             </div>
           </div>
         </section>
 
         {/* Text Areas */}
-        <section className="flex flex-col md:flex-row gap-6 h-[50vh]">
+        <section className="flex flex-col md:flex-row gap-6 min-h-[60vh] md:h-[50vh]">
           
           {/* Input Side */}
-          <div className="flex-1 flex flex-col gap-3">
+          <div className="flex-1 flex flex-col gap-3 min-h-[300px] md:min-h-0">
             <div className="flex justify-between items-center px-1">
               <label className="text-sm font-semibold text-white/80">Input Prompt (Original)</label>
             </div>
             <textarea
-              className="flex-1 bg-[#111113] border border-white/10 rounded-xl p-5 text-white/90 font-mono text-sm leading-relaxed resize-none focus:outline-none focus:border-accent/50 transition-colors shadow-lg"
+              className="flex-1 bg-[#111113] border border-white/10 rounded-xl p-4 md:p-5 text-white/90 font-mono text-sm leading-relaxed resize-none focus:outline-none focus:border-accent/50 transition-colors shadow-lg"
               placeholder="Paste your massive prompt, codebase context, or instructions here..."
               value={originalText}
               onChange={handleTextChange}
