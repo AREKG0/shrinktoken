@@ -3,7 +3,7 @@
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00e5ff,100:b900ff&height=240&section=header&text=SHRINKTOKEN%20%E2%9A%A1&fontSize=75&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Next-Gen%20AI%20Prompt%20Compression%20%26%20Token%20Optimization%20Engine&descAlignY=62&descAlign=50" alt="ShrinkToken Header" width="100%"/>
 
 <!-- ANIMATED TYPING TEXT -->
-  <a href="https://github.com/AREKG0/shrinktoken">
+  <a href="https://chromewebstore.google.com/detail/shrinktoken/mplofkijajafbhgmeapoefnmppgmiodp">
     <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=00E5FF&center=true&vCenter=true&width=800&lines=%E2%9A%A1+Compress+Massive+AI+Prompts+Instantly;%F0%9F%9B%A1%EF%B8%8F+100%25+Privacy-First+Client-Side+NLP+Engine;%F0%9F%92%B8+Save+Up+To+50%25+On+ChatGPT+%26+Claude+API+Costs;%F0%9F%9A%80+Built+for+Developers%2C+Engineers+%26+Power+Users!" alt="Typing SVG" />
   </a>
 
@@ -14,6 +14,13 @@
   
   <p align="center">
     <strong>A high-performance, locally executed NLP linguistic compression engine built into a sleek Chrome Side-Panel extension. Cut your context window footprint without sacrificing semantic meaning.</strong>
+  </p>
+
+<!-- CHROME WEB STORE INSTALL BUTTON -->
+  <p align="center">
+    <a href="https://chromewebstore.google.com/detail/shrinktoken/mplofkijajafbhgmeapoefnmppgmiodp" target="_blank">
+      <img src="https://img.shields.io/badge/⚡_INSTALL_NOW_FROM-CHROME_WEB_STORE-00e5ff?style=for-the-badge&logo=googlechrome&logoColor=white&labelColor=111113&border=3" alt="Install from Chrome Web Store" style="height: 45px;" />
+    </a>
   </p>
 
 <!-- COLORFUL GITHUB BADGES -->
@@ -33,15 +40,17 @@
     <a href="https://github.com/AREKG0/shrinktoken/commits/main">
       <img src="https://img.shields.io/github/last-commit/AREKG0/shrinktoken?style=for-the-badge&color=b900ff&labelColor=111113" alt="Last Commit"/>
     </a>
-    <a href="https://github.com/AREKG0/shrinktoken/releases">
-      <img src="https://img.shields.io/github/v/release/AREKG0/shrinktoken?style=for-the-badge&logo=semantic-release&color=00e5ff&labelColor=111113" alt="Release"/>
+    <a href="https://chromewebstore.google.com/detail/shrinktoken/mplofkijajafbhgmeapoefnmppgmiodp">
+      <img src="https://img.shields.io/badge/Store_Status-LIVE_⚡-b900ff?style=for-the-badge&logo=google-chrome&labelColor=111113" alt="Store Status"/>
     </a>
   </p>
 
   <p align="center">
     <img src="https://img.shields.io/badge/Open%20Source-%E2%9D%A4%EF%B8%8F-8a2be2?style=for-the-badge&labelColor=111113" alt="Open Source"/>
     <img src="https://img.shields.io/badge/Beginner%20Friendly-YES-00e5ff?style=for-the-badge&labelColor=111113" alt="Beginner Friendly"/>
-    <img src="https://img.shields.io/badge/Chrome%20Web%20Store-Manifest%20V3-ff007f?style=for-the-badge&logo=google-chrome&labelColor=111113" alt="Manifest V3"/>
+    <a href="https://chromewebstore.google.com/detail/shrinktoken/mplofkijajafbhgmeapoefnmppgmiodp">
+      <img src="https://img.shields.io/badge/Chrome%20Web%20Store-Manifest%20V3-ff007f?style=for-the-badge&logo=google-chrome&labelColor=111113" alt="Manifest V3"/>
+    </a>
     <img src="https://visitor-badge.laobi.icu/badge?page_id=AREKG0.shrinktoken&left_color=111113&right_color=b900ff" alt="Visitor Counter"/>
   </p>
 
@@ -131,9 +140,21 @@ In the rapidly expanding realm of generative AI, **tokens are currency**. Whethe
 
 ## 🚀 Installation
 
-You can run ShrinkToken either as a **Local Web App** or directly install it as an unpacked **Chrome Extension**.
+You can install ShrinkToken officially from the Google Chrome Web Store in just two clicks, or clone it directly from source!
 
-### 💻 Option A: Quick Chrome Extension Setup (Recommended)
+### 🌟 Option A: Install from Chrome Web Store (Official & Recommended)
+
+ShrinkToken is officially verified and distributed by Google on the Chrome Web Store:
+
+<a href="https://chromewebstore.google.com/detail/shrinktoken/mplofkijajafbhgmeapoefnmppgmiodp" target="_blank">
+  <img src="https://img.shields.io/badge/⚡_CLICK_HERE_TO_INSTALL-SHRINKTOKEN_FROM_CHROME_STORE-00e5ff?style=for-the-badge&logo=googlechrome&logoColor=white&labelColor=111113" alt="Install from Chrome Web Store" />
+</a>
+
+1. Click the neon link above to open our Web Store listing.
+2. Click **Add to Chrome**.
+3. Click the puzzle icon 🧩 in your top browser toolbar and **pin ShrinkToken ⚡** for instant side-panel access!
+
+### 💻 Option B: Manual Developer Source Setup (Unpacked)
 
 ```bash
 # 1. Clone the cyber-repository to your local terminal
@@ -149,11 +170,10 @@ npm install
 npm run build
 ```
 
-1. Open your Google Chrome browser and navigate to `chrome://extensions/`.
+1. Open Google Chrome and navigate to `chrome://extensions/`.
 2. Toggle on **Developer mode** in the top right corner.
 3. Click **Load unpacked** in the top left toolbar.
 4. Select the freshly generated `dist/` directory inside your `shrinktoken` project folder.
-5. *Boom!* 💥 Click the extensions puzzle icon 🧩 and **pin ShrinkToken** to your toolbar!
 
 ---
 
@@ -269,7 +289,7 @@ We believe in radical transparency and rigorous iteration. Here is the current p
 | **Cyberpunk Dark-Mode Liquid UI** | `██████████ 100%` | ✅ Completed |
 | **Chrome Manifest V3 Side-Panel Integration** | `██████████ 100%` | ✅ Completed |
 | **Zero-Trust Privacy Verification & Documentation** | `██████████ 100%` | ✅ Completed |
-| **Chrome Web Store Official Submission** | `██████████ 100%` | 🚀 In Review / Live |
+| **Chrome Web Store Official Submission & Approval** | `██████████ 100%` | 🚀 LIVE ON STORE |
 | **Custom Customizable Pruning Dictionaries** | `██████░░░░ 60%` | 🚧 In Progress |
 | **Automated "Direct-Inject" DOM Button for ChatGPT** | `████░░░░░░ 40%` | 🔮 Future Release |
 
