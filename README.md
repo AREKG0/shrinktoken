@@ -13,13 +13,16 @@
   <br />
   
   <p align="center">
-    <strong>A high-performance, locally executed NLP linguistic compression engine built into a sleek Chrome Side-Panel extension. Cut your context window footprint without sacrificing semantic meaning.</strong>
+    <strong>A high-performance, locally executed NLP linguistic compression engine built into a sleek Chrome Side-Panel extension & Web App. Cut your context window footprint without sacrificing semantic meaning.</strong>
   </p>
 
-<!-- CHROME WEB STORE INSTALL BUTTON -->
+<!-- CHROME WEB STORE & NETLIFY LIVE APP BUTTONS -->
   <p align="center">
     <a href="https://chromewebstore.google.com/detail/shrinktoken/mplofkijajafbhgmeapoefnmppgmiodp" target="_blank">
-      <img src="https://img.shields.io/badge/⚡_INSTALL_NOW_FROM-CHROME_WEB_STORE-00e5ff?style=for-the-badge&logo=googlechrome&logoColor=white&labelColor=111113&border=3" alt="Install from Chrome Web Store" style="height: 45px;" />
+      <img src="https://img.shields.io/badge/⚡_INSTALL_EXTENSION_FROM-CHROME_WEB_STORE-00e5ff?style=for-the-badge&logo=googlechrome&logoColor=white&labelColor=111113&border=3" alt="Install from Chrome Web Store" style="height: 42px;" />
+    </a>
+    <a href="https://shrinktoken.netlify.app/" target="_blank">
+      <img src="https://img.shields.io/badge/🌐_LAUNCH_LIVE_WEB_APP-SHRINKTOKEN.NETLIFY.APP-ff007f?style=for-the-badge&logo=netlify&logoColor=white&labelColor=111113&border=3" alt="Try Live Web App on Netlify" style="height: 42px;" />
     </a>
   </p>
 
@@ -48,8 +51,8 @@
   <p align="center">
     <img src="https://img.shields.io/badge/Open%20Source-%E2%9D%A4%EF%B8%8F-8a2be2?style=for-the-badge&labelColor=111113" alt="Open Source"/>
     <img src="https://img.shields.io/badge/Beginner%20Friendly-YES-00e5ff?style=for-the-badge&labelColor=111113" alt="Beginner Friendly"/>
-    <a href="https://chromewebstore.google.com/detail/shrinktoken/mplofkijajafbhgmeapoefnmppgmiodp">
-      <img src="https://img.shields.io/badge/Chrome%20Web%20Store-Manifest%20V3-ff007f?style=for-the-badge&logo=google-chrome&labelColor=111113" alt="Manifest V3"/>
+    <a href="https://shrinktoken.netlify.app/">
+      <img src="https://img.shields.io/badge/Web_Deployment-Netlify_Live-ff007f?style=for-the-badge&logo=netlify&labelColor=111113" alt="Netlify Deployment"/>
     </a>
     <img src="https://visitor-badge.laobi.icu/badge?page_id=AREKG0.shrinktoken&left_color=111113&right_color=b900ff" alt="Visitor Counter"/>
   </p>
@@ -79,7 +82,7 @@
 - [About the Project](#-about-the-project)
 - [Features](#-features)
 - [Screenshots](#-screenshots)
-- [Installation](#-installation)
+- [Installation & Live Access](#-installation--live-access)
 - [Usage](#-usage)
 - [Folder Structure](#-folder-structure)
 - [Technologies Used](#-technologies-used)
@@ -88,6 +91,7 @@
 - [Contributing](#-contributing)
 - [Roadmap & Completion Status](#-roadmap--completion-status)
 - [FAQ](#-faq)
+- [Support & Buy Us a Domain!](#-support--buy-us-a-domain)
 - [License](#-license)
 - [Contact](#-contact)
 - [Acknowledgements](#-acknowledgements)
@@ -116,6 +120,7 @@ In the rapidly expanding realm of generative AI, **tokens are currency**. Whethe
 | ⚡ | **Real-Time Compression** | Instantaneous token pruning powered by optimized regex algorithms & semantic heuristics. |
 | 🛡️ | **100% Zero-Trust Privacy** | All execution happens offline in your local DOM. Your proprietary prompts **never touch an external server**. |
 | 🧲 | **Persistent Side-Panel UI** | Built on modern **Chrome Manifest V3**, sliding alongside ChatGPT/Claude without tab switching. |
+| 🌐 | **Instant Web App Experience** | Access ShrinkToken immediately from anywhere in the world on our live cloud deployment at `shrinktoken.netlify.app`. |
 | 📊 | **Live Telemetry & Analytics** | Real-time calculation of original tokens, compressed tokens, savings percentages, and financial metrics. |
 | 🏆 | **Lifetime Savings Tracker** | Permanent browser memory tracking your cumulative tokens and dollars saved across all sessions. |
 | 🌊 | **Liquid Neon Interface** | High-contrast glassmorphism animations and HSL tailored dark mode designed to prevent eye strain. |
@@ -138,11 +143,18 @@ In the rapidly expanding realm of generative AI, **tokens are currency**. Whethe
 
 ---
 
-## 🚀 Installation
+## 🚀 Installation & Live Access
 
-You can install ShrinkToken officially from the Google Chrome Web Store in just two clicks, or clone it directly from source!
+You can run ShrinkToken directly in your browser without installing anything via our **Live Web App**, install it officially from the **Google Chrome Web Store**, or clone it from source!
 
-### 🌟 Option A: Install from Chrome Web Store (Official & Recommended)
+### 🌐 Option A: Instant Live Web App (No Installation Required)
+
+Don't want to install an extension right now? We have a complete, responsive standalone web version running live on Netlify!
+👉 **[Click here to open ShrinkToken Web App (shrinktoken.netlify.app)](https://shrinktoken.netlify.app/)** 
+
+---
+
+### 🌟 Option B: Install from Chrome Web Store (Official & Recommended)
 
 ShrinkToken is officially verified and distributed by Google on the Chrome Web Store:
 
@@ -154,7 +166,9 @@ ShrinkToken is officially verified and distributed by Google on the Chrome Web S
 2. Click **Add to Chrome**.
 3. Click the puzzle icon 🧩 in your top browser toolbar and **pin ShrinkToken ⚡** for instant side-panel access!
 
-### 💻 Option B: Manual Developer Source Setup (Unpacked)
+---
+
+### 💻 Option C: Manual Developer Source Setup (Unpacked)
 
 ```bash
 # 1. Clone the cyber-repository to your local terminal
@@ -181,7 +195,7 @@ npm run build
 
 ```mermaid
 graph LR
-  A[Raw Massive Prompt] -->|Paste into Side Panel| B(ShrinkToken NLP Engine)
+  A[Raw Massive Prompt] -->|Paste into Side Panel or Web App| B(ShrinkToken NLP Engine)
   B -->|Prune Fluff & Adverbs| C{Semantic Verification}
   C -->|50% Tokens Reduced| D[Compressed Prompt]
   D -->|One-Click Copy/Paste| E[ChatGPT / Claude / API]
@@ -189,7 +203,7 @@ graph LR
   style D fill:#00e5ff,stroke:#8a2be2,stroke-width:2px,color:#000
 ```
 
-1. **Invoke the Side Panel**: Click the lightning bolt `⚡` icon in your Chrome toolbar while browsing `chatgpt.com` or `claude.ai`.
+1. **Invoke the Side Panel or Web App**: Click the lightning bolt `⚡` extension icon while browsing ChatGPT, or visit `shrinktoken.netlify.app`.
 2. **Input Context**: Paste your bloated code review request or lengthy prompt into the top textarea.
 3. **Execute Compression**: Hit the liquid neon **Compress** button.
 4. **Inspect Telemetry**: Watch the savings percentage meter spike up to 50%!
@@ -216,7 +230,7 @@ shrinktoken/
 ├── package.json               # Node dependencies and execution scripts
 ├── PRIVACY.md                 # Zero-trust privacy disclosure & legal compliance
 ├── README.md                  # Project architectural documentation (You are here)
-└── vite.config.js             # Vite compiler rules (Relative pathing for Chrome)
+└── vite.config.js             # Vite compiler rules (Relative pathing for Chrome & Netlify)
 ```
 
 ---
@@ -224,9 +238,10 @@ shrinktoken/
 ## 🛠️ Technologies Used
 
 - **React 18**: Frontend component architecture for instantaneous rendering and responsive UI updates.
-- **Vite 8**: Ultra-fast build tool leveraging optimized Rolldown bundling for extension architectures.
+- **Vite 8**: Ultra-fast build tool leveraging optimized Rolldown bundling for extension & cloud architectures.
 - **Tailwind CSS & Vanilla CSS**: Custom HSL color palettes, glassmorphism filters, and liquid micro-animations.
 - **Chrome Extensions API (Manifest V3)**: Modern browser sandboxing, background service workers, and Side-Panel bindings.
+- **Netlify Edge**: High-speed global CDN deployment hosting our real-time standalone web application.
 - **Client-Side NLP Regex Algorithms**: Zero-latency word pruning and heuristic grammatical simplification.
 
 ---
@@ -237,12 +252,12 @@ shrinktoken/
 sequenceDiagram
     autonumber
     actor User as 🧑‍💻 Power User / Developer
-    participant Browser as 🌐 Chrome Side-Panel (ShrinkToken)
+    participant Browser as 🌐 Chrome Side-Panel / Netlify App
     participant Engine as ⚙️ Local NLP Pruning Engine
     participant Storage as 💾 Browser LocalStorage
     participant AI as 🤖 ChatGPT / Claude / Gemini
 
-    User->>Browser: Opens side panel & pastes massive prompt
+    User->>Browser: Opens side panel or shrinktoken.netlify.app
     Browser->>Engine: Transmits raw input string (0% server contact)
     Engine->>Engine: Executes semantic compression & token math
     Engine-->>Browser: Returns optimized output + % tokens saved
@@ -288,7 +303,7 @@ We believe in radical transparency and rigorous iteration. Here is the current p
 | **Core React Compression Engine** | `██████████ 100%` | ✅ Completed |
 | **Cyberpunk Dark-Mode Liquid UI** | `██████████ 100%` | ✅ Completed |
 | **Chrome Manifest V3 Side-Panel Integration** | `██████████ 100%` | ✅ Completed |
-| **Zero-Trust Privacy Verification & Documentation** | `██████████ 100%` | ✅ Completed |
+| **Live Standalone Web Deployment (Netlify)** | `██████████ 100%` | 🌐 LIVE WEB APP |
 | **Chrome Web Store Official Submission & Approval** | `██████████ 100%` | 🚀 LIVE ON STORE |
 | **Custom Customizable Pruning Dictionaries** | `██████░░░░ 60%` | 🚧 In Progress |
 | **Automated "Direct-Inject" DOM Button for ChatGPT** | `████░░░░░░ 40%` | 🔮 Future Release |
@@ -363,17 +378,24 @@ We actively welcome developers, engineers, and NLP specialists to expand ShrinkT
 
 ---
 
-## 💖 Support the Project
+## 💖 Support & Buy Us a Domain! 😅
 
-If ShrinkToken has significantly lowered your daily ChatGPT, Claude, or LLM server expenses, consider throwing a bolt of electricity our way:
+> [!NOTE]
+> **Help! We are literally living on a free Netlify subdomain! 🛑** 
+> Right now, our glorious standalone web application is squatting on Netlify's generous free tier at **[shrinktoken.netlify.app](https://shrinktoken.netlify.app/)**. Don't let a cutting-edge AI utility look like a weekend garage project—help us buy a legitimate custom domain (like `shrinktoken.com` or `shrinktoken.in`)! 
+
+If ShrinkToken has saved your company from agonizing ChatGPT, Claude, or LLM server bills, **tossing a coin to your developers** so we can buy a real domain name would mean the cyber-world to us! 💸
 
 <div align="center">
   <br />
   <a href="https://github.com/AREKG0/shrinktoken">
-    <img src="https://img.shields.io/badge/⭐_STAR_THIS_REPOSITORY-Give_us_a_Boost!-00e5ff?style=for-the-badge&logo=github&labelColor=111113&border=2" alt="Star Repository" />
+    <img src="https://img.shields.io/badge/⭐_STAR_THIS_REPO-Give_Us_Free_Street_Cred-00e5ff?style=for-the-badge&logo=github&labelColor=111113&border=2" alt="Star Repository" />
   </a>
   <a href="https://github.com/sponsors/AREKG0">
-    <img src="https://img.shields.io/badge/💖_SPONSOR_US-Support_Open_Source-ff007f?style=for-the-badge&logo=github-sponsors&labelColor=111113" alt="Sponsor" />
+    <img src="https://img.shields.io/badge/💖_DONATE_%2F_SPONSOR-Help_Us_Buy_A_Real_.COM_Domain!-ff007f?style=for-the-badge&logo=github-sponsors&labelColor=111113" alt="Sponsor Domain Fund" />
+  </a>
+  <a href="https://shrinktoken.netlify.app/">
+    <img src="https://img.shields.io/badge/🌐_VISIT_THE_FREE_TIER_WEB_APP-shrinktoken.netlify.app-b900ff?style=for-the-badge&logo=netlify&labelColor=111113" alt="Netlify Live" />
   </a>
   <br /><br />
 </div>
