@@ -423,9 +423,6 @@ Distributed under the MIT License. See `PRIVACY.md` and standard open-source agr
   <a href="https://www.linkedin.com/">
     <img src="https://img.shields.io/badge/LinkedIn-Connect_Professional-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=111113" alt="LinkedIn" />
   </a>
-  <a href="https://twitter.com/">
-    <img src="https://img.shields.io/badge/X_%2F_Twitter-Follow_Updates-000000?style=for-the-badge&logo=x&logoColor=white&labelColor=111113" alt="Twitter" />
-  </a>
 </div>
 
 ---
