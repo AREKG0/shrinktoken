@@ -12,6 +12,7 @@ function App() {
   const [originalTokens, setOriginalTokens] = useState(0)
   const [compressedTokens, setCompressedTokens] = useState(0)
   const [copied, setCopied] = useState(false)
+  const [shareCopied, setShareCopied] = useState(false)
   const [isCompressed, setIsCompressed] = useState(false)
   
   // Fake loading state for button animation
@@ -71,6 +72,14 @@ function App() {
     setTimeout(() => setCopied(false), 2000)
   }
 
+  const handleShareSavings = () => {
+    const total = lifetimeSaved > 0 ? lifetimeSaved.toLocaleString() : (originalTokens - compressedTokens).toLocaleString()
+    const boast = `⚡ I just saved ${total} tokens on my ChatGPT & Claude API calls using #ShrinkToken! Try the 100% private, local-first AI prompt compression engine by OpenArc: https://github.com/AREKG0/shrinktoken`
+    navigator.clipboard.writeText(boast)
+    setShareCopied(true)
+    setTimeout(() => setShareCopied(false), 3500)
+  }
+
   const tokensSaved = originalTokens - compressedTokens
   const percentageSaved = originalTokens > 0 ? Math.round((tokensSaved / originalTokens) * 100) : 0
 
@@ -127,6 +136,25 @@ function App() {
             </div>
           </div>
         </section>
+
+        {/* Viral Share Savings Bar */}
+        {(lifetimeSaved > 0 || isCompressed) && (
+          <section className="w-full bg-[#161224] border border-[#b900ff]/40 rounded-xl p-4 flex flex-col md:flex-row items-center justify-between gap-4 shadow-[0_0_25px_rgba(185,0,255,0.15)]">
+            <div className="flex items-center gap-3 text-sm text-white/90">
+              <span className="text-xl">🏆</span>
+              <div className="leading-relaxed">
+                You've pruned <strong className="text-[#00e5ff] font-mono text-base">{lifetimeSaved > 0 ? lifetimeSaved.toLocaleString() : tokensSaved.toLocaleString()} total tokens</strong> with 0% server contact! Boast about your computational shields:
+              </div>
+            </div>
+            <button
+              onClick={handleShareSavings}
+              className="w-full md:w-auto px-5 py-2.5 rounded-lg bg-gradient-to-r from-[#00e5ff] to-[#b900ff] text-[#0a0a0f] font-extrabold text-xs uppercase tracking-wider flex items-center justify-center gap-2 hover:scale-105 transition-all shadow-[0_0_15px_rgba(0,229,255,0.5)] cursor-pointer shrink-0"
+            >
+              {shareCopied ? <Check size={16} className="text-[#0a0a0f]" /> : <span className="text-sm">⚡</span>}
+              {shareCopied ? 'Copied Boast to Clipboard!' : 'Copy Social Boast (LinkedIn & X)'}
+            </button>
+          </section>
+        )}
 
         {/* Text Areas */}
         <section className="flex flex-col md:flex-row gap-6 min-h-[60vh] md:h-[50vh]">

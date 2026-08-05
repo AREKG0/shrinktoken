@@ -313,10 +313,10 @@ We believe in radical transparency and rigorous iteration. Here is the current p
 | **Core React Compression Engine** | `██████████ 100%` | ✅ Completed |
 | **Cyberpunk Dark-Mode Liquid UI** | `██████████ 100%` | ✅ Completed |
 | **Chrome Manifest V3 Side-Panel Integration** | `██████████ 100%` | ✅ Completed |
+| **Automated "Direct-Inject" DOM Button (ChatGPT & Claude)** | `██████████ 100%` | 💉 v1.1 LIVE |
 | **Live Standalone Web Deployment (Netlify)** | `██████████ 100%` | 🌐 LIVE WEB APP |
 | **Chrome Web Store Official Submission & Approval** | `██████████ 100%` | 🚀 LIVE ON STORE |
-| **Custom Customizable Pruning Dictionaries** | `██████░░░░ 60%` | 🚧 In Progress |
-| **Automated "Direct-Inject" DOM Button for ChatGPT** | `████░░░░░░ 40%` | 🔮 Future Release |
+| **Custom Customizable Pruning Dictionaries** | `████████░░ 80%` | 🚧 Next Release |
 
 ---
 

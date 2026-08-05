@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
   "name": "ShrinkToken",
-  "version": "1.0",
-  "description": "Compress your massive prompts before sending them to ChatGPT or Claude. Save up to 50% on API costs.",
+  "version": "1.1",
+  "description": "Compress your massive prompts before sending them to ChatGPT or Claude. Save up to 50% on API costs with zero-trust local privacy.",
   "icons": {
     "16": "icon.png",
     "48": "icon.png",
@@ -12,12 +12,29 @@
     "service_worker": "background.js"
   },
   "permissions": [
-    "sidePanel"
+    "sidePanel",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://*.chatgpt.com/*",
+    "https://*.claude.ai/*",
+    "https://*.openai.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.chatgpt.com/*",
+        "https://*.claude.ai/*",
+        "https://*.openai.com/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
   ],
   "side_panel": {
     "default_path": "index.html"
   },
   "action": {
-    "default_title": "Open ShrinkToken"
+    "default_title": "Open ShrinkToken Side-Panel"
   }
 }
