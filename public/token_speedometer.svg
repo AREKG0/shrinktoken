@@ -1,0 +1,211 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 320" width="100%" height="100%">
+  <defs>
+    <!-- Dark Cyberpunk Background Gradient -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090a0f" />
+      <stop offset="50%" stop-color="#12131f" />
+      <stop offset="100%" stop-color="#0a0a12" />
+    </linearGradient>
+
+    <!-- Neon Glow Filters -->
+    <filter id="glow-cyan" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    
+    <filter id="glow-magenta" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    
+    <filter id="glow-purple" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <!-- Linear Gradients for Arcs & Bars -->
+    <linearGradient id="arc-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00e5ff" />
+      <stop offset="50%" stop-color="#b900ff" />
+      <stop offset="100%" stop-color="#ff007f" />
+    </linearGradient>
+
+    <linearGradient id="bar-cyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#006688" />
+      <stop offset="100%" stop-color="#00e5ff" />
+    </linearGradient>
+    
+    <linearGradient id="bar-magenta" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#880044" />
+      <stop offset="100%" stop-color="#ff007f" />
+    </linearGradient>
+  </defs>
+
+  <!-- Embedded CSS Keyframe Animations -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600;700&amp;display=swap');
+    
+    .text-mono { font-family: 'Fira Code', monospace, sans-serif; }
+    .title { font-family: 'Fira Code', monospace, sans-serif; font-weight: 700; font-size: 16px; fill: #00e5ff; letter-spacing: 3px; }
+    .metric-value { font-family: 'Fira Code', monospace; font-weight: 700; font-size: 28px; fill: #ffffff; }
+    .metric-label { font-family: 'Fira Code', monospace; font-size: 12px; fill: #a0a0c0; letter-spacing: 1px; }
+    
+    /* Animated Radar Ring Rotation */
+    .rotate-cw {
+      transform-origin: 400px 180px;
+      animation: spinCW 12s linear infinite;
+    }
+    .rotate-ccw {
+      transform-origin: 400px 180px;
+      animation: spinCCW 8s linear infinite;
+    }
+    @keyframes spinCW {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    @keyframes spinCCW {
+      from { transform: rotate(360deg); }
+      to { transform: rotate(0deg); }
+    }
+
+    /* Bouncing Gauge Needle (Simulating real-time prompt compression) */
+    .needle {
+      transform-origin: 400px 180px;
+      animation: compressNeedle 5s cubic-bezier(0.4, 0.0, 0.2, 1) infinite;
+    }
+    @keyframes compressNeedle {
+      0% { transform: rotate(60deg); }
+      20% { transform: rotate(65deg); }
+      45% { transform: rotate(-55deg); }
+      60% { transform: rotate(-50deg); }
+      85% { transform: rotate(-58deg); }
+      100% { transform: rotate(60deg); }
+    }
+
+    /* Pulsing Lights */
+    .pulse-glow {
+      animation: pulse 2s ease-in-out infinite alternate;
+    }
+    @keyframes pulse {
+      0% { opacity: 0.6; transform: scale(0.98); transform-origin: center; }
+      100% { opacity: 1; transform: scale(1.02); transform-origin: center; }
+    }
+
+    /* Animated Progress Bars */
+    .bar-animate-raw {
+      animation: barRaw 5s ease-in-out infinite;
+    }
+    .bar-animate-shrunk {
+      animation: barShrunk 5s ease-in-out infinite;
+    }
+    @keyframes barRaw {
+      0%, 25% { width: 220px; fill: #ff007f; }
+      50%, 90% { width: 220px; fill: #ff007f; opacity: 0.4; }
+      100% { width: 220px; fill: #ff007f; }
+    }
+    @keyframes barShrunk {
+      0%, 25% { width: 40px; opacity: 0.2; }
+      45%, 90% { width: 110px; opacity: 1; }
+      100% { width: 40px; opacity: 0.2; }
+    }
+
+    /* Blinking Status LED */
+    .led { animation: blink 1s steps(2, start) infinite; }
+    @keyframes blink { to { visibility: hidden; } }
+  </style>
+
+  <!-- Background Chassis & Neon Border -->
+  <rect x="5" y="5" width="790" height="310" rx="15" fill="url(#bg-grad)" stroke="#00e5ff" stroke-width="2" stroke-opacity="0.6" filter="url(#glow-cyan)" />
+  <rect x="15" y="15" width="770" height="290" rx="10" fill="none" stroke="#b900ff" stroke-width="1" stroke-dasharray="10 5" opacity="0.4" />
+
+  <!-- Title & Status LED -->
+  <circle cx="45" cy="40" r="6" fill="#ff007f" class="led" filter="url(#glow-magenta)" />
+  <text x="65" y="45" class="title">SHRINKTOKEN TELEMETRY :: REAL-TIME COMPRESSION HUD</text>
+  <text x="680" y="45" class="text-mono" font-size="12" fill="#00e5ff" opacity="0.8">[ONLINE ⚡]</text>
+
+  <!-- LEFT DASHBOARD: TOKEN TELEMETRY READOUTS -->
+  <g transform="translate(40, 80)">
+    <!-- Raw Prompt Box -->
+    <rect x="0" y="0" width="250" height="95" rx="8" fill="#181424" stroke="#ff007f" stroke-width="1.5" stroke-opacity="0.7" />
+    <text x="15" y="25" class="metric-label">RAW BLOATED INPUT</text>
+    <text x="15" y="55" class="metric-value" fill="#ff007f" filter="url(#glow-magenta)">1,850 TOKENS</text>
+    <rect x="15" y="70" height="8" rx="4" class="bar-animate-raw" fill="url(#bar-magenta)" />
+    
+    <!-- Optimized Output Box -->
+    <g transform="translate(0, 115)">
+      <rect x="0" y="0" width="250" height="95" rx="8" fill="#141e28" stroke="#00e5ff" stroke-width="1.5" stroke-opacity="0.8" filter="url(#glow-cyan)" />
+      <text x="15" y="25" class="metric-label">SHRUNKEN OUTPUT (50% SAVED)</text>
+      <text x="15" y="55" class="metric-value" fill="#00e5ff" filter="url(#glow-cyan)">925 TOKENS</text>
+      <rect x="15" y="70" height="8" rx="4" class="bar-animate-shrunk" fill="url(#bar-cyan)" />
+    </g>
+  </g>
+
+  <!-- CENTER DASHBOARD: FUTURISTIC NEON SPEEDOMETER DIAL -->
+  <g transform="translate(0, 20)">
+    <!-- Outer Rotating Laser Ring -->
+    <circle cx="400" cy="180" r="110" fill="none" stroke="#b900ff" stroke-width="2" stroke-dasharray="25 15 5 15" class="rotate-cw" filter="url(#glow-purple)" opacity="0.8" />
+    <!-- Inner Counter-Rotating Ring -->
+    <circle cx="400" cy="180" r="95" fill="none" stroke="#00e5ff" stroke-width="1.5" stroke-dasharray="12 8 30 8" class="rotate-ccw" opacity="0.6" />
+    
+    <!-- Speedometer Background Arc -->
+    <path d="M 295 180 A 105 105 0 0 1 505 180" fill="none" stroke="#222233" stroke-width="14" stroke-linecap="round" />
+    <!-- Glowing Color Gradient Arc -->
+    <path d="M 295 180 A 105 105 0 0 1 505 180" fill="none" stroke="url(#arc-grad)" stroke-width="14" stroke-linecap="round" filter="url(#glow-cyan)" opacity="0.9" />
+
+    <!-- Dial Tick Marks -->
+    <g stroke="#ffffff" stroke-width="2" opacity="0.6">
+      <line x1="285" y1="180" x2="275" y2="180" />
+      <line x1="305" y1="120" x2="295" y2="112" />
+      <line x1="345" y1="85" x2="338" y2="72" />
+      <line x1="400" y1="75" x2="400" y2="62" />
+      <line x1="455" y1="85" x2="462" y2="72" />
+      <line x1="495" y1="120" x2="505" y2="112" />
+      <line x1="515" y1="180" x2="525" y2="180" />
+    </g>
+    <text x="260" y="205" class="text-mono" font-size="12" fill="#00e5ff" font-weight="600">-50% OPTIMIZED</text>
+    <text x="460" y="205" class="text-mono" font-size="12" fill="#ff007f" font-weight="600">0% (BLOAT)</text>
+
+    <!-- THE ANIMATED GAUGE NEEDLE -->
+    <g class="needle">
+      <!-- Needle Blade -->
+      <polygon points="396,180 404,180 400,80" fill="#ff007f" filter="url(#glow-magenta)" />
+      <line x1="400" y1="180" x2="400" y2="82" stroke="#ffffff" stroke-width="1.5" />
+    </g>
+    <!-- Center Hub -->
+    <circle cx="400" cy="180" r="14" fill="#12131f" stroke="#00e5ff" stroke-width="3" filter="url(#glow-cyan)" />
+    <circle cx="400" cy="180" r="5" fill="#ffffff" />
+    
+    <text x="400" y="235" class="text-mono" font-size="14" fill="#ffffff" font-weight="700" text-anchor="middle" letter-spacing="2px">PRUNING RATE: MAX ⚡</text>
+  </g>
+
+  <!-- RIGHT DASHBOARD: AI FINANCIAL SAVINGS & STATE -->
+  <g transform="translate(510, 80)">
+    <rect x="0" y="0" width="250" height="95" rx="8" fill="#1a1228" stroke="#b900ff" stroke-width="1.5" stroke-opacity="0.8" filter="url(#glow-purple)" />
+    <text x="15" y="25" class="metric-label">EST. API COST REDUCTION</text>
+    <text x="15" y="55" class="metric-value" fill="#b900ff">-50.0% BILL</text>
+    <text x="15" y="78" class="text-mono" font-size="11" fill="#00e5ff">Model: GPT-4o &amp; Claude 3.5</text>
+
+    <g transform="translate(0, 115)">
+      <rect x="0" y="0" width="250" height="95" rx="8" fill="#121622" stroke="#00e5ff" stroke-width="1" />
+      <text x="15" y="28" class="metric-label">ZERO-TRUST PRIVACY</text>
+      <text x="15" y="58" font-family="Fira Code" font-size="20" font-weight="700" fill="#00e5ff">100% LOCAL DOM</text>
+      <text x="15" y="80" class="text-mono" font-size="11" fill="#88aa88">✓ 0 Bytes Transmitted via HTTP</text>
+    </g>
+  </g>
+
+  <!-- Bottom Decorative Cyber-Bars -->
+  <line x1="40" y1="305" x2="350" y2="305" stroke="#00e5ff" stroke-width="2" opacity="0.5" />
+  <line x1="360" y1="305" x2="380" y2="305" stroke="#ff007f" stroke-width="4" />
+  <line x1="390" y1="305" x2="410" y2="305" stroke="#b900ff" stroke-width="4" />
+  <line x1="420" y1="305" x2="440" y2="305" stroke="#ff007f" stroke-width="4" />
+  <line x1="450" y1="305" x2="760" y2="305" stroke="#00e5ff" stroke-width="2" opacity="0.5" />
+</svg>

@@ -68,9 +68,13 @@
 
 ---
 
-## ⚡ Project Showcase & Live Demonstration
+## ⚡ Project Showcase & Real-Time Telemetry HUD
 
 <div align="center">
+<!-- CUSTOM ANIMATED CYBERPUNK SPEEDOMETER HUD -->
+  <img src="https://raw.githubusercontent.com/AREKG0/shrinktoken/main/public/token_speedometer.svg" width="100%" alt="ShrinkToken Animated Telemetry Speedometer HUD" />
+  <p><em>Real-Time Interactive-style Telemetry HUD tracking live prompt optimization and API cost reductions.</em></p>
+  <br />
   <img src="https://raw.githubusercontent.com/AREKG0/shrinktoken/main/public/screenshot_chatgpt.png" width="100%" alt="ShrinkToken running side-by-side with ChatGPT" style="border-radius: 10px; box-shadow: 0px 0px 25px rgba(0, 229, 255, 0.4);" />
   <p><em>ShrinkToken operating seamlessly alongside ChatGPT inside a persistent, sleek dark-mode Side Panel.</em></p>
 </div>
@@ -271,6 +275,12 @@ sequenceDiagram
 ---
 
 ## 🧠 API & NLP Engine
+
+<div align="center">
+<!-- CUSTOM ANIMATED NEURAL NETWORK SYNAPSE PRUNING GRAPHIC -->
+  <img src="https://raw.githubusercontent.com/AREKG0/shrinktoken/main/public/neural_pruning.svg" width="100%" alt="ShrinkToken Neural Synapse Pruning Engine" />
+  <p><em>Live visualization of ShrinkToken's quantum NLP core obliterating conversational bloat while protecting essential syntax and code.</em></p>
+</div>
 
 ShrinkToken operates completely offline without external dependency calls. The core linguistic pipeline executes three primary algorithmic passes:
 

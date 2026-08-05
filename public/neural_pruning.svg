@@ -1,0 +1,187 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300" width="100%" height="100%">
+  <defs>
+    <!-- Cyberpunk Deep Horizon Background -->
+    <linearGradient id="neural-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0b14" />
+      <stop offset="50%" stop-color="#151226" />
+      <stop offset="100%" stop-color="#0e0818" />
+    </linearGradient>
+
+    <!-- Intense Neon Glows -->
+    <filter id="glow-cyan-core" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    
+    <filter id="glow-laser" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="glow-purple-node" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600;700&amp;display=swap');
+    
+    .font-mono { font-family: 'Fira Code', monospace; }
+    
+    /* Traveling Electric Pulses down Synapse lines */
+    .synapse-pulse {
+      stroke-dasharray: 12, 18;
+      animation: pulseMove 1.5s linear infinite;
+    }
+    .synapse-pulse-reverse {
+      stroke-dasharray: 15, 20;
+      animation: pulseMoveReverse 2s linear infinite;
+    }
+    @keyframes pulseMove {
+      from { stroke-dashoffset: 60; }
+      to { stroke-dashoffset: 0; }
+    }
+    @keyframes pulseMoveReverse {
+      from { stroke-dashoffset: 0; }
+      to { stroke-dashoffset: 70; }
+    }
+
+    /* Floating Node Bounce */
+    .float-node-1 { animation: float1 4s ease-in-out infinite alternate; }
+    .float-node-2 { animation: float2 5s ease-in-out infinite alternate-reverse; }
+    .float-node-3 { animation: float3 4.5s ease-in-out infinite alternate; }
+    
+    @keyframes float1 { 0% { transform: translateY(-6px); } 100% { transform: translateY(6px); } }
+    @keyframes float2 { 0% { transform: translateY(5px); } 100% { transform: translateY(-5px); } }
+    @keyframes float3 { 0% { transform: translateY(-4px) translateX(3px); } 100% { transform: translateY(4px) translateX(-3px); } }
+
+    /* Laser Pruning Zapping Effect */
+    .laser-beam {
+      animation: fireLaser 4s infinite;
+    }
+    @keyframes fireLaser {
+      0%, 40% { stroke-opacity: 0; stroke-width: 0; }
+      45% { stroke-opacity: 1; stroke-width: 6px; stroke: #ff007f; }
+      48% { stroke-opacity: 0.8; stroke-width: 3px; stroke: #ffffff; }
+      55%, 100% { stroke-opacity: 0; stroke-width: 0; }
+    }
+
+    /* Pruned Bloat Word Transformation */
+    .bloat-word {
+      animation: obliterate 4s infinite;
+    }
+    .pruned-badge {
+      animation: showBadge 4s infinite;
+    }
+    @keyframes obliterate {
+      0%, 43% { opacity: 1; transform: scale(1); fill: #ff007f; }
+      46% { transform: scale(1.3); fill: #ffffff; opacity: 1; }
+      50%, 90% { opacity: 0; transform: scale(0); }
+      100% { opacity: 1; transform: scale(1); }
+    }
+    @keyframes showBadge {
+      0%, 45% { opacity: 0; transform: scale(0); }
+      50%, 92% { opacity: 1; transform: scale(1.1); fill: #00e5ff; }
+      100% { opacity: 0; transform: scale(0); }
+    }
+
+    /* Rotating Core Rings */
+    .spin-core { transform-origin: 400px 150px; animation: coreSpin 20s linear infinite; }
+    .spin-core-fast { transform-origin: 400px 150px; animation: coreSpinFast 10s linear infinite reverse; }
+    @keyframes coreSpin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+    @keyframes coreSpinFast { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+  </style>
+
+  <!-- Chassis & Background Grid -->
+  <rect x="5" y="5" width="790" height="290" rx="15" fill="url(#neural-bg)" stroke="#b900ff" stroke-width="2" stroke-opacity="0.7" filter="url(#glow-purple-node)" />
+  <g stroke="#ffffff" stroke-width="1" opacity="0.05">
+    <line x1="100" y1="0" x2="100" y2="300" /><line x1="200" y1="0" x2="200" y2="300" />
+    <line x1="300" y1="0" x2="300" y2="300" /><line x1="500" y1="0" x2="500" y2="300" />
+    <line x1="600" y1="0" x2="600" y2="300" /><line x1="700" y1="0" x2="700" y2="300" />
+    <line x1="0" y1="75" x2="800" y2="75" /><line x1="0" y1="150" x2="800" y2="150" />
+    <line x1="0" y1="225" x2="800" y2="225" />
+  </g>
+
+  <!-- Header Title -->
+  <text x="30" y="35" class="font-mono" font-size="14" font-weight="700" fill="#00e5ff" letter-spacing="2px">🧠 SHRINKTOKEN NEURAL-SYNAPSE PRUNING ENGINE ⚡</text>
+  <text x="630" y="35" class="font-mono" font-size="12" fill="#ff007f">MODE: DEEP PURGE</text>
+
+  <!-- SYNAPTIC CONNECTIONS (PULSING LINES) -->
+  <g stroke-width="2" opacity="0.8">
+    <!-- Left Ingestion to Core -->
+    <line x1="160" y1="100" x2="400" y2="150" stroke="#ff007f" class="synapse-pulse" filter="url(#glow-laser)" />
+    <line x1="150" y1="200" x2="400" y2="150" stroke="#b900ff" class="synapse-pulse" />
+    <line x1="240" y1="250" x2="400" y2="150" stroke="#00e5ff" class="synapse-pulse" />
+    
+    <!-- Core to Right Streamlined Output -->
+    <line x1="400" y1="150" x2="640" y2="95" stroke="#00e5ff" class="synapse-pulse-reverse" filter="url(#glow-cyan-core)" />
+    <line x1="400" y1="150" x2="650" y2="190" stroke="#00e5ff" class="synapse-pulse-reverse" filter="url(#glow-cyan-core)" />
+    <line x1="400" y1="150" x2="580" y2="250" stroke="#b900ff" class="synapse-pulse-reverse" />
+  </g>
+
+  <!-- THE LASER BEAM ZAPPER -->
+  <line x1="400" y1="150" x2="160" y2="100" stroke="#ffffff" class="laser-beam" filter="url(#glow-laser)" />
+
+  <!-- LEFT SIDE: RAW UNFILTERED NODES (THE BLOAT & CODE) -->
+  <g class="float-node-1" transform="translate(160, 100)">
+    <!-- Bloated filler words node -->
+    <circle cx="0" cy="0" r="32" fill="#1b1122" stroke="#ff007f" stroke-width="3" filter="url(#glow-laser)" />
+    <text x="0" y="-42" class="font-mono bloat-word" font-size="13" font-weight="700" fill="#ff007f" text-anchor="middle">"Please kindly could you..."</text>
+    <text x="0" y="-42" class="font-mono pruned-badge" font-size="14" font-weight="700" fill="#00e5ff" text-anchor="middle">⚡ [PRUNED: -18 TOKENS]</text>
+    <text x="0" y="5" class="font-mono" font-size="11" fill="#ffffff" text-anchor="middle">FLUFF WORD</text>
+  </g>
+
+  <g class="float-node-2" transform="translate(150, 200)">
+    <circle cx="0" cy="0" r="28" fill="#121524" stroke="#b900ff" stroke-width="2.5" filter="url(#glow-purple-node)" />
+    <text x="0" y="45" class="font-mono" font-size="13" font-weight="600" fill="#b900ff" text-anchor="middle">"very really basically"</text>
+    <text x="0" y="5" class="font-mono" font-size="11" fill="#ffffff" text-anchor="middle">ADVERBS</text>
+  </g>
+
+  <g class="float-node-3" transform="translate(240, 250)">
+    <circle cx="0" cy="0" r="24" fill="#0d1b2a" stroke="#00e5ff" stroke-width="2" />
+    <text x="0" y="38" class="font-mono" font-size="12" font-weight="700" fill="#00e5ff" text-anchor="middle">"const auth = new API()"</text>
+    <text x="0" y="4" class="font-mono" font-size="10" fill="#00e5ff" text-anchor="middle">CODE VACCINATED</text>
+  </g>
+
+  <!-- CENTER CORE: THE SHRINKTOKEN COMPRESSION REACTOR -->
+  <g>
+    <!-- Outer Laser Halo -->
+    <circle cx="400" cy="150" r="55" fill="none" stroke="#b900ff" stroke-width="2" stroke-dasharray="20 10 5 10" class="spin-core" filter="url(#glow-purple-node)" />
+    <!-- Inner Cyber Halo -->
+    <circle cx="400" cy="150" r="45" fill="none" stroke="#00e5ff" stroke-width="3" stroke-dasharray="10 5" class="spin-core-fast" filter="url(#glow-cyan-core)" />
+    <!-- Reactor Core Sphere -->
+    <circle cx="400" cy="150" r="32" fill="#110d1f" stroke="#ff007f" stroke-width="3" filter="url(#glow-laser)" />
+    <circle cx="400" cy="150" r="15" fill="#00e5ff" filter="url(#glow-cyan-core)" />
+    <!-- Lightning Bolt Icon in Core -->
+    <text x="400" y="157" font-size="20" font-weight="bold" fill="#ffffff" text-anchor="middle">⚡</text>
+    <text x="400" y="235" class="font-mono" font-size="13" font-weight="700" fill="#00e5ff" text-anchor="middle" letter-spacing="1px">[ NLP QUANTUM CHIP ]</text>
+  </g>
+
+  <!-- RIGHT SIDE: STREAMLINED SEMANTIC OUTPUT (OPTIMIZED FOR LLMS) -->
+  <g class="float-node-3" transform="translate(640, 95)">
+    <circle cx="0" cy="0" r="30" fill="#0c1822" stroke="#00e5ff" stroke-width="3" filter="url(#glow-cyan-core)" />
+    <text x="0" y="-42" class="font-mono" font-size="14" font-weight="700" fill="#00e5ff" text-anchor="middle">100% INTENT PRESERVED</text>
+    <text x="0" y="5" class="font-mono" font-size="11" font-weight="600" fill="#ffffff" text-anchor="middle">PURE LOGIC</text>
+  </g>
+
+  <g class="float-node-1" transform="translate(650, 190)">
+    <circle cx="0" cy="0" r="32" fill="#141026" stroke="#b900ff" stroke-width="2.5" filter="url(#glow-purple-node)" />
+    <text x="0" y="48" class="font-mono" font-size="13" font-weight="700" fill="#b900ff" text-anchor="middle">"auth = new API()"</text>
+    <text x="0" y="5" class="font-mono" font-size="11" font-weight="600" fill="#ffffff" text-anchor="middle">STREAMLINED</text>
+  </g>
+  
+  <g class="float-node-2" transform="translate(580, 255)">
+    <circle cx="0" cy="0" r="22" fill="#180e22" stroke="#ff007f" stroke-width="2" />
+    <text x="0" y="4" class="font-mono" font-size="10" font-weight="700" fill="#ffffff" text-anchor="middle">-50% COSTS</text>
+  </g>
+</svg>
