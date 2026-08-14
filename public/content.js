@@ -83,30 +83,107 @@ function showShrinkToast(originalCount, compressedCount) {
 
 // Attempt to find active text input on ChatGPT or Claude and compress its contents
 function executeDirectShrink() {
-  // Try finding textarea (common in Claude and older ChatGPT layouts) or contenteditable div (modern ChatGPT PROSE-MIRROR / ProseMirror)
-  let inputEl = document.querySelector('textarea, [contenteditable="true"], .ProseMirror');
-  if (!inputEl) return;
+  // Strategy: Try multiple selectors in priority order for ChatGPT's evolving DOM
+  let inputEl = document.querySelector('#prompt-textarea')
+    || document.querySelector('div[contenteditable="true"].ProseMirror')
+    || document.querySelector('div[contenteditable="true"]')
+    || document.querySelector('textarea');
+  if (!inputEl) {
+    console.warn('[ShrinkToken] No input element found on page.');
+    return;
+  }
 
-  let rawText = inputEl.value !== undefined ? inputEl.value : inputEl.innerText || '';
-  if (!rawText.trim()) return;
+  // Read current text from the input element
+  let rawText = '';
+  if (inputEl.tagName === 'TEXTAREA' || inputEl.tagName === 'INPUT') {
+    rawText = inputEl.value || '';
+  } else {
+    rawText = inputEl.innerText || '';
+  }
+  if (!rawText.trim()) {
+    console.warn('[ShrinkToken] Input is empty, nothing to compress.');
+    return;
+  }
 
   let origCount = approxTokens(rawText);
   let compressed = localCompress(rawText);
   let compCount = approxTokens(compressed);
 
-  if (inputEl.value !== undefined) {
-    inputEl.value = compressed;
-    // Dispatch input events so React / Vue state management recognizes the programmatic update
+  if (inputEl.tagName === 'TEXTAREA' || inputEl.tagName === 'INPUT') {
+    // Standard textarea (older ChatGPT / some Claude layouts)
+    let nativeSetter = Object.getOwnPropertyDescriptor(
+      window.HTMLTextAreaElement.prototype, 'value'
+    )?.set || Object.getOwnPropertyDescriptor(
+      window.HTMLInputElement.prototype, 'value'
+    )?.set;
+    if (nativeSetter) {
+      nativeSetter.call(inputEl, compressed);
+    } else {
+      inputEl.value = compressed;
+    }
     inputEl.dispatchEvent(new Event('input', { bubbles: true }));
     inputEl.dispatchEvent(new Event('change', { bubbles: true }));
   } else {
-    // For ContentEditable / ProseMirror interfaces
-    inputEl.focus();
-    document.execCommand('selectAll', false, null);
-    document.execCommand('insertText', false, compressed);
+    // ContentEditable / ProseMirror (modern ChatGPT / Claude)
+    replaceProseMirrorContent(inputEl, compressed);
   }
 
   showShrinkToast(origCount, compCount);
+}
+
+// Replace text inside a ProseMirror contenteditable using synthetic ClipboardEvent
+function replaceProseMirrorContent(el, text) {
+  el.focus();
+
+  // Step 1: Select ALL content inside the contenteditable element
+  let sel = window.getSelection();
+  let range = document.createRange();
+  range.selectNodeContents(el);
+  sel.removeAllRanges();
+  sel.addRange(range);
+
+  // Step 2: Dispatch a synthetic paste event with a DataTransfer object
+  // ProseMirror natively listens for 'paste' events and reads clipboardData
+  let dt = new DataTransfer();
+  dt.setData('text/plain', text);
+  let pasteEvent = new ClipboardEvent('paste', {
+    bubbles: true,
+    cancelable: true,
+    clipboardData: dt
+  });
+  let accepted = el.dispatchEvent(pasteEvent);
+
+  // Step 3: If ProseMirror consumed the paste event, we're done.
+  // If not (accepted === true means no handler called preventDefault), use direct DOM fallback.
+  if (accepted) {
+    // ProseMirror didn't handle it — fall back to direct DOM replacement
+    // Delete the current selection first
+    sel.deleteFromDocument();
+
+    // Insert compressed text as a text node
+    let textNode = document.createTextNode(text);
+    sel = window.getSelection();
+    if (sel.rangeCount > 0) {
+      let insertRange = sel.getRangeAt(0);
+      insertRange.insertNode(textNode);
+      // Move cursor to end
+      insertRange.setStartAfter(textNode);
+      insertRange.collapse(true);
+      sel.removeAllRanges();
+      sel.addRange(insertRange);
+    } else {
+      // Last resort: just set innerHTML with <p> wrapper
+      el.innerHTML = '<p>' + text + '</p>';
+    }
+
+    // Fire input events so React/ProseMirror updates internal state
+    el.dispatchEvent(new InputEvent('input', {
+      bubbles: true,
+      cancelable: true,
+      inputType: 'insertFromPaste',
+      data: text
+    }));
+  }
 }
 
 // Inject our cyberpunk button into the interface
