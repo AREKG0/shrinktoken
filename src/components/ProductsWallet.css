@@ -1,0 +1,329 @@
+/* ProductsWallet.css */
+
+/* Wallet Wrapper */
+.wallet {
+  position: relative;
+  width: 280px;
+  height: 230px;
+  cursor: pointer;
+  perspective: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  transition: transform 0.4s ease;
+  margin: 0 auto;
+}
+.wallet::after {
+  content: "Hover for more products";
+  position: absolute;
+  bottom: -30px;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+/* entry animation for card as page loads */
+@keyframes slideIntoPocket {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* this is wallet back */
+.wallet-back {
+  position: absolute;
+  bottom: 0;
+  width: 280px;
+  height: 200px;
+  background: #1e293b; /* slate-800 */
+  border-radius: 22px 22px 60px 60px;
+  z-index: 5;
+  box-shadow:
+    inset 0 25px 35px rgba(0, 0, 0, 0.4),
+    inset 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Cards things */
+.card-wallet-item {
+  position: absolute;
+  width: 260px;
+  height: 140px;
+  left: 10px;
+  border-radius: 16px;
+  padding: 18px;
+  color: white;
+  text-decoration: none;
+  box-shadow:
+    inset 0 1px 1px rgba(255, 255, 255, 0.3),
+    0 -4px 15px rgba(0, 0, 0, 0.1);
+  transition:
+    transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1),
+    z-index 0s;
+  animation: slideIntoPocket 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) backwards;
+}
+
+.card-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+.chip {
+  width: 32px;
+  height: 24px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.card-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.label-desc {
+  font-size: 11px;
+  opacity: 0.9;
+  text-transform: none;
+  margin-top: 6px;
+  line-height: 1.3;
+  display: block;
+}
+
+.hidden-stars {
+  font-size: 16px;
+  letter-spacing: 2px;
+  margin-top: 4px;
+}
+
+.card-link-icon {
+  display: none;
+  margin-top: 6px;
+}
+
+/* card variants (Only 2 cards as requested) */
+.card-1 {
+  background: #3b82f6; /* blue-500 */
+  bottom: 65px;
+  z-index: 10;
+  animation-delay: 0.1s;
+}
+
+.card-2 {
+  background: #a855f7; /* purple-500 */
+  bottom: 40px;
+  z-index: 20;
+  animation-delay: 0.2s;
+}
+
+/* Pocket */
+.pocket {
+  position: absolute;
+  bottom: 0;
+  width: 280px;
+  height: 160px;
+  z-index: 40;
+  filter: drop-shadow(0 15px 25px rgba(0, 0, 0, 0.5));
+}
+.pocket svg {
+  width: 100%;
+  height: 100%;
+  border-radius: 0 0 60px 60px;
+}
+
+.pocket-content {
+  position: absolute;
+  top: 45px;
+  width: 100%;
+  text-align: center;
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.balance-stars {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 24px;
+  letter-spacing: 4px;
+  transition: 0.3s;
+}
+
+.balance-real {
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 10px);
+  transition: 0.3s;
+  white-space: nowrap;
+}
+
+/* eye Logic */
+.eye-icon-wrapper {
+  margin-top: 8px;
+  height: 20px;
+  width: 20px;
+  position: relative;
+  opacity: 0.3;
+  transition: 0.3s;
+}
+
+.eye-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  stroke: white;
+  transition: 0.3s;
+}
+
+/* hovers works here */
+.wallet:hover {
+  transform: translateY(-5px);
+}
+
+.wallet:hover .eye-icon-wrapper {
+  opacity: 1;
+}
+
+/* hover effects on cards */
+.wallet:hover .card-1 {
+  transform: translateY(-60px) rotate(-3deg);
+}
+
+.wallet:hover .card-2 {
+  transform: translateY(-20px) rotate(2deg);
+}
+
+/* indi card hover */
+.card-wallet-item:hover {
+  z-index: 100 !important;
+  transition-delay: 0s !important;
+}
+
+.wallet:hover .card-1:hover {
+  transform: translateY(-60px) scale(1.05) rotate(0);
+}
+
+.wallet:hover .card-2:hover {
+  transform: translateY(-30px) scale(1.05) rotate(0);
+}
+
+.card-wallet-item:hover .hidden-stars {
+  display: none;
+}
+
+.card-wallet-item:hover .card-link-icon {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.wallet:hover .balance-stars {
+  opacity: 0;
+}
+
+.wallet:hover .balance-real {
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
+
+.wallet:hover .eye-slash {
+  opacity: 0;
+  transform: scale(0.5);
+}
+
+.wallet:hover .eye-open {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+/* Custom Dropdown Button */
+.custom-hover-btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background: #183153;
+  font-family: inherit;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  cursor: pointer;
+  border: none;
+  padding: 0;
+}
+
+.custom-hover-btn:after {
+  content: " ";
+  width: 0%;
+  height: 100%;
+  background: #ffd401;
+  position: absolute;
+  transition: all 0.4s ease-in-out;
+  right: 0;
+}
+
+.custom-hover-btn:hover::after {
+  right: auto;
+  left: 0;
+  width: 100%;
+}
+
+.custom-hover-btn span {
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+  padding: 12px 20px;
+  color: #fff;
+  font-size: 0.875rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  z-index: 20;
+  transition: all 0.3s ease-in-out;
+}
+
+.custom-hover-btn:hover span {
+  color: #183153;
+  animation: scaleUp 0.3s ease-in-out;
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+

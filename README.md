@@ -67,7 +67,7 @@ Below are approximate empirical results collected on a benchmark dataset of 405 
 | **Mean Model Calls / Prompt** | 1.00 call | **~0.67 calls** (via early exit filtering) |
 | **Max Model Call Limit** | Uncapped | **4 calls MAX** (Authoritative cap) |
 | **Mean Total Latency (CPU)** | ~1400 ms | **~2106 ms** |
-| **P95 Latency (CPU)** | ~8600 ms | **~6278 ms** |
+| **P95 Latency (CPU)** | ~6278 ms | **~6278 ms** |
 
 ### Category Breakdown (Approximate)
 - **Compressible Prose Categories:** `general` (~10.6% reduction), `multi_constraint` (~9.4% reduction), `reasoning` (~8.6% reduction), `agents` (~2.7% reduction), `rag` (~2.5% reduction).
