@@ -1,0 +1,387 @@
+{
+  "dataset_total_prompts": 405,
+  "passed": 379,
+  "failed": 26,
+  "fallbacks": 24,
+  "fallback_rate_percent": 5.93,
+  "false_pass_count": 17,
+  "false_pass_rate_percent": 34.0,
+  "false_fail_count": 0,
+  "false_fail_rate_percent": 0.0,
+  "validation_failure_rate_percent": 6.42,
+  "total_original_tokens": 5988,
+  "total_direct_llmlingua_tokens": 5057,
+  "total_optimized_tokens": 5646,
+  "total_tokens_saved": 342,
+  "direct_llmlingua": {
+    "average_reduction_percent": 6.55,
+    "median_reduction_percent": 20.0
+  },
+  "shrinktoken_pro": {
+    "average_token_reduction_percent": 2.3,
+    "median_token_reduction_percent": 0.0,
+    "token_reduction_distribution": {
+      "min": 0.0,
+      "p25": 0.0,
+      "median_p50": 0.0,
+      "p75": 0.0,
+      "p95": 19.47,
+      "max": 65.38,
+      "mean": 2.3
+    },
+    "retention_rate_distribution": {
+      "min": 0.3462,
+      "p25": 1.0,
+      "median_p50": 1.0,
+      "p75": 1.0,
+      "p95": 1.0,
+      "max": 1.0,
+      "mean": 0.977
+    }
+  },
+  "latency_ms": {
+    "total_latency": {
+      "mean": 2767.58,
+      "median": 1392.83,
+      "p95": 8669.47
+    },
+    "compression_latency": {
+      "mean": 1424.58,
+      "median": 1383.25,
+      "p95": 1491.38
+    },
+    "validation_latency": {
+      "mean": 0.34,
+      "median": 0.29,
+      "p95": 0.63
+    },
+    "protection_latency": {
+      "mean": 0.04,
+      "median": 0.03,
+      "p95": 0.06
+    }
+  },
+  "adaptive_metrics": {
+    "mean_retries": 0.94,
+    "max_retries": 1
+  },
+  "hypothetical_cost_model_usd": {
+    "note": "Hypothetical cost savings based on benchmark token reduction at $2.50 per 1M input tokens (GPT-4o benchmark rate). Not actual claimed dollar savings.",
+    "price_per_1m_input_tokens_usd": 2.5,
+    "original_inference_cost_usd": 0.01497,
+    "optimized_inference_cost_usd": 0.014115,
+    "gross_token_savings_usd": 0.000855
+  },
+  "false_passes": [
+    {
+      "id": "ADV-001",
+      "category": "adversarial",
+      "original_prompt": "Do not ask me questions about my preferences.",
+      "corrupted_candidate": "Do not ask me questions.",
+      "expected": "FAIL",
+      "actual": "PASS",
+      "reason": "Constraint context lost (scope of negation dropped)"
+    },
+    {
+      "id": "ADV-006",
+      "category": "adversarial",
+      "original_prompt": "Explain recursion to a beginner.",
+      "corrupted_candidate": "Explain recursion to an expert.",
+      "expected": "FAIL",
+      "actual": "PASS",
+      "reason": "Target audience target changed from beginner to expert"
+    },
+    {
+      "id": "ADV-007",
+      "category": "adversarial",
+      "original_prompt": "Return JSON with fields name and age.",
+      "corrupted_candidate": "Return JSON with field name.",
+      "expected": "FAIL",
+      "actual": "PASS",
+      "reason": "Required output schema field 'age' missing"
+    },
+    {
+      "id": "ADV-008",
+      "category": "adversarial",
+      "original_prompt": "Do not summarize the article, but explain its conclusion.",
+      "corrupted_candidate": "Do not summarize the article.",
+      "expected": "FAIL",
+      "actual": "PASS",
+      "reason": "Positive instruction 'explain its conclusion' removed"
+    },
+    {
+      "id": "ADV-009",
+      "category": "adversarial",
+      "original_prompt": "Explain recursion using simple language.",
+      "corrupted_candidate": "Explain recursion.",
+      "expected": "FAIL",
+      "actual": "PASS",
+      "reason": "Style instruction 'using simple language' lost"
+    },
+    {
+      "id": "ADV-014",
+      "category": "adversarial",
+      "original_prompt": "Limit maximum request payload size to 10MB.",
+      "corrupted_candidate": "Limit maximum request payload size to 100MB.",
+      "expected": "FAIL",
+      "actual": "PASS",
+      "reason": "Numeric limit value altered from 10 to 100"
+    },
+    {
+      "id": "ADV-016",
+      "category": "adversarial",
+      "original_prompt": "Operating voltage must be maintained between 3.3V and 5.0V.",
+      "corrupted_candidate": "Operating voltage must be maintained between 5.0V and 3.3V.",
+      "expected": "FAIL",
+      "actual": "PASS",
+      "reason": "Reversed range bounds"
+    },
+    {
+      "id": "ADV-020",
+      "category": "adversarial",
+      "original_prompt": "Return output strictly as valid JSON.",
+      "corrupted_candidate": "Return output as plain freeform prose.",
+      "expected": "FAIL",
+      "actual": "PASS",
+      "reason": "Output format schema requirement ignored"
+    },
+    {
+      "id": "ADV-022",
+      "category": "adversarial",
+      "original_prompt": "Format response as a Markdown table with columns ID, Name, Status.",
+      "corrupted_candidate": "Format response as a simple bullet list with no table.",
+      "expected": "FAIL",
+      "actual": "PASS",
+      "reason": "Structural format requirement ignored"
+    },
+    {
+      "id": "ADV-025",
+      "category": "adversarial",
+      "original_prompt": "Read file at path: C:\\Users\\ASUS\\.gemini\\config.json",
+      "corrupted_candidate": "Read file at path: C:\\Windows\\System32\\cmd.exe",
+      "expected": "FAIL",
+      "actual": "PASS",
+      "reason": "File path target altered"
+    },
+    {
+      "id": "ADV-026",
+      "category": "adversarial",
+      "original_prompt": "Update Linux configuration at /etc/nginx/sites-available/default.conf",
+      "corrupted_candidate": "Update Linux configuration at /tmp/scratch.txt",
+      "expected": "FAIL",
+      "actual": "PASS",
+      "reason": "File path target altered"
+    },
+    {
+      "id": "ADV-029",
+      "category": "adversarial",
+      "original_prompt": "Tool selection rule: Use get_weather(location) first.",
+      "corrupted_candidate": "Tool selection rule: Use delete_database() first.",
+      "expected": "FAIL",
+      "actual": "PASS",
+      "reason": "Agent tool name modified"
+    },
+    {
+      "id": "ADV-033",
+      "category": "adversarial",
+      "original_prompt": "Don't apologize if you don't know the answer.",
+      "corrupted_candidate": "Apologize profusely if you don't know the answer.",
+      "expected": "FAIL",
+      "actual": "PASS",
+      "reason": "Flipped negation polarity"
+    },
+    {
+      "id": "ADV-046",
+      "category": "adversarial",
+      "original_prompt": "Keep score index between 0.0 and 1.0 inclusive.",
+      "corrupted_candidate": "Keep score index between 1.0 and 0.0 inclusive.",
+      "expected": "FAIL",
+      "actual": "PASS",
+      "reason": "Reversed range bounds"
+    },
+    {
+      "id": "ADV-047",
+      "category": "adversarial",
+      "original_prompt": "Price should range from $10.00 to $49.99.",
+      "corrupted_candidate": "Price should range from $49.99 to $10.00.",
+      "expected": "FAIL",
+      "actual": "PASS",
+      "reason": "Reversed range bounds"
+    },
+    {
+      "id": "ADV-048",
+      "category": "adversarial",
+      "original_prompt": "Latency SLA is between 50ms and 200ms max.",
+      "corrupted_candidate": "Latency SLA is between 200ms and 50ms max.",
+      "expected": "FAIL",
+      "actual": "PASS",
+      "reason": "Reversed range bounds"
+    },
+    {
+      "id": "ADV-049",
+      "category": "adversarial",
+      "original_prompt": "Scale cluster from 3 nodes up to 10 nodes.",
+      "corrupted_candidate": "Scale cluster from 10 nodes down to 3 nodes.",
+      "expected": "FAIL",
+      "actual": "PASS",
+      "reason": "Scaling direction inverted"
+    }
+  ],
+  "false_failures": [],
+  "category_breakdown": {
+    "adversarial": {
+      "prompt_count": 50,
+      "average_reduction_percent": 0.0,
+      "median_reduction_percent": 0.0,
+      "direct_llmlingua_avg_reduction_percent": 11.0,
+      "validation_failures": 0,
+      "fallbacks": 0,
+      "false_passes": 17,
+      "false_fails": 0,
+      "average_latency_ms": 1667.66
+    },
+    "agents": {
+      "prompt_count": 15,
+      "average_reduction_percent": 2.66,
+      "median_reduction_percent": 0.0,
+      "direct_llmlingua_avg_reduction_percent": -1.34,
+      "validation_failures": 0,
+      "fallbacks": 0,
+      "false_passes": 0,
+      "false_fails": 0,
+      "average_latency_ms": 2774.73
+    },
+    "code": {
+      "prompt_count": 20,
+      "average_reduction_percent": 0.65,
+      "median_reduction_percent": 0.0,
+      "direct_llmlingua_avg_reduction_percent": -39.98,
+      "validation_failures": 1,
+      "fallbacks": 1,
+      "false_passes": 0,
+      "false_fails": 0,
+      "average_latency_ms": 2437.21
+    },
+    "general": {
+      "prompt_count": 15,
+      "average_reduction_percent": 11.18,
+      "median_reduction_percent": 0.0,
+      "direct_llmlingua_avg_reduction_percent": 27.58,
+      "validation_failures": 0,
+      "fallbacks": 0,
+      "false_passes": 0,
+      "false_fails": 0,
+      "average_latency_ms": 2818.17
+    },
+    "json": {
+      "prompt_count": 20,
+      "average_reduction_percent": 0.0,
+      "median_reduction_percent": 0.0,
+      "direct_llmlingua_avg_reduction_percent": -81.8,
+      "validation_failures": 0,
+      "fallbacks": 0,
+      "false_passes": 0,
+      "false_fails": 0,
+      "average_latency_ms": 1385.44
+    },
+    "multi_constraint": {
+      "prompt_count": 50,
+      "average_reduction_percent": 9.29,
+      "median_reduction_percent": 7.14,
+      "direct_llmlingua_avg_reduction_percent": 22.83,
+      "validation_failures": 19,
+      "fallbacks": 19,
+      "false_passes": 0,
+      "false_fails": 0,
+      "average_latency_ms": 8574.8
+    },
+    "negation": {
+      "prompt_count": 50,
+      "average_reduction_percent": 0.0,
+      "median_reduction_percent": 0.0,
+      "direct_llmlingua_avg_reduction_percent": 31.12,
+      "validation_failures": 0,
+      "fallbacks": 0,
+      "false_passes": 0,
+      "false_fails": 0,
+      "average_latency_ms": 1387.72
+    },
+    "numeric_constraints": {
+      "prompt_count": 50,
+      "average_reduction_percent": 0.0,
+      "median_reduction_percent": 0.0,
+      "direct_llmlingua_avg_reduction_percent": 18.18,
+      "validation_failures": 0,
+      "fallbacks": 0,
+      "false_passes": 0,
+      "false_fails": 0,
+      "average_latency_ms": 1371.34
+    },
+    "output_formats": {
+      "prompt_count": 50,
+      "average_reduction_percent": 0.0,
+      "median_reduction_percent": 0.0,
+      "direct_llmlingua_avg_reduction_percent": 24.7,
+      "validation_failures": 0,
+      "fallbacks": 0,
+      "false_passes": 0,
+      "false_fails": 0,
+      "average_latency_ms": 1373.98
+    },
+    "rag": {
+      "prompt_count": 15,
+      "average_reduction_percent": 8.9,
+      "median_reduction_percent": 0.0,
+      "direct_llmlingua_avg_reduction_percent": 16.69,
+      "validation_failures": 4,
+      "fallbacks": 3,
+      "false_passes": 0,
+      "false_fails": 0,
+      "average_latency_ms": 6446.65
+    },
+    "ranges": {
+      "prompt_count": 25,
+      "average_reduction_percent": 0.0,
+      "median_reduction_percent": 0.0,
+      "direct_llmlingua_avg_reduction_percent": -6.92,
+      "validation_failures": 0,
+      "fallbacks": 0,
+      "false_passes": 0,
+      "false_fails": 0,
+      "average_latency_ms": 1370.6
+    },
+    "reasoning": {
+      "prompt_count": 15,
+      "average_reduction_percent": 7.6,
+      "median_reduction_percent": 0.0,
+      "direct_llmlingua_avg_reduction_percent": 12.89,
+      "validation_failures": 2,
+      "fallbacks": 1,
+      "false_passes": 0,
+      "false_fails": 0,
+      "average_latency_ms": 4583.6
+    },
+    "roles": {
+      "prompt_count": 15,
+      "average_reduction_percent": 0.0,
+      "median_reduction_percent": 0.0,
+      "direct_llmlingua_avg_reduction_percent": 28.86,
+      "validation_failures": 0,
+      "fallbacks": 0,
+      "false_passes": 0,
+      "false_fails": 0,
+      "average_latency_ms": 1398.66
+    },
+    "urls_paths": {
+      "prompt_count": 15,
+      "average_reduction_percent": 0.0,
+      "median_reduction_percent": 0.0,
+      "direct_llmlingua_avg_reduction_percent": -93.25,
+      "validation_failures": 0,
+      "fallbacks": 0,
+      "false_passes": 0,
+      "false_fails": 0,
+      "average_latency_ms": 1403.32
+    }
+  }
+}

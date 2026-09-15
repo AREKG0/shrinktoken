@@ -1,0 +1,144 @@
+[
+  {
+    "id": "GEN-001",
+    "category": "general",
+    "prompt": "Summarize the key points of the annual software developer survey, highlighting top languages, preferred operating systems, and remote work trends.",
+    "constraints": [
+      "summarize survey key points"
+    ],
+    "expected_risk": "low"
+  },
+  {
+    "id": "GEN-002",
+    "category": "general",
+    "prompt": "Draft a polite email to a vendor requesting an extension on the project delivery deadline by two business days due to unexpected server downtime.",
+    "constraints": [
+      "polite vendor email",
+      "2 business days extension"
+    ],
+    "expected_risk": "low"
+  },
+  {
+    "id": "GEN-003",
+    "category": "general",
+    "prompt": "Provide a brief history of the open source movement from GNU project in 1983 to modern GitHub ecosystems.",
+    "constraints": [
+      "open source history",
+      "1983 to modern"
+    ],
+    "expected_risk": "low"
+  },
+  {
+    "id": "GEN-004",
+    "category": "general",
+    "prompt": "Compare monolithic application architecture with microservices architecture, highlighting deployment complexity, scalability, and maintainability.",
+    "constraints": [
+      "monolithic vs microservices"
+    ],
+    "expected_risk": "medium"
+  },
+  {
+    "id": "GEN-005",
+    "category": "general",
+    "prompt": "Explain the concept of database indexing using an analogy suitable for non-technical stakeholders.",
+    "constraints": [
+      "database indexing analogy",
+      "non-technical stakeholders"
+    ],
+    "expected_risk": "low"
+  },
+  {
+    "id": "GEN-006",
+    "category": "general",
+    "prompt": "Write a descriptive guide on setting up a virtual environment in Python using venv and installing pip dependencies from a requirements file.",
+    "constraints": [
+      "python venv guide"
+    ],
+    "expected_risk": "low"
+  },
+  {
+    "id": "GEN-007",
+    "category": "general",
+    "prompt": "Outline best practices for securing RESTful API endpoints using OAuth 2.0 and JSON Web Tokens (JWT).",
+    "constraints": [
+      "rest api security",
+      "oauth 2.0",
+      "jwt"
+    ],
+    "expected_risk": "medium"
+  },
+  {
+    "id": "GEN-008",
+    "category": "general",
+    "prompt": "Describe the main differences between synchronous and asynchronous programming paradigms in modern Web development.",
+    "constraints": [
+      "sync vs async programming"
+    ],
+    "expected_risk": "low"
+  },
+  {
+    "id": "GEN-009",
+    "category": "general",
+    "prompt": "Write an introductory overview of containerization and how Docker simplifies software deployment across environments.",
+    "constraints": [
+      "containerization",
+      "docker overview"
+    ],
+    "expected_risk": "low"
+  },
+  {
+    "id": "GEN-010",
+    "category": "general",
+    "prompt": "Explain the principles of Agile software development and how sprint planning sessions operate.",
+    "constraints": [
+      "agile software development",
+      "sprint planning"
+    ],
+    "expected_risk": "low"
+  },
+  {
+    "id": "GEN-011",
+    "category": "general",
+    "prompt": "Write a comprehensive introduction to distributed systems concepts including fault tolerance, consensus protocols, and eventual consistency.",
+    "constraints": [
+      "distributed systems introduction"
+    ],
+    "expected_risk": "low"
+  },
+  {
+    "id": "GEN-012",
+    "category": "general",
+    "prompt": "Draft a technical blog post explaining how modern web browsers render HTML, CSS, and execute JavaScript event loops.",
+    "constraints": [
+      "browser rendering blog post"
+    ],
+    "expected_risk": "low"
+  },
+  {
+    "id": "GEN-013",
+    "category": "general",
+    "prompt": "Provide a detailed comparison of relational databases (PostgreSQL) vs document databases (MongoDB) for scalability and transactional integrity.",
+    "constraints": [
+      "postgresql vs mongodb comparison"
+    ],
+    "expected_risk": "medium"
+  },
+  {
+    "id": "GEN-014",
+    "category": "general",
+    "prompt": "Explain the concepts of continuous integration and continuous deployment (CI/CD) and how automated testing pipelines reduce release risk.",
+    "constraints": [
+      "ci/cd overview"
+    ],
+    "expected_risk": "low"
+  },
+  {
+    "id": "GEN-015",
+    "category": "general",
+    "prompt": "Write a beginner-friendly overview of machine learning model training, validation splits, and preventing overfitting.",
+    "constraints": [
+      "machine learning training overview"
+    ],
+    "expected_risk": "low"
+  }
+]

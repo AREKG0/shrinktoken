@@ -1,0 +1,685 @@
+[
+  {
+    "id": "MLT-001",
+    "category": "multi_constraint",
+    "prompt": "You are a Python tutor. Explain recursion to a beginner. Use simple language. Give exactly 3 examples. Do not use C++ or Java code. Keep the response under 500 words. Do not ask questions. Return output in Markdown with headers.",
+    "constraints": [
+      "role: python tutor",
+      "beginner",
+      "simple language",
+      "exactly 3 examples",
+      "do not use c++ or java code",
+      "under 500 words",
+      "do not ask questions",
+      "markdown with headers"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "MLT-002",
+    "category": "multi_constraint",
+    "prompt": "Act as a cybersecurity analyst. Review the provided log. Never reveal IP addresses. Do not summarize the intro. Provide exactly 4 recommendations. Keep response between 200 and 400 words. Output valid JSON.",
+    "constraints": [
+      "role: cybersecurity analyst",
+      "never reveal ip addresses",
+      "do not summarize intro",
+      "exactly 4 recommendations",
+      "between 200 and 400 words",
+      "valid json"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "MLT-003",
+    "category": "multi_constraint",
+    "prompt": "You are a software architect. Design a REST API schema for user registration. Include fields: email, password_hash, created_at, role. Do not use GraphQL. Give 2 code examples in Python and TypeScript. Return response as a Markdown table followed by code blocks.",
+    "constraints": [
+      "role: software architect",
+      "rest api schema",
+      "specific fields",
+      "do not use graphql",
+      "2 code examples: python and typescript",
+      "markdown table followed by code"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "MLT-004",
+    "category": "multi_constraint",
+    "prompt": "Summarize the financial report for Q3 2026. Do not mention competitor names. Preserve exact figures: revenue $12.5M, profit margin 18.4%. Use no more than 150 words. Do not use bullet points. End response with exact string 'CONFIRMED'.",
+    "constraints": [
+      "do not mention competitor names",
+      "revenue $12.5M",
+      "profit margin 18.4%",
+      "no more than 150 words",
+      "do not use bullet points",
+      "end with 'CONFIRMED'"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "MLT-005",
+    "category": "multi_constraint",
+    "prompt": "Act as a DevOps expert. Write a GitHub Actions deployment workflow script for Python 3.13. Target environment is Ubuntu 24.04. Do not hardcode secret tokens. Use 3 steps: checkout, setup-python, run-tests. Return valid YAML block only.",
+    "constraints": [
+      "role: devops expert",
+      "python 3.13",
+      "ubuntu 24.04",
+      "do not hardcode secret tokens",
+      "3 steps: checkout, setup-python, run-tests",
+      "valid yaml block only"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "MLT-006",
+    "category": "multi_constraint",
+    "prompt": "Evaluate Cloud Provider A vs Cloud Provider B. Do not express personal opinions. Provide exactly 5 comparison metrics. Use a markdown table. Keep total length between 300 and 600 words. Do not include external URLs. End with a 1-sentence conclusion.",
+    "constraints": [
+      "do not express personal opinions",
+      "exactly 5 comparison metrics",
+      "markdown table",
+      "between 300 and 600 words",
+      "do not include external urls",
+      "1-sentence conclusion"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "MLT-007",
+    "category": "multi_constraint",
+    "prompt": "You are a database administrator. Write a PostgreSQL migration script. Create table 'audit_logs' with columns: id, event, timestamp. Do not drop existing tables. Add an index on timestamp column. Return code block only.",
+    "constraints": [
+      "role: dba",
+      "postgresql migration script",
+      "create table audit_logs",
+      "columns: id, event, timestamp",
+      "do not drop existing tables",
+      "index on timestamp",
+      "code block only"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "MLT-008",
+    "category": "multi_constraint",
+    "prompt": "Explain transformer attention mechanism to an undergraduate student. Use simple analogies. Give 1 numerical example showing matrix multiplication of shape 2x4 by 4x2. Do not use complex jargon. Limit response to 4 paragraphs.",
+    "constraints": [
+      "undergraduate student",
+      "simple analogies",
+      "1 numerical example",
+      "shape 2x4 by 4x2",
+      "do not use complex jargon",
+      "limit to 4 paragraphs"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "MLT-009",
+    "category": "multi_constraint",
+    "prompt": "Write a unit test for FastAPI endpoint GET /api/v1/health. Target framework is pytest with httpx AsyncClient. Assert status code 200 and response body {\"status\": \"ok\"}. Do not use mock objects. Return valid Python code block.",
+    "constraints": [
+      "fastapi GET /api/v1/health",
+      "pytest with httpx AsyncClient",
+      "assert status code 200",
+      "assert body {\"status\": \"ok\"}",
+      "do not use mock objects",
+      "python code block"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "MLT-010",
+    "category": "multi_constraint",
+    "prompt": "Act as a technical project manager. Create a sprint backlog plan for 2 weeks. Include 4 user stories with story points: 3, 5, 8, 2. Do not exceed 18 total story points. Output format: Markdown list with acceptance criteria.",
+    "constraints": [
+      "role: technical project manager",
+      "2 weeks sprint",
+      "4 user stories",
+      "story points: 3, 5, 8, 2",
+      "do not exceed 18 total points",
+      "markdown list with acceptance criteria"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "MLT-011",
+    "category": "multi_constraint",
+    "prompt": "Act as a security consultant. Review the authentication flow. Do not recommend basic auth. Provide exactly 3 recommendations. Format as a Markdown list. Keep response under 300 words. Do not ask questions.",
+    "constraints": [
+      "role: security consultant",
+      "do not recommend basic auth",
+      "exactly 3 recommendations",
+      "markdown list",
+      "under 300 words",
+      "do not ask questions"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "MLT-012",
+    "category": "multi_constraint",
+    "prompt": "You are a Python instructor. Explain decorators to a beginner. Use simple analogies. Include 1 code block in Python. Do not use complex jargon. Keep length between 200 and 400 words. Return Markdown output.",
+    "constraints": [
+      "role: python instructor",
+      "beginner",
+      "simple analogies",
+      "1 code block",
+      "do not use complex jargon",
+      "between 200 and 400 words",
+      "markdown output"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "MLT-013",
+    "category": "multi_constraint",
+    "prompt": "Write a Dockerfile for Python 3.13 app. Use alpine base image. Set working directory to /app. Do not run container as root user. Expose port 8000. Return raw Dockerfile code block only.",
+    "constraints": [
+      "dockerfile python 3.13",
+      "alpine base",
+      "workdir /app",
+      "do not run as root",
+      "expose port 8000",
+      "raw code block only"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "MLT-014",
+    "category": "multi_constraint",
+    "prompt": "Act as a data analyst. Summarize Q3 sales metrics. Preserve exact figures: revenue $4.5M, growth 12.5%. Do not mention competitor names. Format as valid JSON. Limit to 4 key fields.",
+    "constraints": [
+      "role: data analyst",
+      "revenue $4.5M",
+      "growth 12.5%",
+      "do not mention competitor names",
+      "valid json",
+      "limit 4 fields"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "MLT-015",
+    "category": "multi_constraint",
+    "prompt": "Explain Kubernetes pod lifecycle to a junior engineer. Do not use acronyms without expanding them. Include exactly 4 lifecycle phases. Use bullet points. Keep response under 350 words. Do not ask questions.",
+    "constraints": [
+      "junior engineer",
+      "do not use unexpanded acronyms",
+      "exactly 4 lifecycle phases",
+      "bullet points",
+      "under 350 words",
+      "do not ask questions"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "MLT-016",
+    "category": "multi_constraint",
+    "prompt": "You are a backend architect. Compare PostgreSQL vs MongoDB for e-commerce. Provide exactly 3 pros and 3 cons for each. Use a Markdown table. Do not express personal bias. Keep response under 500 words.",
+    "constraints": [
+      "role: backend architect",
+      "postgresql vs mongodb",
+      "exactly 3 pros and 3 cons each",
+      "markdown table",
+      "do not express personal bias",
+      "under 500 words"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "MLT-017",
+    "category": "multi_constraint",
+    "prompt": "Create an Ansible playbook for web server setup. Target OS is Ubuntu 24.04. Install nginx and git. Do not hardcode SSH keys. Include 3 tasks. Return YAML code block only.",
+    "constraints": [
+      "ansible playbook",
+      "ubuntu 24.04",
+      "install nginx and git",
+      "do not hardcode ssh keys",
+      "3 tasks",
+      "yaml code block only"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "MLT-018",
+    "category": "multi_constraint",
+    "prompt": "Summarize incident report INC-9902. Preserve exact downtime figure of 45 minutes and impact score 4.2. Do not reveal customer names. Provide 2 corrective action steps. Format as Markdown headers.",
+    "constraints": [
+      "inc-9902",
+      "downtime 45 minutes",
+      "impact score 4.2",
+      "do not reveal customer names",
+      "2 corrective action steps",
+      "markdown headers"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "MLT-019",
+    "category": "multi_constraint",
+    "prompt": "Act as a technical recruiter. Write a job description for Senior DevOps Engineer. Require at least 5 years experience with AWS and Terraform. Do not specify salary range. Use exactly 4 bullet points for responsibilities. Keep under 400 words.",
+    "constraints": [
+      "role: technical recruiter",
+      "at least 5 years experience",
+      "do not specify salary range",
+      "exactly 4 bullet points",
+      "under 400 words"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "MLT-020",
+    "category": "multi_constraint",
+    "prompt": "You are a software tester. Write unit test cases for user login API. Include 3 valid test cases and 2 invalid test cases. Use pytest framework with mock client. Do not execute real HTTP calls. Return Python code block.",
+    "constraints": [
+      "role: software tester",
+      "3 valid test cases",
+      "2 invalid test cases",
+      "pytest with mock client",
+      "do not execute real http calls",
+      "python code block"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "MLT-021",
+    "category": "multi_constraint",
+    "prompt": "Write a terraform script creating AWS S3 bucket. Bucket name must be 'my-app-logs-2026'. Enable AES256 server-side encryption. Do not allow public read access. Return valid HCL code block only.",
+    "constraints": [
+      "terraform script",
+      "bucket my-app-logs-2026",
+      "aes256 encryption",
+      "do not allow public read",
+      "hcl code block only"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "MLT-022",
+    "category": "multi_constraint",
+    "prompt": "Explain OAuth 2.0 PKCE flow to a developer. Include steps for client, authorization server, and resource server. Do not skip state verification step. Limit response to 5 paragraphs. Return Markdown output.",
+    "constraints": [
+      "oauth 2.0 pkce",
+      "developer",
+      "do not skip state verification",
+      "limit 5 paragraphs",
+      "markdown output"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "MLT-023",
+    "category": "multi_constraint",
+    "prompt": "Act as a database administrator. Write PostgreSQL query finding top 10 users by query runtime. Join pg_stat_activity view. Filter out idle queries. Do not alter system tables. Return raw SQL block.",
+    "constraints": [
+      "role: dba",
+      "top 10 users by runtime",
+      "join pg_stat_activity",
+      "filter out idle queries",
+      "do not alter system tables",
+      "raw sql block"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "MLT-024",
+    "category": "multi_constraint",
+    "prompt": "Create a CI/CD pipeline configuration for GitHub Actions. Run tests on Python 3.12 and 3.13. Cache pip packages. Do not push image on pull request events. Use exactly 3 workflow jobs. Return YAML block.",
+    "constraints": [
+      "github actions pipeline",
+      "python 3.12 and 3.13",
+      "cache pip packages",
+      "do not push image on pr",
+      "exactly 3 jobs",
+      "yaml block"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "MLT-025",
+    "category": "multi_constraint",
+    "prompt": "You are a tech lead. Write a post-mortem summary for database outage. Include root cause: pool exhaustion. Preserve duration 2.5 hours. Do not blame individual engineers. Provide 3 action items. Output valid JSON.",
+    "constraints": [
+      "role: tech lead",
+      "root cause pool exhaustion",
+      "duration 2.5 hours",
+      "do not blame individual engineers",
+      "3 action items",
+      "valid json"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "MLT-026",
+    "category": "multi_constraint",
+    "prompt": "Write a summary of RFC 7519 JSON Web Tokens. Explain header, payload, and signature components. Do not use pseudocode. Keep response between 250 and 450 words. Do not ask questions. Return Markdown.",
+    "constraints": [
+      "rfc 7519 jwt",
+      "header payload signature",
+      "do not use pseudocode",
+      "between 250 and 450 words",
+      "do not ask questions",
+      "markdown"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "MLT-027",
+    "category": "multi_constraint",
+    "prompt": "Act as a frontend engineer. Explain React Server Components to a Vue developer. Compare mental models. Do not claim React is superior to Vue. Provide 1 code snippet showing server component. Keep under 500 words.",
+    "constraints": [
+      "role: frontend engineer",
+      "react server components to vue dev",
+      "do not claim react is superior",
+      "1 code snippet",
+      "under 500 words"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "MLT-028",
+    "category": "multi_constraint",
+    "prompt": "Create a Nginx config for reverse proxying to http://127.0.0.1:8000. Set proxy_set_header Host $host. Enable gzip compression. Do not allow HTTP OPTIONS method. Return Nginx configuration code block.",
+    "constraints": [
+      "nginx config reverse proxy",
+      "http://127.0.0.1:8000",
+      "enable gzip",
+      "do not allow http options",
+      "nginx code block"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "MLT-029",
+    "category": "multi_constraint",
+    "prompt": "You are an AI researcher. Explain LLMLingua prompt compression algorithm. Mention token pruning and budget allocation. Do not use marketing claims. Limit response to 3 numbered paragraphs. Output Markdown.",
+    "constraints": [
+      "role: ai researcher",
+      "llmlingua prompt compression",
+      "mention token pruning",
+      "do not use marketing claims",
+      "3 numbered paragraphs",
+      "markdown"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "MLT-030",
+    "category": "multi_constraint",
+    "prompt": "Write a Python script parsing CSV file 'data.csv'. Extract columns 'id' and 'value'. Compute average value. Handle FileNotFoundError gracefully. Do not use pandas library. Return Python code block.",
+    "constraints": [
+      "python script data.csv",
+      "extract id and value",
+      "compute average",
+      "handle FileNotFoundError",
+      "do not use pandas",
+      "python code block"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "MLT-031",
+    "category": "multi_constraint",
+    "prompt": "Act as a cloud architect. Design disaster recovery plan for multi-region web app. RPO must be under 15 minutes and RTO under 1 hour. Do not exceed $5000/month budget. Provide 4 architectural steps. Return Markdown.",
+    "constraints": [
+      "role: cloud architect",
+      "rpo under 15 min",
+      "rto under 1 hour",
+      "do not exceed $5000/month",
+      "4 steps",
+      "markdown"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "MLT-032",
+    "category": "multi_constraint",
+    "prompt": "Summarize Git rebase vs merge. Explain when to use interactive rebase. Do not recommend rebasing shared public branches. Provide exactly 2 command examples. Keep response under 300 words.",
+    "constraints": [
+      "git rebase vs merge",
+      "do not recommend rebasing shared branches",
+      "exactly 2 command examples",
+      "under 300 words"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "MLT-033",
+    "category": "multi_constraint",
+    "prompt": "You are a DevOps engineer. Write a Bash script monitoring disk usage. Send alert if root partition / is over 85% full. Do not use external third-party dependencies. Include crontab example. Return Bash block.",
+    "constraints": [
+      "role: devops engineer",
+      "bash script disk usage",
+      "alert over 85% full",
+      "do not use external dependencies",
+      "crontab example",
+      "bash block"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "MLT-034",
+    "category": "multi_constraint",
+    "prompt": "Explain GraphQL query resolvers to a REST API developer. Use analogies. Provide 1 GraphQL schema definition and 1 resolver snippet. Do not use TypeScript types. Limit to 400 words.",
+    "constraints": [
+      "graphql query resolvers",
+      "analogies",
+      "1 schema and 1 resolver snippet",
+      "do not use typescript types",
+      "limit 400 words"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "MLT-035",
+    "category": "multi_constraint",
+    "prompt": "Act as a technical author. Write installation instructions for CLI tool 'shrinktoken'. Support macOS, Linux, and Windows. Do not require root privileges. Use exactly 3 step headings. Return Markdown.",
+    "constraints": [
+      "role: technical author",
+      "shrinktoken cli",
+      "macOS Linux Windows",
+      "do not require root",
+      "exactly 3 step headings",
+      "markdown"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "MLT-036",
+    "category": "multi_constraint",
+    "prompt": "Create a REST API endpoint specification for POST /v1/prompts/optimize. Request body must be JSON with field 'prompt'. Return status 200 with JSON response. Do not allow empty prompts. Output OpenAPI format.",
+    "constraints": [
+      "rest api post /v1/prompts/optimize",
+      "request body json field 'prompt'",
+      "status 200",
+      "do not allow empty prompts",
+      "openapi format"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "MLT-037",
+    "category": "multi_constraint",
+    "prompt": "You are a system administrator. Explain SSH key authentication setup. Include ssh-keygen and ssh-copy-id commands. Do not recommend RSA keys under 2048 bits. Provide 3 security recommendations. Return Markdown.",
+    "constraints": [
+      "role: sysadmin",
+      "ssh-keygen and ssh-copy-id",
+      "do not recommend rsa under 2048 bits",
+      "3 security recommendations",
+      "markdown"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "MLT-038",
+    "category": "multi_constraint",
+    "prompt": "Write a Python function computing exponential backoff delay with jitter. Max retries 5, base delay 1.0s, max delay 30.0s. Do not use third-party libraries outside math and random. Return code block with docstring.",
+    "constraints": [
+      "python function exponential backoff",
+      "max retries 5",
+      "base 1.0s max 30.0s",
+      "do not use third-party libraries",
+      "code block with docstring"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "MLT-039",
+    "category": "multi_constraint",
+    "prompt": "Act as a compliance officer. Explain GDPR data subject access request (DSAR) requirements. Response time must be within 30 days. Do not charge fee unless request is manifestly unfounded. Provide 4 compliance steps. Return Markdown.",
+    "constraints": [
+      "role: compliance officer",
+      "gdpr dsar",
+      "within 30 days",
+      "do not charge fee",
+      "4 compliance steps",
+      "markdown"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "MLT-040",
+    "category": "multi_constraint",
+    "prompt": "Summarize micro-frontend architecture principles. Compare module federation vs iframe isolation. Do not recommend iframe for shared UI state. Provide 3 core guidelines. Keep under 450 words. Return Markdown.",
+    "constraints": [
+      "micro-frontend architecture",
+      "module federation vs iframe",
+      "do not recommend iframe for shared state",
+      "3 guidelines",
+      "under 450 words"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "MLT-041",
+    "category": "multi_constraint",
+    "prompt": "You are a performance engineer. Optimize a slow MongoDB aggregation query. Explain index creation on compound keys. Do not run unindexed $match stages. Provide 1 index command. Return Markdown.",
+    "constraints": [
+      "role: performance engineer",
+      "mongodb aggregation query",
+      "compound keys index",
+      "do not run unindexed $match",
+      "1 index command"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "MLT-042",
+    "category": "multi_constraint",
+    "prompt": "Write a Docker compose file launching FastAPI app and Redis container. FastAPI port 8000, Redis port 6379. Use environment variable REDIS_URL. Do not expose Redis port to public host interface. Return YAML block.",
+    "constraints": [
+      "docker compose fastapi redis",
+      "ports 8000 and 6379",
+      "env REDIS_URL",
+      "do not expose redis to public host",
+      "yaml block"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "MLT-043",
+    "category": "multi_constraint",
+    "prompt": "Act as a mobile developer. Explain React Native vs Native Swift/Kotlin apps. Highlight performance, bundle size, and code reuse. Do not claim React Native equals native performance. Provide 3 recommendation guidelines. Return Markdown.",
+    "constraints": [
+      "role: mobile developer",
+      "react native vs native",
+      "do not claim rn equals native",
+      "3 guidelines",
+      "markdown"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "MLT-044",
+    "category": "multi_constraint",
+    "prompt": "Create a JSON Schema validating user registration payload. Fields required: email, password, age. Age must be at least 18. Email must match email regex. Do not allow additional properties. Return JSON block.",
+    "constraints": [
+      "json schema user payload",
+      "required email password age",
+      "age at least 18",
+      "email regex",
+      "do not allow additional properties",
+      "json block"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "MLT-045",
+    "category": "multi_constraint",
+    "prompt": "You are a cloud devops engineer. Explain AWS Lambda cold starts. Provide 3 mitigation strategies including provisioned concurrency. Do not recommend increasing memory solely to reduce cold start latency. Limit to 350 words.",
+    "constraints": [
+      "role: cloud devops engineer",
+      "aws lambda cold starts",
+      "3 mitigation strategies",
+      "do not recommend memory increase solely for latency",
+      "limit 350 words"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "MLT-046",
+    "category": "multi_constraint",
+    "prompt": "Write a SQL migration script creating index idx_orders_user_date on table orders(user_id, created_at). Use CONCURRENTLY keyword in PostgreSQL. Do not lock table during index build. Return SQL block only.",
+    "constraints": [
+      "sql migration script",
+      "index idx_orders_user_date",
+      "concurrently keyword",
+      "do not lock table",
+      "sql block only"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "MLT-047",
+    "category": "multi_constraint",
+    "prompt": "Act as a software architect. Explain event-driven architecture using Kafka. Describe producers, topics, consumer groups, and brokers. Do not use JMS terminology. Keep length between 300 and 500 words. Return Markdown.",
+    "constraints": [
+      "role: software architect",
+      "event-driven kafka",
+      "do not use jms terminology",
+      "between 300 and 500 words",
+      "markdown"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "MLT-048",
+    "category": "multi_constraint",
+    "prompt": "Create a Python script using httpx to query REST API endpoint. Set timeout to 5.0 seconds. Handle HTTPStatusError. Do not print raw authorization headers to stdout. Return Python code block.",
+    "constraints": [
+      "python script httpx rest api",
+      "timeout 5.0s",
+      "handle HTTPStatusError",
+      "do not print auth headers",
+      "python code block"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "MLT-049",
+    "category": "multi_constraint",
+    "prompt": "You are a cybersecurity consultant. Explain SQL injection vulnerabilities and parameterized queries. Provide 1 vulnerable query and 1 safe parameterized query in Python. Do not use string concatenation. Return Markdown.",
+    "constraints": [
+      "role: cybersecurity consultant",
+      "sql injection parameterized queries",
+      "1 vulnerable and 1 safe query",
+      "do not use string concatenation",
+      "markdown"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "MLT-050",
+    "category": "multi_constraint",
+    "prompt": "Write a comprehensive summary of HTTP/2 vs HTTP/3 (QUIC). Compare multiplexing, head-of-line blocking, and UDP protocol usage. Do not omit UDP transport layer detail. Provide 4 comparative bullet points. Keep under 400 words.",
+    "constraints": [
+      "http/2 vs http/3 quic",
+      "multiplexing hol blocking udp",
+      "do not omit udp transport detail",
+      "4 comparative bullet points",
+      "under 400 words"
+    ],
+    "expected_risk": "high"
+  }
+]

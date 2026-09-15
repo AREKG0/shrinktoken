@@ -1,0 +1,149 @@
+[
+  {
+    "id": "AGT-001",
+    "category": "agents",
+    "prompt": "Tool selection rule: Use get_weather(location, date) first. If temperature < 0C, invoke get_snow_warning(). Stop if API returns error 500.",
+    "constraints": [
+      "get_weather",
+      "temperature < 0C",
+      "get_snow_warning",
+      "error 500 stop condition"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "AGT-002",
+    "category": "agents",
+    "prompt": "Execution order: Step 1: Call search_database(query). Step 2: Pass results to filter_items(items, max_count=5). Step 3: Call format_output(). Do not skip step 2.",
+    "constraints": [
+      "step 1 -> step 2 -> step 3 order",
+      "max_count=5",
+      "do not skip step 2"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "AGT-003",
+    "category": "agents",
+    "prompt": "Safety constraint: Never call execute_terminal_command() unless user explicitly confirms with code CONFIRM_EXEC_99.",
+    "constraints": [
+      "never call execute_terminal_command without confirmation code CONFIRM_EXEC_99"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "AGT-004",
+    "category": "agents",
+    "prompt": "Output schema required: {\"tool_name\": string, \"parameters\": object, \"reasoning\": string}.",
+    "constraints": [
+      "exact tool output schema"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "AGT-005",
+    "category": "agents",
+    "prompt": "Stop condition: Maximum retry attempts = 3. If query fails 3 times, return error status FAILED_RETRY.",
+    "constraints": [
+      "max 3 retries",
+      "FAILED_RETRY error status"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "AGT-006",
+    "category": "agents",
+    "prompt": "Agent role: You are a SQL Query Assistant. Tool available: run_query(sql_string). Never execute DROP TABLE or DELETE FROM without WHERE clause.",
+    "constraints": [
+      "never execute DROP TABLE or DELETE without WHERE"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "AGT-007",
+    "category": "agents",
+    "prompt": "Rate limiting guardrail: Wait 1.0 second between consecutive tool calls. Maximum total runtime 30 seconds.",
+    "constraints": [
+      "1.0s wait",
+      "30s max runtime"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "AGT-008",
+    "category": "agents",
+    "prompt": "Agent instruction: If retrieved context length > 4000 tokens, call truncate_context(max_tokens=2000) before passing to model.",
+    "constraints": [
+      "> 4000 tokens",
+      "truncate_context(max_tokens=2000)"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "AGT-009",
+    "category": "agents",
+    "prompt": "Multi-tool workflow: Call fetch_user_profile(user_id) AND fetch_account_balance(user_id) in parallel.",
+    "constraints": [
+      "parallel execution of fetch_user_profile and fetch_account_balance"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "AGT-010",
+    "category": "agents",
+    "prompt": "Fallback rule: If primary API endpoint https://api.primary.com fails, failover to https://api.backup.com within 500ms.",
+    "constraints": [
+      "failover from primary to backup url within 500ms"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "AGT-011",
+    "category": "agents",
+    "prompt": "Tool selection rule: Use search_code(query) first. If matches > 50, call refine_search(filter_tag). Never return unverified matches.",
+    "constraints": [
+      "search_code first",
+      "matches > 50 refine_search"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "AGT-012",
+    "category": "agents",
+    "prompt": "Execution order: Step 1: Validate auth token. Step 2: Fetch permissions. Step 3: Execute query. Stop immediately if auth fails.",
+    "constraints": [
+      "step 1 -> step 2 -> step 3",
+      "stop if auth fails"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "AGT-013",
+    "category": "agents",
+    "prompt": "Guardrail constraint: Maximum tool call iterations = 5. If task uncompleted after 5 calls, return status MAXIMUM_ITERATIONS_REACHED.",
+    "constraints": [
+      "max 5 tool calls",
+      "MAXIMUM_ITERATIONS_REACHED"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "AGT-014",
+    "category": "agents",
+    "prompt": "Safety rule: Never execute git push --force on branch main.",
+    "constraints": [
+      "never execute git push --force on main"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "AGT-015",
+    "category": "agents",
+    "prompt": "Agent fallback: If primary LLM model fails with 503, retry once with fallback model flash-lite before throwing exception.",
+    "constraints": [
+      "primary model 503",
+      "retry fallback model flash-lite"
+    ],
+    "expected_risk": "high"
+  }
+]

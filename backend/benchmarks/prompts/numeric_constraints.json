@@ -1,0 +1,459 @@
+[
+  {
+    "id": "NUM-001",
+    "category": "numeric_constraints",
+    "prompt": "Give exactly 5 examples of machine learning algorithms.",
+    "constraints": [
+      "exactly 5 examples"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "NUM-002",
+    "category": "numeric_constraints",
+    "prompt": "Give at least 5 examples of cloud providers.",
+    "constraints": [
+      "at least 5 examples"
+    ],
+    "expected_risk": "medium"
+  },
+  {
+    "id": "NUM-003",
+    "category": "numeric_constraints",
+    "prompt": "Give no more than 5 examples of web frameworks.",
+    "constraints": [
+      "no more than 5 examples"
+    ],
+    "expected_risk": "medium"
+  },
+  {
+    "id": "NUM-004",
+    "category": "numeric_constraints",
+    "prompt": "Write a summary using exactly 10 words.",
+    "constraints": [
+      "exactly 10 words"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "NUM-005",
+    "category": "numeric_constraints",
+    "prompt": "Write an explanation using between 50 and 100 words.",
+    "constraints": [
+      "between 50 and 100 words"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "NUM-006",
+    "category": "numeric_constraints",
+    "prompt": "Use 5 examples and explain each in 100 words.",
+    "constraints": [
+      "5 examples",
+      "100 words per example"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "NUM-007",
+    "category": "numeric_constraints",
+    "prompt": "Limit response to 3 main bullet points with 2 sub-points each.",
+    "constraints": [
+      "3 bullet points",
+      "2 sub-points"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "NUM-008",
+    "category": "numeric_constraints",
+    "prompt": "Provide 4 distinct recommendations ranked from 1 to 4.",
+    "constraints": [
+      "4 recommendations",
+      "ranked 1 to 4"
+    ],
+    "expected_risk": "medium"
+  },
+  {
+    "id": "NUM-009",
+    "category": "numeric_constraints",
+    "prompt": "Set retry limit to 3 attempts with 5.5 second delay.",
+    "constraints": [
+      "3 attempts",
+      "5.5 second delay"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "NUM-010",
+    "category": "numeric_constraints",
+    "prompt": "Ensure memory utilization remains under 80% during execution.",
+    "constraints": [
+      "under 80% memory"
+    ],
+    "expected_risk": "medium"
+  },
+  {
+    "id": "NUM-011",
+    "category": "numeric_constraints",
+    "prompt": "Format table with exactly 4 columns and 10 rows.",
+    "constraints": [
+      "4 columns",
+      "10 rows"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "NUM-012",
+    "category": "numeric_constraints",
+    "prompt": "Select 12 top features out of 50 candidates.",
+    "constraints": [
+      "12 top features",
+      "50 candidates"
+    ],
+    "expected_risk": "medium"
+  },
+  {
+    "id": "NUM-013",
+    "category": "numeric_constraints",
+    "prompt": "Generate 100 unique random test sample tokens.",
+    "constraints": [
+      "100 unique sample tokens"
+    ],
+    "expected_risk": "medium"
+  },
+  {
+    "id": "NUM-014",
+    "category": "numeric_constraints",
+    "prompt": "Reduce batch size from 64 to 32 items.",
+    "constraints": [
+      "batch size 64 to 32"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "NUM-015",
+    "category": "numeric_constraints",
+    "prompt": "Keep maximum payload under 5MB.",
+    "constraints": [
+      "under 5MB"
+    ],
+    "expected_risk": "medium"
+  },
+  {
+    "id": "NUM-016",
+    "category": "numeric_constraints",
+    "prompt": "Allow up to 3 concurrent worker connections.",
+    "constraints": [
+      "up to 3 concurrent connections"
+    ],
+    "expected_risk": "medium"
+  },
+  {
+    "id": "NUM-017",
+    "category": "numeric_constraints",
+    "prompt": "Ensure minimum coverage is at least 95.5% across modules.",
+    "constraints": [
+      "at least 95.5% coverage"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "NUM-018",
+    "category": "numeric_constraints",
+    "prompt": "Allocate 256MB buffer for streaming data.",
+    "constraints": [
+      "256MB buffer"
+    ],
+    "expected_risk": "medium"
+  },
+  {
+    "id": "NUM-019",
+    "category": "numeric_constraints",
+    "prompt": "Process 500 requests per second across 4 nodes.",
+    "constraints": [
+      "500 requests per second",
+      "4 nodes"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "NUM-020",
+    "category": "numeric_constraints",
+    "prompt": "Set cache expiration timeout to 3600 seconds.",
+    "constraints": [
+      "3600 seconds cache expiration"
+    ],
+    "expected_risk": "medium"
+  },
+  {
+    "id": "NUM-021",
+    "category": "numeric_constraints",
+    "prompt": "Generate exactly 8 unit test cases covering edge conditions.",
+    "constraints": [
+      "exactly 8 unit test cases"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "NUM-022",
+    "category": "numeric_constraints",
+    "prompt": "Limit maximum request payload size to 10MB per upload.",
+    "constraints": [
+      "maximum 10MB payload"
+    ],
+    "expected_risk": "medium"
+  },
+  {
+    "id": "NUM-023",
+    "category": "numeric_constraints",
+    "prompt": "Allocate exactly 4 CPU cores for worker process execution.",
+    "constraints": [
+      "exactly 4 CPU cores"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "NUM-024",
+    "category": "numeric_constraints",
+    "prompt": "Ensure password length is at least 12 characters long.",
+    "constraints": [
+      "at least 12 characters"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "NUM-025",
+    "category": "numeric_constraints",
+    "prompt": "Set sliding window buffer size to exactly 1000 items.",
+    "constraints": [
+      "exactly 1000 items"
+    ],
+    "expected_risk": "medium"
+  },
+  {
+    "id": "NUM-026",
+    "category": "numeric_constraints",
+    "prompt": "Keep connection pool size between 10 and 50 active connections.",
+    "constraints": [
+      "between 10 and 50 connections"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "NUM-027",
+    "category": "numeric_constraints",
+    "prompt": "Allow no more than 3 failed login attempts before lock.",
+    "constraints": [
+      "no more than 3 failed login attempts"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "NUM-028",
+    "category": "numeric_constraints",
+    "prompt": "Set retry interval backoff to 2.5 seconds.",
+    "constraints": [
+      "retry interval 2.5 seconds"
+    ],
+    "expected_risk": "medium"
+  },
+  {
+    "id": "NUM-029",
+    "category": "numeric_constraints",
+    "prompt": "Export dataset with 500 rows and 15 attributes.",
+    "constraints": [
+      "500 rows and 15 attributes"
+    ],
+    "expected_risk": "medium"
+  },
+  {
+    "id": "NUM-030",
+    "category": "numeric_constraints",
+    "prompt": "Configure worker process thread count to exactly 16 threads.",
+    "constraints": [
+      "exactly 16 threads"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "NUM-031",
+    "category": "numeric_constraints",
+    "prompt": "Ensure code test coverage remains above 90.0% overall.",
+    "constraints": [
+      "above 90.0% coverage"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "NUM-032",
+    "category": "numeric_constraints",
+    "prompt": "Batch process events in chunks of exactly 100 messages.",
+    "constraints": [
+      "chunks of exactly 100 messages"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "NUM-033",
+    "category": "numeric_constraints",
+    "prompt": "Set session cookie age to 86400 seconds.",
+    "constraints": [
+      "86400 seconds session cookie age"
+    ],
+    "expected_risk": "medium"
+  },
+  {
+    "id": "NUM-034",
+    "category": "numeric_constraints",
+    "prompt": "Limit maximum response latency to under 250 milliseconds.",
+    "constraints": [
+      "under 250 milliseconds"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "NUM-035",
+    "category": "numeric_constraints",
+    "prompt": "Generate 3 distinct architecture diagrams for the proposal.",
+    "constraints": [
+      "3 distinct architecture diagrams"
+    ],
+    "expected_risk": "medium"
+  },
+  {
+    "id": "NUM-036",
+    "category": "numeric_constraints",
+    "prompt": "Keep cache hit ratio above 95% during peak hours.",
+    "constraints": [
+      "cache hit ratio above 95%"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "NUM-037",
+    "category": "numeric_constraints",
+    "prompt": "Process exactly 50 items per pagination page.",
+    "constraints": [
+      "exactly 50 items per page"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "NUM-038",
+    "category": "numeric_constraints",
+    "prompt": "Configure 2 backup replica nodes for high availability.",
+    "constraints": [
+      "2 backup replica nodes"
+    ],
+    "expected_risk": "medium"
+  },
+  {
+    "id": "NUM-039",
+    "category": "numeric_constraints",
+    "prompt": "Set maximum payload timeout to 120 seconds.",
+    "constraints": [
+      "maximum payload timeout 120 seconds"
+    ],
+    "expected_risk": "medium"
+  },
+  {
+    "id": "NUM-040",
+    "category": "numeric_constraints",
+    "prompt": "Limit concurrent user sessions to at most 5 sessions.",
+    "constraints": [
+      "at most 5 sessions"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "NUM-041",
+    "category": "numeric_constraints",
+    "prompt": "Provide 10 key insights summarized from the transcript.",
+    "constraints": [
+      "10 key insights"
+    ],
+    "expected_risk": "medium"
+  },
+  {
+    "id": "NUM-042",
+    "category": "numeric_constraints",
+    "prompt": "Require at least 2 code owner approvals before merge.",
+    "constraints": [
+      "at least 2 code owner approvals"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "NUM-043",
+    "category": "numeric_constraints",
+    "prompt": "Set disk log rotation cap to 500MB per file.",
+    "constraints": [
+      "disk log rotation cap 500MB"
+    ],
+    "expected_risk": "medium"
+  },
+  {
+    "id": "NUM-044",
+    "category": "numeric_constraints",
+    "prompt": "Keep transaction rollback window under 5 seconds.",
+    "constraints": [
+      "rollback window under 5 seconds"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "NUM-045",
+    "category": "numeric_constraints",
+    "prompt": "Generate 4 mock data objects for testing.",
+    "constraints": [
+      "4 mock data objects"
+    ],
+    "expected_risk": "medium"
+  },
+  {
+    "id": "NUM-046",
+    "category": "numeric_constraints",
+    "prompt": "Configure HTTP keep-alive timeout to 60 seconds.",
+    "constraints": [
+      "keep-alive timeout 60 seconds"
+    ],
+    "expected_risk": "medium"
+  },
+  {
+    "id": "NUM-047",
+    "category": "numeric_constraints",
+    "prompt": "Allow up to 100 websocket client connections simultaneously.",
+    "constraints": [
+      "up to 100 websocket client connections"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "NUM-048",
+    "category": "numeric_constraints",
+    "prompt": "Enforce rate limit of 60 requests per minute.",
+    "constraints": [
+      "60 requests per minute"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "NUM-049",
+    "category": "numeric_constraints",
+    "prompt": "Limit error log retention to 30 days maximum.",
+    "constraints": [
+      "30 days maximum error log retention"
+    ],
+    "expected_risk": "medium"
+  },
+  {
+    "id": "NUM-050",
+    "category": "numeric_constraints",
+    "prompt": "Require exactly 1 primary index per table.",
+    "constraints": [
+      "exactly 1 primary index per table"
+    ],
+    "expected_risk": "high"
+  }
+]

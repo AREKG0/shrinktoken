@@ -1,0 +1,402 @@
+[
+  {
+    "id": "ADV-001",
+    "category": "adversarial",
+    "prompt": "Do not ask me questions about my preferences.",
+    "corrupted_candidate": "Do not ask me questions.",
+    "expected_validation": "FAIL",
+    "reason": "Constraint context lost (scope of negation dropped)"
+  },
+  {
+    "id": "ADV-002",
+    "category": "adversarial",
+    "prompt": "Never mention politics unless I specifically ask.",
+    "corrupted_candidate": "Never mention politics.",
+    "expected_validation": "FAIL",
+    "reason": "Conditional clause 'unless I specifically ask' removed"
+  },
+  {
+    "id": "ADV-003",
+    "category": "adversarial",
+    "prompt": "Give exactly 5 examples.",
+    "corrupted_candidate": "Give at least 5 examples.",
+    "expected_validation": "FAIL",
+    "reason": "Operator changed from exactly to at least"
+  },
+  {
+    "id": "ADV-004",
+    "category": "adversarial",
+    "prompt": "Complete this within 15-60 minutes.",
+    "corrupted_candidate": "Complete this within 60-15 minutes.",
+    "expected_validation": "FAIL",
+    "reason": "Range bound numbers reversed"
+  },
+  {
+    "id": "ADV-005",
+    "category": "adversarial",
+    "prompt": "Use 5 examples and explain each in 100 words.",
+    "corrupted_candidate": "Use 100 examples and explain each in 5 words.",
+    "expected_validation": "FAIL",
+    "reason": "Number-to-context binding swapped while number set is identical"
+  },
+  {
+    "id": "ADV-006",
+    "category": "adversarial",
+    "prompt": "Explain recursion to a beginner.",
+    "corrupted_candidate": "Explain recursion to an expert.",
+    "expected_validation": "FAIL",
+    "reason": "Target audience target changed from beginner to expert"
+  },
+  {
+    "id": "ADV-007",
+    "category": "adversarial",
+    "prompt": "Return JSON with fields name and age.",
+    "corrupted_candidate": "Return JSON with field name.",
+    "expected_validation": "FAIL",
+    "reason": "Required output schema field 'age' missing"
+  },
+  {
+    "id": "ADV-008",
+    "category": "adversarial",
+    "prompt": "Do not summarize the article, but explain its conclusion.",
+    "corrupted_candidate": "Do not summarize the article.",
+    "expected_validation": "FAIL",
+    "reason": "Positive instruction 'explain its conclusion' removed"
+  },
+  {
+    "id": "ADV-009",
+    "category": "adversarial",
+    "prompt": "Explain recursion using simple language.",
+    "corrupted_candidate": "Explain recursion.",
+    "expected_validation": "FAIL",
+    "reason": "Style instruction 'using simple language' lost"
+  },
+  {
+    "id": "ADV-010",
+    "category": "adversarial",
+    "prompt": "Return exactly this URL: https://example.com/api?v=1",
+    "corrupted_candidate": "Return exactly this URL: https://example.com/api?v=2",
+    "expected_validation": "FAIL",
+    "reason": "URL parameter modified"
+  },
+  {
+    "id": "ADV-011",
+    "category": "adversarial",
+    "prompt": "Do not execute unverified SQL queries directly on production databases.",
+    "corrupted_candidate": "Execute unverified SQL queries directly on production databases.",
+    "expected_validation": "FAIL",
+    "reason": "Flipped negation polarity"
+  },
+  {
+    "id": "ADV-012",
+    "category": "adversarial",
+    "prompt": "Never hardcode passwords or API tokens in source files.",
+    "corrupted_candidate": "Hardcode passwords or API tokens in source files.",
+    "expected_validation": "FAIL",
+    "reason": "Flipped negation polarity"
+  },
+  {
+    "id": "ADV-013",
+    "category": "adversarial",
+    "prompt": "Give at least 5 examples.",
+    "corrupted_candidate": "Give at most 5 examples.",
+    "expected_validation": "FAIL",
+    "reason": "Operator inverted from at least to at most"
+  },
+  {
+    "id": "ADV-014",
+    "category": "adversarial",
+    "prompt": "Limit maximum request payload size to 10MB.",
+    "corrupted_candidate": "Limit maximum request payload size to 100MB.",
+    "expected_validation": "FAIL",
+    "reason": "Numeric limit value altered from 10 to 100"
+  },
+  {
+    "id": "ADV-015",
+    "category": "adversarial",
+    "prompt": "Ensure password length is at least 12 characters long.",
+    "corrupted_candidate": "Ensure password length is at least 2 characters long.",
+    "expected_validation": "FAIL",
+    "reason": "Numeric limit value altered from 12 to 2"
+  },
+  {
+    "id": "ADV-016",
+    "category": "adversarial",
+    "prompt": "Operating voltage must be maintained between 3.3V and 5.0V.",
+    "corrupted_candidate": "Operating voltage must be maintained between 5.0V and 3.3V.",
+    "expected_validation": "FAIL",
+    "reason": "Reversed range bounds"
+  },
+  {
+    "id": "ADV-017",
+    "category": "adversarial",
+    "prompt": "Format matrix as 4 rows and 10 columns.",
+    "corrupted_candidate": "Format matrix as 10 rows and 4 columns.",
+    "expected_validation": "FAIL",
+    "reason": "Swapped numeric target dimensions"
+  },
+  {
+    "id": "ADV-018",
+    "category": "adversarial",
+    "prompt": "Do not allow plain text transmission of sensitive user data.",
+    "corrupted_candidate": "Allow plain text transmission of sensitive user data.",
+    "expected_validation": "FAIL",
+    "reason": "Flipped negation polarity"
+  },
+  {
+    "id": "ADV-019",
+    "category": "adversarial",
+    "prompt": "Never delete temporary cache directories while worker threads execute.",
+    "corrupted_candidate": "Delete temporary cache directories while worker threads execute.",
+    "expected_validation": "FAIL",
+    "reason": "Flipped negation polarity"
+  },
+  {
+    "id": "ADV-020",
+    "category": "adversarial",
+    "prompt": "Return output strictly as valid JSON.",
+    "corrupted_candidate": "Return output as plain freeform prose.",
+    "expected_validation": "FAIL",
+    "reason": "Output format schema requirement ignored"
+  },
+  {
+    "id": "ADV-021",
+    "category": "adversarial",
+    "prompt": "Return exactly 5 bullet points.",
+    "corrupted_candidate": "Return 1 bullet point.",
+    "expected_validation": "FAIL",
+    "reason": "Count constraint violated"
+  },
+  {
+    "id": "ADV-022",
+    "category": "adversarial",
+    "prompt": "Format response as a Markdown table with columns ID, Name, Status.",
+    "corrupted_candidate": "Format response as a simple bullet list with no table.",
+    "expected_validation": "FAIL",
+    "reason": "Structural format requirement ignored"
+  },
+  {
+    "id": "ADV-023",
+    "category": "adversarial",
+    "prompt": "Return only the final answer as a single floating point number.",
+    "corrupted_candidate": "Return a long multi-paragraph explanation.",
+    "expected_validation": "FAIL",
+    "reason": "Output restriction violated"
+  },
+  {
+    "id": "ADV-024",
+    "category": "adversarial",
+    "prompt": "Fetch metadata from endpoint: https://api.shrinktoken.com/v1/optimize",
+    "corrupted_candidate": "Fetch metadata from endpoint: http://malicious.org/phish",
+    "expected_validation": "FAIL",
+    "reason": "URL target altered"
+  },
+  {
+    "id": "ADV-025",
+    "category": "adversarial",
+    "prompt": "Read file at path: C:\\Users\\ASUS\\.gemini\\config.json",
+    "corrupted_candidate": "Read file at path: C:\\Windows\\System32\\cmd.exe",
+    "expected_validation": "FAIL",
+    "reason": "File path target altered"
+  },
+  {
+    "id": "ADV-026",
+    "category": "adversarial",
+    "prompt": "Update Linux configuration at /etc/nginx/sites-available/default.conf",
+    "corrupted_candidate": "Update Linux configuration at /tmp/scratch.txt",
+    "expected_validation": "FAIL",
+    "reason": "File path target altered"
+  },
+  {
+    "id": "ADV-027",
+    "category": "adversarial",
+    "prompt": "System instruction: Answer using only retrieved facts. Revenue was $4.2M.",
+    "corrupted_candidate": "System instruction: Revenue was $42.0M.",
+    "expected_validation": "FAIL",
+    "reason": "Context numerical fact altered"
+  },
+  {
+    "id": "ADV-028",
+    "category": "adversarial",
+    "prompt": "If a train travels at 60 mph for 2.5 hours, calculate distance.",
+    "corrupted_candidate": "If a train travels at 6 mph for 25 hours, calculate distance.",
+    "expected_validation": "FAIL",
+    "reason": "Context numbers modified"
+  },
+  {
+    "id": "ADV-029",
+    "category": "adversarial",
+    "prompt": "Tool selection rule: Use get_weather(location) first.",
+    "corrupted_candidate": "Tool selection rule: Use delete_database() first.",
+    "expected_validation": "FAIL",
+    "reason": "Agent tool name modified"
+  },
+  {
+    "id": "ADV-030",
+    "category": "adversarial",
+    "prompt": "Safety constraint: Never call execute_terminal_command without code CONFIRM_EXEC_99.",
+    "corrupted_candidate": "Safety constraint: Call execute_terminal_command freely.",
+    "expected_validation": "FAIL",
+    "reason": "Safety constraint dropped"
+  },
+  {
+    "id": "ADV-031",
+    "category": "adversarial",
+    "prompt": "Do not write more than three paragraphs.",
+    "corrupted_candidate": "Write at least ten paragraphs.",
+    "expected_validation": "FAIL",
+    "reason": "Prohibition constraint inverted"
+  },
+  {
+    "id": "ADV-032",
+    "category": "adversarial",
+    "prompt": "Never use jargon without explaining it immediately.",
+    "corrupted_candidate": "Use complex jargon freely without explanation.",
+    "expected_validation": "FAIL",
+    "reason": "Prohibition constraint inverted"
+  },
+  {
+    "id": "ADV-033",
+    "category": "adversarial",
+    "prompt": "Don't apologize if you don't know the answer.",
+    "corrupted_candidate": "Apologize profusely if you don't know the answer.",
+    "expected_validation": "FAIL",
+    "reason": "Flipped negation polarity"
+  },
+  {
+    "id": "ADV-034",
+    "category": "adversarial",
+    "prompt": "Do not skip any step in the multi-stage deployment process.",
+    "corrupted_candidate": "Skip intermediate steps in deployment process.",
+    "expected_validation": "FAIL",
+    "reason": "Prohibition constraint violated"
+  },
+  {
+    "id": "ADV-035",
+    "category": "adversarial",
+    "prompt": "Never generate code that imports deprecated libraries.",
+    "corrupted_candidate": "Generate code importing deprecated libraries.",
+    "expected_validation": "FAIL",
+    "reason": "Flipped negation polarity"
+  },
+  {
+    "id": "ADV-036",
+    "category": "adversarial",
+    "prompt": "Do not alter raw JSON values when formatting.",
+    "corrupted_candidate": "Alter raw JSON values during formatting.",
+    "expected_validation": "FAIL",
+    "reason": "Flipped negation polarity"
+  },
+  {
+    "id": "ADV-037",
+    "category": "adversarial",
+    "prompt": "Never output HTML tags inside the markdown block.",
+    "corrupted_candidate": "Output HTML tags inside markdown block.",
+    "expected_validation": "FAIL",
+    "reason": "Flipped negation polarity"
+  },
+  {
+    "id": "ADV-038",
+    "category": "adversarial",
+    "prompt": "Do not use first-person pronouns like 'I' or 'my'.",
+    "corrupted_candidate": "Use first-person pronouns like 'I' and 'my' throughout.",
+    "expected_validation": "FAIL",
+    "reason": "Prohibition constraint violated"
+  },
+  {
+    "id": "ADV-039",
+    "category": "adversarial",
+    "prompt": "Never assume default parameters unless specified.",
+    "corrupted_candidate": "Assume default parameters without checking.",
+    "expected_validation": "FAIL",
+    "reason": "Flipped negation polarity"
+  },
+  {
+    "id": "ADV-040",
+    "category": "adversarial",
+    "prompt": "Do not truncate long output lists.",
+    "corrupted_candidate": "Truncate long output lists aggressively.",
+    "expected_validation": "FAIL",
+    "reason": "Flipped negation polarity"
+  },
+  {
+    "id": "ADV-041",
+    "category": "adversarial",
+    "prompt": "Keep memory utilization under 80%.",
+    "corrupted_candidate": "Keep memory utilization under 800%.",
+    "expected_validation": "FAIL",
+    "reason": "Numeric limit value altered"
+  },
+  {
+    "id": "ADV-042",
+    "category": "adversarial",
+    "prompt": "Format table with exactly 4 columns and 10 rows.",
+    "corrupted_candidate": "Format table with 1 column and 1 row.",
+    "expected_validation": "FAIL",
+    "reason": "Structural dimensions violated"
+  },
+  {
+    "id": "ADV-043",
+    "category": "adversarial",
+    "prompt": "Reduce batch size from 64 to 32 items.",
+    "corrupted_candidate": "Increase batch size from 32 to 64 items.",
+    "expected_validation": "FAIL",
+    "reason": "Numeric direction and values inverted"
+  },
+  {
+    "id": "ADV-044",
+    "category": "adversarial",
+    "prompt": "Ensure minimum coverage is at least 95.5%.",
+    "corrupted_candidate": "Ensure minimum coverage is at least 5.5%.",
+    "expected_validation": "FAIL",
+    "reason": "Numeric requirement altered"
+  },
+  {
+    "id": "ADV-045",
+    "category": "adversarial",
+    "prompt": "Process 500 requests per second across 4 nodes.",
+    "corrupted_candidate": "Process 5 requests per second across 400 nodes.",
+    "expected_validation": "FAIL",
+    "reason": "Swapped numeric target values"
+  },
+  {
+    "id": "ADV-046",
+    "category": "adversarial",
+    "prompt": "Keep score index between 0.0 and 1.0 inclusive.",
+    "corrupted_candidate": "Keep score index between 1.0 and 0.0 inclusive.",
+    "expected_validation": "FAIL",
+    "reason": "Reversed range bounds"
+  },
+  {
+    "id": "ADV-047",
+    "category": "adversarial",
+    "prompt": "Price should range from $10.00 to $49.99.",
+    "corrupted_candidate": "Price should range from $49.99 to $10.00.",
+    "expected_validation": "FAIL",
+    "reason": "Reversed range bounds"
+  },
+  {
+    "id": "ADV-048",
+    "category": "adversarial",
+    "prompt": "Latency SLA is between 50ms and 200ms max.",
+    "corrupted_candidate": "Latency SLA is between 200ms and 50ms max.",
+    "expected_validation": "FAIL",
+    "reason": "Reversed range bounds"
+  },
+  {
+    "id": "ADV-049",
+    "category": "adversarial",
+    "prompt": "Scale cluster from 3 nodes up to 10 nodes.",
+    "corrupted_candidate": "Scale cluster from 10 nodes down to 3 nodes.",
+    "expected_validation": "FAIL",
+    "reason": "Scaling direction inverted"
+  },
+  {
+    "id": "ADV-050",
+    "category": "adversarial",
+    "prompt": "Output valid JSON with exact fields: name, age, active, roles.",
+    "corrupted_candidate": "Output plain text string with no fields.",
+    "expected_validation": "FAIL",
+    "reason": "Schema output requirements dropped"
+  }
+]

@@ -1,0 +1,452 @@
+[
+  {
+    "id": "NEG-001",
+    "category": "negation",
+    "prompt": "Do not ask me what I want to do. Write a short introduction to Python.",
+    "constraints": [
+      "do not ask me what i want to do"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "NEG-002",
+    "category": "negation",
+    "prompt": "Never mention politics when discussing renewable energy policies.",
+    "constraints": [
+      "never mention politics"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "NEG-003",
+    "category": "negation",
+    "prompt": "Do not summarize the article, but explain its main conclusion.",
+    "constraints": [
+      "do not summarize the article"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "NEG-004",
+    "category": "negation",
+    "prompt": "You must not use bullet points under any circumstances.",
+    "constraints": [
+      "must not use bullet points"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "NEG-005",
+    "category": "negation",
+    "prompt": "Don't provide a conclusion at the end of your response.",
+    "constraints": [
+      "don't provide a conclusion"
+    ],
+    "expected_risk": "medium"
+  },
+  {
+    "id": "NEG-006",
+    "category": "negation",
+    "prompt": "Do not ask questions unless clarification is absolutely necessary.",
+    "constraints": [
+      "do not ask questions unless clarification is necessary"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "NEG-007",
+    "category": "negation",
+    "prompt": "Never mention competitor products except when explicitly comparing benchmarks.",
+    "constraints": [
+      "never mention competitor products except..."
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "NEG-008",
+    "category": "negation",
+    "prompt": "Do not use passive voice in any of the summary sentences.",
+    "constraints": [
+      "do not use passive voice"
+    ],
+    "expected_risk": "medium"
+  },
+  {
+    "id": "NEG-009",
+    "category": "negation",
+    "prompt": "Never reveal internal API keys or secret credentials.",
+    "constraints": [
+      "never reveal internal api keys"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "NEG-010",
+    "category": "negation",
+    "prompt": "Do not include code snippets in your text explanation.",
+    "constraints": [
+      "do not include code snippets"
+    ],
+    "expected_risk": "medium"
+  },
+  {
+    "id": "NEG-011",
+    "category": "negation",
+    "prompt": "Do not write more than three paragraphs.",
+    "constraints": [
+      "do not write more than three paragraphs"
+    ],
+    "expected_risk": "medium"
+  },
+  {
+    "id": "NEG-012",
+    "category": "negation",
+    "prompt": "Never use jargon without explaining it immediately.",
+    "constraints": [
+      "never use jargon without explaining"
+    ],
+    "expected_risk": "medium"
+  },
+  {
+    "id": "NEG-013",
+    "category": "negation",
+    "prompt": "Don't apologize if you don't know the answer; state what is known.",
+    "constraints": [
+      "don't apologize"
+    ],
+    "expected_risk": "low"
+  },
+  {
+    "id": "NEG-014",
+    "category": "negation",
+    "prompt": "Do not skip any step in the multi-stage deployment process.",
+    "constraints": [
+      "do not skip any step"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "NEG-015",
+    "category": "negation",
+    "prompt": "Never generate code that imports deprecated libraries.",
+    "constraints": [
+      "never generate code importing deprecated libraries"
+    ],
+    "expected_risk": "medium"
+  },
+  {
+    "id": "NEG-016",
+    "category": "negation",
+    "prompt": "Do not alter the raw JSON values when formatting.",
+    "constraints": [
+      "do not alter raw json values"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "NEG-017",
+    "category": "negation",
+    "prompt": "Never output HTML tags inside the markdown block.",
+    "constraints": [
+      "never output html tags"
+    ],
+    "expected_risk": "medium"
+  },
+  {
+    "id": "NEG-018",
+    "category": "negation",
+    "prompt": "Do not use first-person pronouns like 'I' or 'my'.",
+    "constraints": [
+      "do not use first-person pronouns"
+    ],
+    "expected_risk": "medium"
+  },
+  {
+    "id": "NEG-019",
+    "category": "negation",
+    "prompt": "Never assume default parameters unless specified.",
+    "constraints": [
+      "never assume default parameters"
+    ],
+    "expected_risk": "medium"
+  },
+  {
+    "id": "NEG-020",
+    "category": "negation",
+    "prompt": "Do not truncate long output lists.",
+    "constraints": [
+      "do not truncate output lists"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "NEG-021",
+    "category": "negation",
+    "prompt": "Do not execute unverified SQL queries directly on production databases.",
+    "constraints": [
+      "do not execute unverified sql"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "NEG-022",
+    "category": "negation",
+    "prompt": "Never hardcode passwords or API tokens in source files.",
+    "constraints": [
+      "never hardcode passwords"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "NEG-023",
+    "category": "negation",
+    "prompt": "Do not omit type annotations in Python code signatures.",
+    "constraints": [
+      "do not omit type annotations"
+    ],
+    "expected_risk": "medium"
+  },
+  {
+    "id": "NEG-024",
+    "category": "negation",
+    "prompt": "Never use global variable state in async worker loops.",
+    "constraints": [
+      "never use global variable state"
+    ],
+    "expected_risk": "medium"
+  },
+  {
+    "id": "NEG-025",
+    "category": "negation",
+    "prompt": "Do not override default HTTP timeout configurations.",
+    "constraints": [
+      "do not override default http timeout"
+    ],
+    "expected_risk": "low"
+  },
+  {
+    "id": "NEG-026",
+    "category": "negation",
+    "prompt": "Do not allow plain text transmission of sensitive user data over unencrypted channels.",
+    "constraints": [
+      "do not allow plain text transmission"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "NEG-027",
+    "category": "negation",
+    "prompt": "Never delete temporary cache directories while worker threads are executing.",
+    "constraints": [
+      "never delete temporary cache"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "NEG-028",
+    "category": "negation",
+    "prompt": "Do not modify the original array in place during sorting operations.",
+    "constraints": [
+      "do not modify original array in place"
+    ],
+    "expected_risk": "medium"
+  },
+  {
+    "id": "NEG-029",
+    "category": "negation",
+    "prompt": "Never instantiate heavy database connections inside tight loop bodies.",
+    "constraints": [
+      "never instantiate heavy database connections in loops"
+    ],
+    "expected_risk": "medium"
+  },
+  {
+    "id": "NEG-030",
+    "category": "negation",
+    "prompt": "Do not suppress uncaught exceptions without logging full traceback context.",
+    "constraints": [
+      "do not suppress uncaught exceptions"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "NEG-031",
+    "category": "negation",
+    "prompt": "Never use wildcard CORS headers like '*' in production authentication routes.",
+    "constraints": [
+      "never use wildcard cors headers"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "NEG-032",
+    "category": "negation",
+    "prompt": "Do not disable SSL verification flags when calling external webhooks.",
+    "constraints": [
+      "do not disable ssl verification"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "NEG-033",
+    "category": "negation",
+    "prompt": "Never commit local environment files containing private secrets to git history.",
+    "constraints": [
+      "never commit local env files"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "NEG-034",
+    "category": "negation",
+    "prompt": "Do not use inline styles inside React component JSX trees.",
+    "constraints": [
+      "do not use inline styles"
+    ],
+    "expected_risk": "low"
+  },
+  {
+    "id": "NEG-035",
+    "category": "negation",
+    "prompt": "Never invoke blocking system calls on event loop threads.",
+    "constraints": [
+      "never invoke blocking calls on event loop"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "NEG-036",
+    "category": "negation",
+    "prompt": "Do not re-export internal utility modules from the public package root.",
+    "constraints": [
+      "do not re-export internal modules"
+    ],
+    "expected_risk": "low"
+  },
+  {
+    "id": "NEG-037",
+    "category": "negation",
+    "prompt": "Never expose administrative API endpoints without role-based access control.",
+    "constraints": [
+      "never expose admin endpoints without rbac"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "NEG-038",
+    "category": "negation",
+    "prompt": "Do not accept unvalidated user inputs directly in system shell executions.",
+    "constraints": [
+      "do not accept unvalidated inputs in shell"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "NEG-039",
+    "category": "negation",
+    "prompt": "Never bypass schema validation when deserializing incoming JSON payloads.",
+    "constraints": [
+      "never bypass schema validation"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "NEG-040",
+    "category": "negation",
+    "prompt": "Do not retry failed payment transactions without checking idempotency tokens.",
+    "constraints": [
+      "do not retry failed payments without idempotency"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "NEG-041",
+    "category": "negation",
+    "prompt": "Never output full credit card numbers in API log files.",
+    "constraints": [
+      "never output full credit card numbers"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "NEG-042",
+    "category": "negation",
+    "prompt": "Do not modify frozen data structure properties after initialization.",
+    "constraints": [
+      "do not modify frozen properties"
+    ],
+    "expected_risk": "medium"
+  },
+  {
+    "id": "NEG-043",
+    "category": "negation",
+    "prompt": "Never run database migrations on production without a pre-flight backup.",
+    "constraints": [
+      "never run migrations without backup"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "NEG-044",
+    "category": "negation",
+    "prompt": "Do not return internal stack traces in HTTP 500 server error responses.",
+    "constraints": [
+      "do not return internal stack traces"
+    ],
+    "expected_risk": "medium"
+  },
+  {
+    "id": "NEG-045",
+    "category": "negation",
+    "prompt": "Never share secret encryption keys across multiple environment deployments.",
+    "constraints": [
+      "never share secret encryption keys"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "NEG-046",
+    "category": "negation",
+    "prompt": "Do not override parent class destructors without calling super cleanup.",
+    "constraints": [
+      "do not override destructors without super cleanup"
+    ],
+    "expected_risk": "medium"
+  },
+  {
+    "id": "NEG-047",
+    "category": "negation",
+    "prompt": "Never rely on floating point equality comparisons in financial ledger logic.",
+    "constraints": [
+      "never rely on floating point equality"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "NEG-048",
+    "category": "negation",
+    "prompt": "Do not hardcode IP addresses; use domain name service resolution instead.",
+    "constraints": [
+      "do not hardcode ip addresses"
+    ],
+    "expected_risk": "medium"
+  },
+  {
+    "id": "NEG-049",
+    "category": "negation",
+    "prompt": "Never drop primary key indexes on production tables during high traffic hours.",
+    "constraints": [
+      "never drop primary key indexes"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "NEG-050",
+    "category": "negation",
+    "prompt": "Do not store session tokens in unencrypted cookies.",
+    "constraints": [
+      "do not store session tokens in unencrypted cookies"
+    ],
+    "expected_risk": "high"
+  }
+]

@@ -1,0 +1,164 @@
+[
+  {
+    "id": "ADV-001",
+    "category": "adversarial",
+    "original": "Do not ask me questions about my preferences.",
+    "unsafe_compressed": "Do not ask me questions.",
+    "expected": "FAIL",
+    "failure_type": "negation_scope_loss",
+    "severity": "critical"
+  },
+  {
+    "id": "ADV-006",
+    "category": "adversarial",
+    "original": "Explain recursion to a beginner.",
+    "unsafe_compressed": "Explain recursion to an expert.",
+    "expected": "FAIL",
+    "failure_type": "audience_drift",
+    "severity": "high"
+  },
+  {
+    "id": "ADV-007",
+    "category": "adversarial",
+    "original": "Return JSON with fields name and age.",
+    "unsafe_compressed": "Return JSON with field name.",
+    "expected": "FAIL",
+    "failure_type": "schema_field_loss",
+    "severity": "high"
+  },
+  {
+    "id": "ADV-008",
+    "category": "adversarial",
+    "original": "Do not summarize the article, but explain its conclusion.",
+    "unsafe_compressed": "Do not summarize the article.",
+    "expected": "FAIL",
+    "failure_type": "positive_instruction_loss",
+    "severity": "critical"
+  },
+  {
+    "id": "ADV-009",
+    "category": "adversarial",
+    "original": "Explain recursion using simple language.",
+    "unsafe_compressed": "Explain recursion.",
+    "expected": "FAIL",
+    "failure_type": "style_constraint_loss",
+    "severity": "medium"
+  },
+  {
+    "id": "ADV-014",
+    "category": "adversarial",
+    "original": "Limit maximum request payload size to 10MB.",
+    "unsafe_compressed": "Limit maximum request payload size to 100MB.",
+    "expected": "FAIL",
+    "failure_type": "numeric_scale_alteration",
+    "severity": "critical"
+  },
+  {
+    "id": "ADV-016",
+    "category": "adversarial",
+    "original": "Operating voltage must be maintained between 3.3V and 5.0V.",
+    "unsafe_compressed": "Operating voltage must be maintained between 5.0V and 3.3V.",
+    "expected": "FAIL",
+    "failure_type": "range_direction_reversal",
+    "severity": "critical"
+  },
+  {
+    "id": "ADV-020",
+    "category": "adversarial",
+    "original": "Return output strictly as valid JSON.",
+    "unsafe_compressed": "Return output as plain freeform prose.",
+    "expected": "FAIL",
+    "failure_type": "output_format_loss",
+    "severity": "critical"
+  },
+  {
+    "id": "ADV-022",
+    "category": "adversarial",
+    "original": "Format response as a Markdown table with columns ID, Name, Status.",
+    "unsafe_compressed": "Format response as a simple bullet list with no table.",
+    "expected": "FAIL",
+    "failure_type": "structural_output_loss",
+    "severity": "high"
+  },
+  {
+    "id": "ADV-023",
+    "category": "adversarial",
+    "original": "Return only the final answer as a single floating point number.",
+    "unsafe_compressed": "Return a long multi-paragraph explanation.",
+    "expected": "FAIL",
+    "failure_type": "output_format_loss",
+    "severity": "critical"
+  },
+  {
+    "id": "ADV-025",
+    "category": "adversarial",
+    "original": "Read file at path: C:\\Users\\ASUS\\.gemini\\config.json",
+    "unsafe_compressed": "Read file at path: C:\\Windows\\System32\\cmd.exe",
+    "expected": "FAIL",
+    "failure_type": "path_target_modification",
+    "severity": "critical"
+  },
+  {
+    "id": "ADV-026",
+    "category": "adversarial",
+    "original": "Update Linux configuration at /etc/nginx/sites-available/default.conf",
+    "unsafe_compressed": "Update Linux configuration at /tmp/scratch.txt",
+    "expected": "FAIL",
+    "failure_type": "path_target_modification",
+    "severity": "critical"
+  },
+  {
+    "id": "ADV-029",
+    "category": "adversarial",
+    "original": "Tool selection rule: Use get_weather(location) first.",
+    "unsafe_compressed": "Tool selection rule: Use delete_database() first.",
+    "expected": "FAIL",
+    "failure_type": "agent_tool_modification",
+    "severity": "critical"
+  },
+  {
+    "id": "ADV-033",
+    "category": "adversarial",
+    "original": "Don't apologize if you don't know the answer.",
+    "unsafe_compressed": "Apologize profusely if you don't know the answer.",
+    "expected": "FAIL",
+    "failure_type": "negation_polarity_flipped",
+    "severity": "critical"
+  },
+  {
+    "id": "ADV-046",
+    "category": "adversarial",
+    "original": "Keep score index between 0.0 and 1.0 inclusive.",
+    "unsafe_compressed": "Keep score index between 1.0 and 0.0 inclusive.",
+    "expected": "FAIL",
+    "failure_type": "range_direction_reversal",
+    "severity": "critical"
+  },
+  {
+    "id": "ADV-047",
+    "category": "adversarial",
+    "original": "Price should range from $10.00 to $49.99.",
+    "unsafe_compressed": "Price should range from $49.99 to $10.00.",
+    "expected": "FAIL",
+    "failure_type": "range_direction_reversal",
+    "severity": "critical"
+  },
+  {
+    "id": "ADV-048",
+    "category": "adversarial",
+    "original": "Latency SLA is between 50ms and 200ms max.",
+    "unsafe_compressed": "Latency SLA is between 200ms and 50ms max.",
+    "expected": "FAIL",
+    "failure_type": "range_direction_reversal",
+    "severity": "critical"
+  },
+  {
+    "id": "ADV-049",
+    "category": "adversarial",
+    "original": "Scale cluster from 3 nodes up to 10 nodes.",
+    "unsafe_compressed": "Scale cluster from 10 nodes down to 3 nodes.",
+    "expected": "FAIL",
+    "failure_type": "scaling_direction_inversion",
+    "severity": "high"
+  }
+]

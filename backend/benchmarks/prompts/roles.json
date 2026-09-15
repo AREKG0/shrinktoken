@@ -1,0 +1,137 @@
+[
+  {
+    "id": "ROL-001",
+    "category": "roles",
+    "prompt": "Act as a Python tutor explaining async/await syntax to a beginner programmer.",
+    "constraints": [
+      "role: python tutor"
+    ],
+    "expected_risk": "low"
+  },
+  {
+    "id": "ROL-002",
+    "category": "roles",
+    "prompt": "You are a senior cybersecurity analyst performing a threat assessment.",
+    "constraints": [
+      "role: senior cybersecurity analyst"
+    ],
+    "expected_risk": "low"
+  },
+  {
+    "id": "ROL-003",
+    "category": "roles",
+    "prompt": "Explain quantum computing as a university professor teaching physics undergrads.",
+    "constraints": [
+      "role: university professor"
+    ],
+    "expected_risk": "medium"
+  },
+  {
+    "id": "ROL-004",
+    "category": "roles",
+    "prompt": "Respond like a friendly customer support manager resolving a billing issue.",
+    "constraints": [
+      "role: friendly customer support manager"
+    ],
+    "expected_risk": "low"
+  },
+  {
+    "id": "ROL-005",
+    "category": "roles",
+    "prompt": "Assume the persona of a strict code reviewer evaluating pull request performance.",
+    "constraints": [
+      "role: strict code reviewer"
+    ],
+    "expected_risk": "medium"
+  },
+  {
+    "id": "ROL-006",
+    "category": "roles",
+    "prompt": "You are a lead cloud architect designing a multi-region failover strategy.",
+    "constraints": [
+      "role: lead cloud architect"
+    ],
+    "expected_risk": "medium"
+  },
+  {
+    "id": "ROL-007",
+    "category": "roles",
+    "prompt": "Act as an expert technical writer crafting documentation for an API REST endpoint.",
+    "constraints": [
+      "role: expert technical writer"
+    ],
+    "expected_risk": "low"
+  },
+  {
+    "id": "ROL-008",
+    "category": "roles",
+    "prompt": "You are a devops engineer automating CI/CD pipeline deployments with GitHub Actions.",
+    "constraints": [
+      "role: devops engineer"
+    ],
+    "expected_risk": "low"
+  },
+  {
+    "id": "ROL-009",
+    "category": "roles",
+    "prompt": "Act as a database administrator optimizing slow SQL queries.",
+    "constraints": [
+      "role: database administrator"
+    ],
+    "expected_risk": "medium"
+  },
+  {
+    "id": "ROL-010",
+    "category": "roles",
+    "prompt": "You are a staff backend software engineer evaluating microservices vs monolith architecture.",
+    "constraints": [
+      "role: staff backend software engineer"
+    ],
+    "expected_risk": "medium"
+  },
+  {
+    "id": "ROL-011",
+    "category": "roles",
+    "prompt": "Act as a senior SRE responding to a P1 production incident.",
+    "constraints": [
+      "role: senior sre"
+    ],
+    "expected_risk": "medium"
+  },
+  {
+    "id": "ROL-012",
+    "category": "roles",
+    "prompt": "You are a product manager writing user stories for an AI SaaS platform.",
+    "constraints": [
+      "role: product manager"
+    ],
+    "expected_risk": "low"
+  },
+  {
+    "id": "ROL-013",
+    "category": "roles",
+    "prompt": "Act as a compliance auditor inspecting SOC2 security controls.",
+    "constraints": [
+      "role: compliance auditor"
+    ],
+    "expected_risk": "medium"
+  },
+  {
+    "id": "ROL-014",
+    "category": "roles",
+    "prompt": "You are a machine learning researcher evaluating Transformer model architectures.",
+    "constraints": [
+      "role: ml researcher"
+    ],
+    "expected_risk": "medium"
+  },
+  {
+    "id": "ROL-015",
+    "category": "roles",
+    "prompt": "Act as a frontend lead developer explaining state management in React.",
+    "constraints": [
+      "role: frontend lead"
+    ],
+    "expected_risk": "low"
+  }
+]

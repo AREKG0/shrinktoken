@@ -1,0 +1,137 @@
+[
+  {
+    "id": "RAG-001",
+    "category": "rag",
+    "prompt": "System instruction: You are a factual Q&A assistant. Context: ShrinkToken Pro reduces prompt tokens by using LLMLingua-2 XLM-RoBERTa-large model. Question: Which model power ShrinkToken Pro?",
+    "constraints": [
+      "preserve retrieved context: LLMLingua-2 XLM-RoBERTa-large"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "RAG-002",
+    "category": "rag",
+    "prompt": "Context excerpts:\n[Doc 1]: Revenue grew by 35% in Q3 reaching $4.2M.\n[Doc 2]: Operating costs were $1.8M.\nQuestion: What was the net profit in Q3 based ONLY on the provided context?",
+    "constraints": [
+      "preserve context figures: 35%, $4.2M, $1.8M"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "RAG-003",
+    "category": "rag",
+    "prompt": "Instructions: Answer using only cited facts.\nRetrieved document:\nPython 3.13 introduced improved GIL free threading options.\nQuestion: What threading feature was introduced in Python 3.13?",
+    "constraints": [
+      "preserve retrieved facts"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "RAG-004",
+    "category": "rag",
+    "prompt": "System instructions: Do not hallucinate outside the retrieved text.\nText: User ID 9948 has tier gold and subscription active until 2027-12-31.\nQuestion: What is User 9948's tier and expiry date?",
+    "constraints": [
+      "preserve user id, tier gold, date 2027-12-31"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "RAG-005",
+    "category": "rag",
+    "prompt": "Context: Error code ERR_AUTH_502 indicates OAuth token expiration after 3600 seconds.\nQuestion: What does ERR_AUTH_502 mean and when does token expire?",
+    "constraints": [
+      "preserve ERR_AUTH_502, 3600 seconds"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "RAG-006",
+    "category": "rag",
+    "prompt": "Retrieved excerpt: Policy section 4.2 states refund requests must be filed within 14 days of purchase.\nQuestion: How many days are allowed for refund requests under section 4.2?",
+    "constraints": [
+      "preserve section 4.2, 14 days"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "RAG-007",
+    "category": "rag",
+    "prompt": "Document excerpt:\nServer ip 192.168.1.100 port 22 allows SSH access for admin user.\nQuestion: How to connect to admin server?",
+    "constraints": [
+      "preserve IP 192.168.1.100, port 22, admin"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "RAG-008",
+    "category": "rag",
+    "prompt": "Context snippet:\nModel A achieved 89.2% accuracy while Model B achieved 91.5% on benchmark dataset.\nQuestion: Which model performed better and by what percentage point difference?",
+    "constraints": [
+      "preserve model A 89.2%, model B 91.5%"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "RAG-009",
+    "category": "rag",
+    "prompt": "Retrieved passage:\nCustomer account status is frozen due to 3 failed password attempts on 2026-08-22.\nQuestion: Why is account frozen?",
+    "constraints": [
+      "preserve 3 failed attempts, date 2026-08-22"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "RAG-010",
+    "category": "rag",
+    "prompt": "System prompt: Answer based strictly on context below.\nContext: Primary database host DB-MAIN-01, replica DB-REP-02.\nQuestion: What is the replica host name?",
+    "constraints": [
+      "preserve DB-MAIN-01, DB-REP-02"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "RAG-011",
+    "category": "rag",
+    "prompt": "Context: SLA guarantees 99.99% uptime with maximum 4.38 minutes monthly downtime. Question: What is monthly downtime SLA limit?",
+    "constraints": [
+      "preserve SLA 99.99%, 4.38 minutes"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "RAG-012",
+    "category": "rag",
+    "prompt": "Context: Encryption standard is AES-256-GCM with 96-bit IV. Question: What encryption cipher and IV length are specified?",
+    "constraints": [
+      "preserve AES-256-GCM, 96-bit IV"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "RAG-013",
+    "category": "rag",
+    "prompt": "Context: User 501 was migrated to cluster US-EAST-1 on 2026-05-10. Question: Where was user 501 migrated?",
+    "constraints": [
+      "preserve User 501, US-EAST-1, 2026-05-10"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "RAG-014",
+    "category": "rag",
+    "prompt": "Context: API v2 rate limit is 1000 req/min for Enterprise tier, 100 req/min for Free tier. Question: What is Free tier rate limit?",
+    "constraints": [
+      "preserve Enterprise 1000 req/min, Free 100 req/min"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "RAG-015",
+    "category": "rag",
+    "prompt": "Context: Database backup snapshot snap-884920 was completed at 02:00 UTC. Question: What is backup snapshot ID?",
+    "constraints": [
+      "preserve snap-884920, 02:00 UTC"
+    ],
+    "expected_risk": "high"
+  }
+]

@@ -1,0 +1,278 @@
+{
+  "dataset_total_prompts": 405,
+  "passed": 382,
+  "failed": 23,
+  "fallbacks": 23,
+  "fallback_rate_percent": 5.68,
+  "false_pass_count": 0,
+  "false_pass_rate_percent": 0.0,
+  "false_fail_count": 0,
+  "false_fail_rate_percent": 0.0,
+  "validation_failure_rate_percent": 5.68,
+  "total_original_tokens": 9243,
+  "total_direct_llmlingua_tokens": 6161,
+  "total_optimized_tokens": 8935,
+  "total_tokens_saved": 308,
+  "macro_average_reduction_percent": 2.07,
+  "corpus_weighted_reduction_percent": 3.33,
+  "direct_llmlingua": {
+    "average_reduction_percent": 34.5,
+    "median_reduction_percent": 36.36
+  },
+  "shrinktoken_pro": {
+    "average_token_reduction_percent": 2.07,
+    "corpus_weighted_reduction_percent": 3.33,
+    "median_token_reduction_percent": 0.0,
+    "token_reduction_distribution": {
+      "min": 0.0,
+      "p25": 0.0,
+      "median_p50": 0.0,
+      "p75": 0.0,
+      "p95": 15.93,
+      "max": 62.07,
+      "mean": 2.07
+    },
+    "retention_rate_distribution": {
+      "min": 0.3793,
+      "p25": 1.0,
+      "median_p50": 1.0,
+      "p75": 1.0,
+      "p95": 1.0,
+      "max": 1.0,
+      "mean": 0.9793
+    }
+  },
+  "latency_ms": {
+    "total_latency": {
+      "mean": 2106.7,
+      "median": 1249.58,
+      "p95": 6278.72
+    },
+    "compression_latency": {
+      "mean": 1269.57,
+      "median": 1238.99,
+      "p95": 1319.11
+    },
+    "validation_latency": {
+      "mean": 0.41,
+      "median": 0.33,
+      "p95": 0.76
+    },
+    "protection_latency": {
+      "mean": 0.05,
+      "median": 0.04,
+      "p95": 0.08
+    },
+    "by_model_calls": {
+      "0_call_ms": {
+        "prompt_count": 336,
+        "mean_ms": 1274.18,
+        "median_ms": 1240.52,
+        "p95_ms": 1316.58
+      },
+      "1_call_ms": {
+        "prompt_count": 1,
+        "mean_ms": 2487.21,
+        "median_ms": 2487.21,
+        "p95_ms": 2487.21
+      },
+      "3_call_ms": {
+        "prompt_count": 2,
+        "mean_ms": 5134.29,
+        "median_ms": 5134.29,
+        "p95_ms": 5276.26
+      },
+      "4_call_ms": {
+        "prompt_count": 66,
+        "mean_ms": 6247.48,
+        "median_ms": 6220.57,
+        "p95_ms": 6473.22
+      }
+    }
+  },
+  "model_calls_distribution": {
+    "mean": 0.67,
+    "median": 0.0,
+    "p95": 4.0,
+    "max": 4
+  },
+  "hypothetical_cost_model_usd": {
+    "note": "Hypothetical cost savings based on benchmark token reduction at $2.50 per 1M input tokens (GPT-4o benchmark rate). Not actual claimed dollar savings.",
+    "price_per_1m_input_tokens_usd": 2.5,
+    "original_inference_cost_usd": 0.023107,
+    "optimized_inference_cost_usd": 0.022337,
+    "gross_token_savings_usd": 0.00077
+  },
+  "false_passes": [],
+  "false_failures": [],
+  "category_breakdown": {
+    "adversarial": {
+      "prompt_count": 50,
+      "average_reduction_percent": 0.0,
+      "median_reduction_percent": 0.0,
+      "direct_llmlingua_avg_reduction_percent": 37.78,
+      "validation_failures": 0,
+      "fallbacks": 0,
+      "false_passes": 0,
+      "false_fails": 0,
+      "average_latency_ms": 1418.6,
+      "average_model_calls": 0.0
+    },
+    "agents": {
+      "prompt_count": 15,
+      "average_reduction_percent": 2.73,
+      "median_reduction_percent": 0.0,
+      "direct_llmlingua_avg_reduction_percent": 31.94,
+      "validation_failures": 0,
+      "fallbacks": 0,
+      "false_passes": 0,
+      "false_fails": 0,
+      "average_latency_ms": 1913.26,
+      "average_model_calls": 0.53
+    },
+    "code": {
+      "prompt_count": 20,
+      "average_reduction_percent": 0.0,
+      "median_reduction_percent": 0.0,
+      "direct_llmlingua_avg_reduction_percent": 41.34,
+      "validation_failures": 0,
+      "fallbacks": 0,
+      "false_passes": 0,
+      "false_fails": 0,
+      "average_latency_ms": 1232.36,
+      "average_model_calls": 0.0
+    },
+    "general": {
+      "prompt_count": 15,
+      "average_reduction_percent": 10.65,
+      "median_reduction_percent": 0.0,
+      "direct_llmlingua_avg_reduction_percent": 35.68,
+      "validation_failures": 0,
+      "fallbacks": 0,
+      "false_passes": 0,
+      "false_fails": 0,
+      "average_latency_ms": 2239.62,
+      "average_model_calls": 0.8
+    },
+    "json": {
+      "prompt_count": 20,
+      "average_reduction_percent": 0.0,
+      "median_reduction_percent": 0.0,
+      "direct_llmlingua_avg_reduction_percent": 41.46,
+      "validation_failures": 0,
+      "fallbacks": 0,
+      "false_passes": 0,
+      "false_fails": 0,
+      "average_latency_ms": 1230.6,
+      "average_model_calls": 0.0
+    },
+    "multi_constraint": {
+      "prompt_count": 50,
+      "average_reduction_percent": 9.36,
+      "median_reduction_percent": 9.76,
+      "direct_llmlingua_avg_reduction_percent": 10.73,
+      "validation_failures": 17,
+      "fallbacks": 17,
+      "false_passes": 0,
+      "false_fails": 0,
+      "average_latency_ms": 6225.57,
+      "average_model_calls": 4.0
+    },
+    "negation": {
+      "prompt_count": 50,
+      "average_reduction_percent": 0.0,
+      "median_reduction_percent": 0.0,
+      "direct_llmlingua_avg_reduction_percent": 37.17,
+      "validation_failures": 0,
+      "fallbacks": 0,
+      "false_passes": 0,
+      "false_fails": 0,
+      "average_latency_ms": 1211.41,
+      "average_model_calls": 0.0
+    },
+    "numeric_constraints": {
+      "prompt_count": 50,
+      "average_reduction_percent": 0.0,
+      "median_reduction_percent": 0.0,
+      "direct_llmlingua_avg_reduction_percent": 38.65,
+      "validation_failures": 0,
+      "fallbacks": 0,
+      "false_passes": 0,
+      "false_fails": 0,
+      "average_latency_ms": 1246.69,
+      "average_model_calls": 0.0
+    },
+    "output_formats": {
+      "prompt_count": 50,
+      "average_reduction_percent": 0.0,
+      "median_reduction_percent": 0.0,
+      "direct_llmlingua_avg_reduction_percent": 37.98,
+      "validation_failures": 0,
+      "fallbacks": 0,
+      "false_passes": 0,
+      "false_fails": 0,
+      "average_latency_ms": 1247.34,
+      "average_model_calls": 0.0
+    },
+    "rag": {
+      "prompt_count": 15,
+      "average_reduction_percent": 2.55,
+      "median_reduction_percent": 0.0,
+      "direct_llmlingua_avg_reduction_percent": 36.23,
+      "validation_failures": 5,
+      "fallbacks": 5,
+      "false_passes": 0,
+      "false_fails": 0,
+      "average_latency_ms": 3859.32,
+      "average_model_calls": 2.07
+    },
+    "ranges": {
+      "prompt_count": 25,
+      "average_reduction_percent": 0.0,
+      "median_reduction_percent": 0.0,
+      "direct_llmlingua_avg_reduction_percent": 37.26,
+      "validation_failures": 0,
+      "fallbacks": 0,
+      "false_passes": 0,
+      "false_fails": 0,
+      "average_latency_ms": 1306.39,
+      "average_model_calls": 0.0
+    },
+    "reasoning": {
+      "prompt_count": 15,
+      "average_reduction_percent": 8.64,
+      "median_reduction_percent": 0.0,
+      "direct_llmlingua_avg_reduction_percent": 33.17,
+      "validation_failures": 1,
+      "fallbacks": 1,
+      "false_passes": 0,
+      "false_fails": 0,
+      "average_latency_ms": 3016.37,
+      "average_model_calls": 1.33
+    },
+    "roles": {
+      "prompt_count": 15,
+      "average_reduction_percent": 0.0,
+      "median_reduction_percent": 0.0,
+      "direct_llmlingua_avg_reduction_percent": 39.19,
+      "validation_failures": 0,
+      "fallbacks": 0,
+      "false_passes": 0,
+      "false_fails": 0,
+      "average_latency_ms": 1284.85,
+      "average_model_calls": 0.0
+    },
+    "urls_paths": {
+      "prompt_count": 15,
+      "average_reduction_percent": 0.0,
+      "median_reduction_percent": 0.0,
+      "direct_llmlingua_avg_reduction_percent": 41.69,
+      "validation_failures": 0,
+      "fallbacks": 0,
+      "false_passes": 0,
+      "false_fails": 0,
+      "average_latency_ms": 1274.3,
+      "average_model_calls": 0.0
+    }
+  }
+}

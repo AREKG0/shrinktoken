@@ -1,0 +1,137 @@
+[
+  {
+    "id": "URL-001",
+    "category": "urls_paths",
+    "prompt": "Fetch metadata from endpoint: https://api.shrinktoken.com/v1/optimize?mode=safe&token=123",
+    "constraints": [
+      "exact url: https://api.shrinktoken.com/v1/optimize?mode=safe&token=123"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "URL-002",
+    "category": "urls_paths",
+    "prompt": "Read file at path: C:\\Users\\ASUS\\.gemini\\antigravity\\brain\\config.json",
+    "constraints": [
+      "windows path: C:\\Users\\ASUS\\.gemini\\antigravity\\brain\\config.json"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "URL-003",
+    "category": "urls_paths",
+    "prompt": "Update Linux configuration at /etc/nginx/sites-available/default.conf",
+    "constraints": [
+      "linux path: /etc/nginx/sites-available/default.conf"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "URL-004",
+    "category": "urls_paths",
+    "prompt": "Webhook destination URL is http://127.0.0.1:8080/events/v2",
+    "constraints": [
+      "exact url: http://127.0.0.1:8080/events/v2"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "URL-005",
+    "category": "urls_paths",
+    "prompt": "Set log directory to D:\\shrinktoken-pro\\backend\\app\\logs\\app.log",
+    "constraints": [
+      "windows path: D:\\shrinktoken-pro\\backend\\app\\logs\\app.log"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "URL-006",
+    "category": "urls_paths",
+    "prompt": "Download documentation from https://docs.python.org/3/library/asyncio.html",
+    "constraints": [
+      "exact url: https://docs.python.org/3/library/asyncio.html"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "URL-007",
+    "category": "urls_paths",
+    "prompt": "Store temporary cache in /var/tmp/shrinktoken/cache/",
+    "constraints": [
+      "linux directory path: /var/tmp/shrinktoken/cache/"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "URL-008",
+    "category": "urls_paths",
+    "prompt": "Redirect query to https://example.com/search?q=prompt+optimization&page=2",
+    "constraints": [
+      "exact url with query params"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "URL-009",
+    "category": "urls_paths",
+    "prompt": "Mount directory path C:\\Data\\Scratch\\TempData\\ into container.",
+    "constraints": [
+      "windows path: C:\\Data\\Scratch\\TempData\\"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "URL-010",
+    "category": "urls_paths",
+    "prompt": "Post payload to https://hooks.slack.com/services/T00/B00/X00",
+    "constraints": [
+      "exact slack webhook url"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "URL-011",
+    "category": "urls_paths",
+    "prompt": "Fetch OAuth token from endpoint: https://auth.shrinktoken.com/oauth/token?grant_type=authorization_code",
+    "constraints": [
+      "exact oauth url"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "URL-012",
+    "category": "urls_paths",
+    "prompt": "Read Windows system host file at: C:\\Windows\\System32\\drivers\\etc\\hosts",
+    "constraints": [
+      "windows host file path"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "URL-013",
+    "category": "urls_paths",
+    "prompt": "Check Nginx log at Linux path: /var/log/nginx/access.log",
+    "constraints": [
+      "linux access log path"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "URL-014",
+    "category": "urls_paths",
+    "prompt": "Query API at endpoint: https://api.github.com/repos/owner/repo/issues?state=open&sort=created",
+    "constraints": [
+      "github api endpoint url"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "URL-015",
+    "category": "urls_paths",
+    "prompt": "Save scratch file to path: D:\\shrinktoken-pro\\backend\\benchmarks\\results\\output.tmp",
+    "constraints": [
+      "windows scratch path"
+    ],
+    "expected_risk": "high"
+  }
+]

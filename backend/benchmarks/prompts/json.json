@@ -1,0 +1,182 @@
+[
+  {
+    "id": "JSN-001",
+    "category": "json",
+    "prompt": "Parse this payload:\n{\"name\": \"ShrinkToken\", \"version\": 1.2, \"active\": true, \"tags\": [\"ai\", \"optimizer\"]}",
+    "constraints": [
+      "preserve json object"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "JSN-002",
+    "category": "json",
+    "prompt": "Process configuration:\n{\"db\": {\"host\": \"localhost\", \"port\": 5432, \"ssl\": false}, \"pool\": 10}",
+    "constraints": [
+      "preserve nested json object"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "JSN-003",
+    "category": "json",
+    "prompt": "Inspect response array:\n[{\"id\": 1, \"status\": \"OK\"}, {\"id\": 2, \"status\": \"PENDING\"}]",
+    "constraints": [
+      "preserve json array"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "JSN-004",
+    "category": "json",
+    "prompt": "Check null values in payload:\n{\"user_id\": 100, \"email\": null, \"verified\": false}",
+    "constraints": [
+      "preserve null and boolean json fields"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "JSN-005",
+    "category": "json",
+    "prompt": "Format schema:\n{\"type\": \"object\", \"properties\": {\"count\": {\"type\": \"integer\", \"minimum\": 0}}}",
+    "constraints": [
+      "preserve json schema"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "JSN-006",
+    "category": "json",
+    "prompt": "Validate endpoint data:\n{\"api_key\": \"sk-12345\", \"endpoints\": [\"/v1/optimize\", \"/v1/validate\"]}",
+    "constraints": [
+      "preserve json endpoints array"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "JSN-007",
+    "category": "json",
+    "prompt": "Check threshold settings:\n{\"metrics\": {\"cpu\": 85.5, \"ram\": 70.0, \"disk\": 92.1}}",
+    "constraints": [
+      "preserve json float values"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "JSN-008",
+    "category": "json",
+    "prompt": "Validate order structure:\n{\"order_id\": \"ORD-998\", \"items\": [{\"sku\": \"A1\", \"qty\": 2}], \"total\": 49.99}",
+    "constraints": [
+      "preserve order json structure"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "JSN-009",
+    "category": "json",
+    "prompt": "Process user roles:\n{\"users\": [{\"role\": \"admin\"}, {\"role\": \"user\"}], \"count\": 2}",
+    "constraints": [
+      "preserve user roles json"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "JSN-010",
+    "category": "json",
+    "prompt": "Inspect metadata headers:\n{\"headers\": {\"Content-Type\": \"application/json\", \"X-Ray-Id\": \"abc-123\"}}",
+    "constraints": [
+      "preserve headers json object"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "JSN-011",
+    "category": "json",
+    "prompt": "Inspect API authentication payload:\n{\"grant_type\": \"client_credentials\", \"client_id\": \"id_123\", \"client_secret\": \"sec_456\"}",
+    "constraints": [
+      "preserve auth json"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "JSN-012",
+    "category": "json",
+    "prompt": "Parse webhook event data:\n{\"event\": \"payment_intent.succeeded\", \"data\": {\"object\": {\"amount\": 2000, \"currency\": \"usd\"}}}",
+    "constraints": [
+      "preserve nested webhook json"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "JSN-013",
+    "category": "json",
+    "prompt": "Check feature flags config:\n{\"flags\": {\"new_ui\": true, \"beta_search\": false, \"max_beta_users\": 100}}",
+    "constraints": [
+      "preserve feature flags json"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "JSN-014",
+    "category": "json",
+    "prompt": "Validate telemetry metrics payload:\n{\"timestamp\": 1774200000, \"metrics\": [{\"name\": \"cpu\", \"val\": 45.2}]}",
+    "constraints": [
+      "preserve telemetry json"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "JSN-015",
+    "category": "json",
+    "prompt": "Inspect GraphQL response JSON:\n{\"data\": {\"user\": {\"id\": \"101\", \"email\": \"test@example.com\"}}, \"errors\": null}",
+    "constraints": [
+      "preserve graphql json"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "JSN-016",
+    "category": "json",
+    "prompt": "Parse database connection parameters:\n{\"host\": \"127.0.0.1\", \"port\": 5432, \"database\": \"prod_db\", \"max_connections\": 20}",
+    "constraints": [
+      "preserve db connection json"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "JSN-017",
+    "category": "json",
+    "prompt": "Validate JSON Web Key (JWK) payload:\n{\"kty\": \"RSA\", \"use\": \"sig\", \"alg\": \"RS256\", \"n\": \"abc123xyz\"}",
+    "constraints": [
+      "preserve jwk json"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "JSN-018",
+    "category": "json",
+    "prompt": "Inspect log entry JSON:\n{\"level\": \"ERROR\", \"message\": \"Database timeout\", \"code\": 504, \"context\": {\"retry\": 3}}",
+    "constraints": [
+      "preserve log json"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "JSN-019",
+    "category": "json",
+    "prompt": "Check user permissions object:\n{\"user_id\": \"usr_99\", \"permissions\": [\"read\", \"write\", \"execute\"], \"is_admin\": false}",
+    "constraints": [
+      "preserve permissions json"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "JSN-020",
+    "category": "json",
+    "prompt": "Parse server status JSON response:\n{\"status\": \"HEALTHY\", \"uptime_seconds\": 86400, \"active_nodes\": 4}",
+    "constraints": [
+      "preserve status json"
+    ],
+    "expected_risk": "high"
+  }
+]

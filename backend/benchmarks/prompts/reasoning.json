@@ -1,0 +1,153 @@
+[
+  {
+    "id": "REA-001",
+    "category": "reasoning",
+    "prompt": "If a train travels at 60 mph for 2.5 hours and then at 80 mph for 1.5 hours, calculate total distance traveled step-by-step.",
+    "constraints": [
+      "60 mph for 2.5 hours",
+      "80 mph for 1.5 hours"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "REA-002",
+    "category": "reasoning",
+    "prompt": "Evaluate step-by-step: Premise 1: All square matrix with non-zero determinant are invertible. Premise 2: Matrix A has determinant 5. Is Matrix A invertible?",
+    "constraints": [
+      "preserve mathematical premises and matrix determinant 5"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "REA-003",
+    "category": "reasoning",
+    "prompt": "Compare approach A (monolith) vs approach B (microservices) for a team of 3 developers building an MVP in 4 weeks.",
+    "constraints": [
+      "team of 3",
+      "4 weeks MVP"
+    ],
+    "expected_risk": "medium"
+  },
+  {
+    "id": "REA-004",
+    "category": "reasoning",
+    "prompt": "Solve logic puzzle: Alice is older than Bob. Charlie is younger than Bob. Who is the oldest of the three?",
+    "constraints": [
+      "preserve ordering relationships"
+    ],
+    "expected_risk": "medium"
+  },
+  {
+    "id": "REA-005",
+    "category": "reasoning",
+    "prompt": "Calculate time complexity O(N log N) vs O(N^2) for array size N=10,000 items.",
+    "constraints": [
+      "O(N log N)",
+      "O(N^2)",
+      "N=10,000"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "REA-006",
+    "category": "reasoning",
+    "prompt": "Step 1: Calculate subtotal. Step 2: Apply 10% discount. Step 3: Add 5% tax. Subtotal is $200. Compute final total.",
+    "constraints": [
+      "10% discount",
+      "5% tax",
+      "$200 subtotal"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "REA-007",
+    "category": "reasoning",
+    "prompt": "Determine root cause: Latency spiked from 20ms to 450ms when concurrent users reached 5,000.",
+    "constraints": [
+      "20ms to 450ms",
+      "5,000 users"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "REA-008",
+    "category": "reasoning",
+    "prompt": "Analyze trade-offs: Consistency vs Availability in CAP theorem for a financial ledger system.",
+    "constraints": [
+      "CAP theorem financial ledger trade-offs"
+    ],
+    "expected_risk": "medium"
+  },
+  {
+    "id": "REA-009",
+    "category": "reasoning",
+    "prompt": "Calculate expected probability of getting at least two heads when flipping 3 fair coins.",
+    "constraints": [
+      "at least two heads",
+      "3 fair coins"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "REA-010",
+    "category": "reasoning",
+    "prompt": "Formulate plan: Migrate 50TB database from AWS RDS MySQL to PostgreSQL with zero downtime.",
+    "constraints": [
+      "50TB database",
+      "RDS MySQL to PostgreSQL",
+      "zero downtime"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "REA-011",
+    "category": "reasoning",
+    "prompt": "If worker A processes 40 jobs/hour and worker B processes 60 jobs/hour, calculate time to complete 250 jobs together.",
+    "constraints": [
+      "40 jobs/hour",
+      "60 jobs/hour",
+      "250 jobs"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "REA-012",
+    "category": "reasoning",
+    "prompt": "Evaluate step-by-step: All prime numbers greater than 2 are odd. 17 is a prime number greater than 2. Is 17 odd?",
+    "constraints": [
+      "logic evaluation"
+    ],
+    "expected_risk": "medium"
+  },
+  {
+    "id": "REA-013",
+    "category": "reasoning",
+    "prompt": "Compare latency impact: Single DB connection pool (size 10) vs Shared pool (size 50) for 100 concurrent threads.",
+    "constraints": [
+      "pool size 10 vs 50",
+      "100 threads"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "REA-014",
+    "category": "reasoning",
+    "prompt": "Solve time complexity: Loop 1 runs N times, inner Loop 2 runs log(N) times. Total big-O complexity?",
+    "constraints": [
+      "N times",
+      "log(N) times"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "REA-015",
+    "category": "reasoning",
+    "prompt": "Calculate subtotal: Item 1 = $45.00 x 2, Item 2 = $30.00 x 1. Apply 15% discount. Compute final total.",
+    "constraints": [
+      "$45.00 x 2",
+      "$30.00 x 1",
+      "15% discount"
+    ],
+    "expected_risk": "high"
+  }
+]

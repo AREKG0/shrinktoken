@@ -1,0 +1,227 @@
+[
+  {
+    "id": "RNG-001",
+    "category": "ranges",
+    "prompt": "Complete this task within 15-60 minutes.",
+    "constraints": [
+      "15-60 minutes"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "RNG-002",
+    "category": "ranges",
+    "prompt": "Temperature must stay between 20.5C and 25.0C.",
+    "constraints": [
+      "between 20.5C and 25.0C"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "RNG-003",
+    "category": "ranges",
+    "prompt": "Select ports from range 8000 to 8080 for binding.",
+    "constraints": [
+      "ports 8000 to 8080"
+    ],
+    "expected_risk": "medium"
+  },
+  {
+    "id": "RNG-004",
+    "category": "ranges",
+    "prompt": "Keep score index between 0.0 and 1.0 inclusive.",
+    "constraints": [
+      "between 0.0 and 1.0"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "RNG-005",
+    "category": "ranges",
+    "prompt": "Price should range from $10.00 to $49.99.",
+    "constraints": [
+      "$10.00 to $49.99"
+    ],
+    "expected_risk": "medium"
+  },
+  {
+    "id": "RNG-006",
+    "category": "ranges",
+    "prompt": "Age group target is 18-35 years old.",
+    "constraints": [
+      "18-35 years old"
+    ],
+    "expected_risk": "low"
+  },
+  {
+    "id": "RNG-007",
+    "category": "ranges",
+    "prompt": "Iterate index i from 1 to N-1 step 2.",
+    "constraints": [
+      "1 to N-1 step 2"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "RNG-008",
+    "category": "ranges",
+    "prompt": "Latency SLA is between 50ms and 200ms max.",
+    "constraints": [
+      "50ms to 200ms SLA"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "RNG-009",
+    "category": "ranges",
+    "prompt": "Keep word count in range of 200-300 words.",
+    "constraints": [
+      "200-300 words"
+    ],
+    "expected_risk": "medium"
+  },
+  {
+    "id": "RNG-010",
+    "category": "ranges",
+    "prompt": "Scale cluster from 3 nodes up to 10 nodes.",
+    "constraints": [
+      "3 to 10 nodes"
+    ],
+    "expected_risk": "medium"
+  },
+  {
+    "id": "RNG-011",
+    "category": "ranges",
+    "prompt": "Operating voltage must be maintained between 3.3V and 5.0V.",
+    "constraints": [
+      "between 3.3V and 5.0V"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "RNG-012",
+    "category": "ranges",
+    "prompt": "Select port range 3000 to 3010 for local web service hosting.",
+    "constraints": [
+      "range 3000 to 3010"
+    ],
+    "expected_risk": "medium"
+  },
+  {
+    "id": "RNG-013",
+    "category": "ranges",
+    "prompt": "Keep CPU utilization in target zone of 40%-70%.",
+    "constraints": [
+      "zone of 40%-70%"
+    ],
+    "expected_risk": "medium"
+  },
+  {
+    "id": "RNG-014",
+    "category": "ranges",
+    "prompt": "Temperature range must stay within -10C to 45C.",
+    "constraints": [
+      "within -10C to 45C"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "RNG-015",
+    "category": "ranges",
+    "prompt": "Set memory buffer limits from 128MB up to 1024MB.",
+    "constraints": [
+      "from 128MB up to 1024MB"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "RNG-016",
+    "category": "ranges",
+    "prompt": "Word length constraint is between 150 and 300 words.",
+    "constraints": [
+      "between 150 and 300 words"
+    ],
+    "expected_risk": "medium"
+  },
+  {
+    "id": "RNG-017",
+    "category": "ranges",
+    "prompt": "Select customer IDs in range 10000 to 99999.",
+    "constraints": [
+      "range 10000 to 99999"
+    ],
+    "expected_risk": "medium"
+  },
+  {
+    "id": "RNG-018",
+    "category": "ranges",
+    "prompt": "Network jitter target is between 1ms and 15ms.",
+    "constraints": [
+      "between 1ms and 15ms"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "RNG-019",
+    "category": "ranges",
+    "prompt": "Configure pool scaling from 5 workers up to 25 workers.",
+    "constraints": [
+      "from 5 workers up to 25 workers"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "RNG-020",
+    "category": "ranges",
+    "prompt": "Keep floating point precision between 0.0001 and 0.01.",
+    "constraints": [
+      "between 0.0001 and 0.01"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "RNG-021",
+    "category": "ranges",
+    "prompt": "Target age cohort is 25-40 years old.",
+    "constraints": [
+      "25-40 years old"
+    ],
+    "expected_risk": "low"
+  },
+  {
+    "id": "RNG-022",
+    "category": "ranges",
+    "prompt": "Set log retention duration from 7 to 90 days.",
+    "constraints": [
+      "from 7 to 90 days"
+    ],
+    "expected_risk": "medium"
+  },
+  {
+    "id": "RNG-023",
+    "category": "ranges",
+    "prompt": "Database connections should range between 20 and 100 active connections.",
+    "constraints": [
+      "range between 20 and 100"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "RNG-024",
+    "category": "ranges",
+    "prompt": "Limit task duration to 10-30 seconds per run.",
+    "constraints": [
+      "10-30 seconds"
+    ],
+    "expected_risk": "medium"
+  },
+  {
+    "id": "RNG-025",
+    "category": "ranges",
+    "prompt": "Scale batch processing size from 100 to 500 items.",
+    "constraints": [
+      "from 100 to 500 items"
+    ],
+    "expected_risk": "high"
+  }
+]

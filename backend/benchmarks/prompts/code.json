@@ -1,0 +1,182 @@
+[
+  {
+    "id": "COD-001",
+    "category": "code",
+    "prompt": "Optimize this Python function:\n```python\ndef fib(n):\n    if n <= 1: return n\n    return fib(n-1) + fib(n-2)\n```",
+    "constraints": [
+      "preserve python code block"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "COD-002",
+    "category": "code",
+    "prompt": "Fix bug in JavaScript snippet:\n```javascript\nconst sum = arr.reduce((acc, val) => acc + val, 0);\nconsole.log(sum);\n```",
+    "constraints": [
+      "preserve javascript snippet"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "COD-003",
+    "category": "code",
+    "prompt": "Refactor C++ vector loop:\n```cpp\nfor(size_t i=0; i<vec.size(); ++i) {\n    std::cout << vec[i] << std::endl;\n}\n```",
+    "constraints": [
+      "preserve cpp snippet"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "COD-004",
+    "category": "code",
+    "prompt": "Explain SQL join query:\n```sql\nSELECT u.id, u.name, o.total FROM users u JOIN orders o ON u.id = o.user_id WHERE o.status = 'COMPLETED';\n```",
+    "constraints": [
+      "preserve sql query"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "COD-005",
+    "category": "code",
+    "prompt": "Run shell command:\n```bash\nfind . -name '*.log' -type f -mtime +7 -delete\n```",
+    "constraints": [
+      "preserve bash command"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "COD-006",
+    "category": "code",
+    "prompt": "Validate regex pattern `^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$` against emails.",
+    "constraints": [
+      "preserve regex pattern"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "COD-007",
+    "category": "code",
+    "prompt": "Debug async worker queue logic in Python:\n```python\nasync def worker(queue):\n    while True:\n        item = await queue.get()\n        await process(item)\n        queue.task_done()\n```",
+    "constraints": [
+      "preserve async python snippet"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "COD-008",
+    "category": "code",
+    "prompt": "Convert TypeScript interface:\n```typescript\ninterface UserProfile {\n  id: string;\n  email: string;\n  roles: string[];\n}\n```",
+    "constraints": [
+      "preserve typescript interface"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "COD-009",
+    "category": "code",
+    "prompt": "Review Rust memory ownership:\n```rust\nfn process(s: String) -> usize {\n    s.len()\n}\n```",
+    "constraints": [
+      "preserve rust snippet"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "COD-010",
+    "category": "code",
+    "prompt": "Explain Dockerfile instructions:\n```dockerfile\nFROM python:3.13-slim\nWORKDIR /app\nCOPY requirements.txt .\nRUN pip install --no-cache-dir -r requirements.txt\n```",
+    "constraints": [
+      "preserve dockerfile snippet"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "COD-011",
+    "category": "code",
+    "prompt": "Fix syntax error in Python dictionary snippet:\n```python\nd = {'a': 1, 'b': 2,}\n```",
+    "constraints": [
+      "preserve python dict snippet"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "COD-012",
+    "category": "code",
+    "prompt": "Refactor JavaScript async fetch call:\n```javascript\nconst res = await fetch('https://api.example.com/data');\nconst json = await res.json();\n```",
+    "constraints": [
+      "preserve js fetch snippet"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "COD-013",
+    "category": "code",
+    "prompt": "Optimize C++ memory allocation:\n```cpp\nint* arr = new int[100];\ndelete[] arr;\n```",
+    "constraints": [
+      "preserve cpp allocation snippet"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "COD-014",
+    "category": "code",
+    "prompt": "Explain SQL CTE query:\n```sql\nWITH summary AS (SELECT dept_id, COUNT(*) as cnt FROM emp GROUP BY dept_id) SELECT * FROM summary;\n```",
+    "constraints": [
+      "preserve sql cte snippet"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "COD-015",
+    "category": "code",
+    "prompt": "Run curl shell command:\n```bash\ncurl -X POST https://api.example.com/v1/auth -H 'Content-Type: application/json' -d '{\"user\":\"admin\"}'\n```",
+    "constraints": [
+      "preserve curl command"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "COD-016",
+    "category": "code",
+    "prompt": "Validate regex for phone numbers `^\\+?[1-9]\\d{1,14}$`.",
+    "constraints": [
+      "preserve phone regex"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "COD-017",
+    "category": "code",
+    "prompt": "Review Go goroutine channel sync:\n```go\nch := make(chan int)\ngo func() { ch <- 42 }()\nfmt.Println(<-ch)\n```",
+    "constraints": [
+      "preserve go channel snippet"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "COD-018",
+    "category": "code",
+    "prompt": "Debug Rust Result error handling:\n```rust\nlet file = File::open(\"foo.txt\")?;\n```",
+    "constraints": [
+      "preserve rust error snippet"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "COD-019",
+    "category": "code",
+    "prompt": "Check HTML script tag:\n```html\n<script src=\"https://cdn.example.com/app.js\"></script>\n```",
+    "constraints": [
+      "preserve html script tag"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "COD-020",
+    "category": "code",
+    "prompt": "Explain Terraform HCL resource:\n```hcl\nresource \"aws_s3_bucket\" \"b\" {\n  bucket = \"my-tf-test-bucket\"\n}\n```",
+    "constraints": [
+      "preserve terraform hcl snippet"
+    ],
+    "expected_risk": "high"
+  }
+]

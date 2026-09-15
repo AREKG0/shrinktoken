@@ -1,0 +1,406 @@
+id,category,original_tokens,direct_llmlingua_tokens,optimized_tokens,token_reduction,token_reduction_percent,direct_reduction_percent,retention_rate,validation_status,fallback,fallback_reason,llmlingua_calls,adaptive_iterations,early_exit,early_exit_reason,protection_time_ms,compression_time_ms,validation_time_ms,total_time_ms
+ADV-001,adversarial,10,6,10,0,0.0,40.0,1.0,PASS,False,NONE,0,0,True,Prompt length (8 words) below minimum compressible threshold (20),0.42,10053.56,3.39,10057.73
+ADV-002,adversarial,9,6,9,0,0.0,33.33,1.0,PASS,False,NONE,0,0,True,Prompt length (7 words) below minimum compressible threshold (20),0.64,1264.43,0.58,1265.99
+ADV-003,adversarial,6,4,6,0,0.0,33.33,1.0,PASS,False,NONE,0,0,True,Prompt length (4 words) below minimum compressible threshold (20),0.02,1253.0,0.31,1253.58
+ADV-004,adversarial,7,4,7,0,0.0,42.86,1.0,PASS,False,NONE,0,0,True,Prompt length (5 words) below minimum compressible threshold (20),0.03,1290.19,0.56,1291.11
+ADV-005,adversarial,11,7,11,0,0.0,36.36,1.0,PASS,False,NONE,0,0,True,Prompt length (9 words) below minimum compressible threshold (20),0.04,1252.63,0.39,1253.48
+ADV-006,adversarial,9,5,9,0,0.0,44.44,1.0,PASS,False,NONE,0,0,True,Prompt length (5 words) below minimum compressible threshold (20),0.03,1284.71,0.22,1285.33
+ADV-007,adversarial,10,7,10,0,0.0,30.0,1.0,PASS,False,NONE,0,0,True,Prompt length (7 words) below minimum compressible threshold (20),0.03,1267.59,0.39,1268.36
+ADV-008,adversarial,13,8,13,0,0.0,38.46,1.0,PASS,False,NONE,0,0,True,Prompt length (9 words) below minimum compressible threshold (20),0.04,1323.24,0.91,1324.56
+ADV-009,adversarial,8,5,8,0,0.0,37.5,1.0,PASS,False,NONE,0,0,True,Prompt length (5 words) below minimum compressible threshold (20),0.03,1267.79,0.21,1268.38
+ADV-010,adversarial,17,13,17,0,0.0,23.53,1.0,PASS,False,NONE,0,0,True,Prompt length (5 words) below minimum compressible threshold (20),0.04,1234.09,0.3,1234.69
+ADV-011,adversarial,16,11,16,0,0.0,31.25,1.0,PASS,False,NONE,0,0,True,Prompt length (10 words) below minimum compressible threshold (20),0.03,1266.47,0.71,1267.54
+ADV-012,adversarial,13,8,13,0,0.0,38.46,1.0,PASS,False,NONE,0,0,True,Prompt length (9 words) below minimum compressible threshold (20),0.04,1232.7,0.74,1233.84
+ADV-013,adversarial,7,4,7,0,0.0,42.86,1.0,PASS,False,NONE,0,0,True,Prompt length (5 words) below minimum compressible threshold (20),0.03,1264.66,0.25,1265.27
+ADV-014,adversarial,10,6,10,0,0.0,40.0,1.0,PASS,False,NONE,0,0,True,Prompt length (7 words) below minimum compressible threshold (20),0.03,1217.45,0.23,1218.04
+ADV-015,adversarial,11,7,11,0,0.0,36.36,1.0,PASS,False,NONE,0,0,True,Prompt length (9 words) below minimum compressible threshold (20),0.04,1228.71,0.38,1229.47
+ADV-016,adversarial,15,10,15,0,0.0,33.33,1.0,PASS,False,NONE,0,0,True,Prompt length (9 words) below minimum compressible threshold (20),0.04,1219.46,0.27,1220.14
+ADV-017,adversarial,14,8,14,0,0.0,42.86,1.0,PASS,False,NONE,0,0,True,Prompt length (8 words) below minimum compressible threshold (20),0.04,1228.16,0.35,1228.81
+ADV-018,adversarial,11,6,11,0,0.0,45.45,1.0,PASS,False,NONE,0,0,True,Prompt length (10 words) below minimum compressible threshold (20),0.04,1222.41,0.69,1223.49
+ADV-019,adversarial,15,9,15,0,0.0,40.0,1.0,PASS,False,NONE,0,0,True,Prompt length (9 words) below minimum compressible threshold (20),0.04,1275.49,0.75,1276.64
+ADV-020,adversarial,9,5,9,0,0.0,44.44,1.0,PASS,False,NONE,0,0,True,Prompt length (6 words) below minimum compressible threshold (20),0.03,1247.45,0.19,1247.95
+ADV-021,adversarial,7,5,7,0,0.0,28.57,1.0,PASS,False,NONE,0,0,True,Prompt length (5 words) below minimum compressible threshold (20),0.02,1215.82,0.2,1216.31
+ADV-022,adversarial,17,10,17,0,0.0,41.18,1.0,PASS,False,NONE,0,0,True,Prompt length (11 words) below minimum compressible threshold (20),0.03,1236.31,0.25,1236.9
+ADV-023,adversarial,13,8,13,0,0.0,38.46,1.0,PASS,False,NONE,0,0,True,Prompt length (11 words) below minimum compressible threshold (20),0.03,1224.33,0.31,1225.0
+ADV-024,adversarial,23,14,23,0,0.0,39.13,1.0,PASS,False,NONE,0,0,True,Prompt length (5 words) below minimum compressible threshold (20),0.05,1219.12,0.26,1219.76
+ADV-025,adversarial,23,11,23,0,0.0,52.17,1.0,PASS,False,NONE,0,0,True,Prompt length (5 words) below minimum compressible threshold (20),0.04,1242.95,0.31,1243.66
+ADV-026,adversarial,20,16,20,0,0.0,20.0,1.0,PASS,False,NONE,0,0,True,Prompt length (5 words) below minimum compressible threshold (20),0.05,1229.68,0.27,1230.32
+ADV-027,adversarial,20,14,20,0,0.0,30.0,1.0,PASS,False,NONE,0,0,True,Prompt length (10 words) below minimum compressible threshold (20),0.04,1206.77,0.37,1207.53
+ADV-028,adversarial,17,10,17,0,0.0,41.18,1.0,PASS,False,NONE,0,0,True,Prompt length (12 words) below minimum compressible threshold (20),0.04,1228.7,0.34,1229.4
+ADV-029,adversarial,15,11,15,0,0.0,26.67,1.0,PASS,False,NONE,0,0,True,Prompt length (6 words) below minimum compressible threshold (20),0.03,1249.5,0.2,1249.98
+ADV-030,adversarial,26,9,26,0,0.0,65.38,1.0,PASS,False,NONE,0,0,True,Prompt length (8 words) below minimum compressible threshold (20),0.04,1228.22,0.76,1229.39
+ADV-031,adversarial,9,4,9,0,0.0,55.56,1.0,PASS,False,NONE,0,0,True,Prompt length (7 words) below minimum compressible threshold (20),0.03,1219.14,0.58,1220.04
+ADV-032,adversarial,10,7,10,0,0.0,30.0,1.0,PASS,False,NONE,0,0,True,Prompt length (7 words) below minimum compressible threshold (20),0.03,1248.27,0.54,1249.09
+ADV-033,adversarial,15,9,15,0,0.0,40.0,1.0,PASS,False,NONE,0,0,True,Prompt length (8 words) below minimum compressible threshold (20),0.02,1223.03,1.08,1224.46
+ADV-034,adversarial,17,12,17,0,0.0,29.41,1.0,PASS,False,NONE,0,0,True,Prompt length (10 words) below minimum compressible threshold (20),0.04,1243.94,0.79,1245.14
+ADV-035,adversarial,13,7,13,0,0.0,46.15,1.0,PASS,False,NONE,0,0,True,Prompt length (7 words) below minimum compressible threshold (20),0.04,1216.1,0.56,1216.99
+ADV-036,adversarial,11,7,11,0,0.0,36.36,1.0,PASS,False,NONE,0,0,True,Prompt length (8 words) below minimum compressible threshold (20),0.03,1232.37,0.74,1233.45
+ADV-037,adversarial,10,6,10,0,0.0,40.0,1.0,PASS,False,NONE,0,0,True,Prompt length (8 words) below minimum compressible threshold (20),0.03,1228.26,0.68,1229.24
+ADV-038,adversarial,18,12,18,0,0.0,33.33,1.0,PASS,False,NONE,0,0,True,Prompt length (9 words) below minimum compressible threshold (20),0.03,1238.3,0.3,1238.99
+ADV-039,adversarial,9,6,9,0,0.0,33.33,1.0,PASS,False,NONE,0,0,True,Prompt length (6 words) below minimum compressible threshold (20),0.05,1240.96,0.7,1242.04
+ADV-040,adversarial,10,5,10,0,0.0,50.0,1.0,PASS,False,NONE,0,0,True,Prompt length (6 words) below minimum compressible threshold (20),0.03,1222.74,0.72,1223.92
+ADV-041,adversarial,7,4,7,0,0.0,42.86,1.0,PASS,False,NONE,0,0,True,Prompt length (5 words) below minimum compressible threshold (20),0.03,1221.56,0.33,1222.3
+ADV-042,adversarial,14,10,14,0,0.0,28.57,1.0,PASS,False,NONE,0,0,True,Prompt length (9 words) below minimum compressible threshold (20),0.04,1229.22,0.28,1229.8
+ADV-043,adversarial,11,6,11,0,0.0,45.45,1.0,PASS,False,NONE,0,0,True,Prompt length (8 words) below minimum compressible threshold (20),0.03,1230.03,0.43,1230.87
+ADV-044,adversarial,11,6,11,0,0.0,45.45,1.0,PASS,False,NONE,0,0,True,Prompt length (7 words) below minimum compressible threshold (20),0.03,1244.98,0.27,1245.55
+ADV-045,adversarial,11,7,11,0,0.0,36.36,1.0,PASS,False,NONE,0,0,True,Prompt length (8 words) below minimum compressible threshold (20),0.04,1222.82,0.38,1223.55
+ADV-046,adversarial,9,7,9,0,0.0,22.22,1.0,PASS,False,NONE,0,0,True,Prompt length (8 words) below minimum compressible threshold (20),0.04,1241.8,0.44,1242.62
+ADV-047,adversarial,11,8,11,0,0.0,27.27,1.0,PASS,False,NONE,0,0,True,Prompt length (7 words) below minimum compressible threshold (20),0.04,1259.72,0.31,1260.34
+ADV-048,adversarial,14,10,14,0,0.0,28.57,1.0,PASS,False,NONE,0,0,True,Prompt length (8 words) below minimum compressible threshold (20),0.03,1238.13,0.18,1238.59
+ADV-049,adversarial,13,8,13,0,0.0,38.46,1.0,PASS,False,NONE,0,0,True,Prompt length (9 words) below minimum compressible threshold (20),0.03,1253.63,0.23,1254.25
+ADV-050,adversarial,19,11,19,0,0.0,42.11,1.0,PASS,False,NONE,0,0,True,Prompt length (10 words) below minimum compressible threshold (20),0.04,1255.47,0.34,1256.21
+AGT-001,agents,43,28,43,0,0.0,34.88,1.0,PASS,False,NONE,0,0,True,Prompt length (19 words) below minimum compressible threshold (20),0.06,1302.25,0.31,1302.91
+AGT-002,agents,48,32,48,0,0.0,33.33,1.0,PASS,False,NONE,0,0,True,High constraint density in short prompt; compression risks constraint loss,0.06,1237.13,0.73,1238.87
+AGT-003,agents,34,24,34,0,0.0,29.41,1.0,PASS,False,NONE,0,0,True,Prompt length (12 words) below minimum compressible threshold (20),0.06,1221.49,0.45,1222.38
+AGT-004,agents,31,17,31,0,0.0,45.16,1.0,PASS,False,NONE,0,0,True,Prompt length (9 words) below minimum compressible threshold (20),0.05,1284.73,0.25,1285.33
+AGT-005,agents,29,19,29,0,0.0,34.48,1.0,PASS,False,NONE,0,0,True,Prompt length (16 words) below minimum compressible threshold (20),0.04,1269.31,0.41,1270.13
+AGT-006,agents,29,33,19,10,34.48,-13.79,0.6552,PASS,False,NONE,4,4,False,,0.06,1224.72,0.27,6280.56
+AGT-007,agents,24,17,24,0,0.0,29.17,1.0,PASS,False,NONE,0,0,True,Prompt length (15 words) below minimum compressible threshold (20),0.04,1254.39,0.5,1255.34
+AGT-008,agents,36,20,36,0,0.0,44.44,1.0,PASS,False,NONE,0,0,True,Prompt length (15 words) below minimum compressible threshold (20),0.05,1256.9,0.61,1257.99
+AGT-009,agents,34,19,34,0,0.0,44.12,1.0,PASS,False,NONE,0,0,True,Prompt length (8 words) below minimum compressible threshold (20),0.05,1245.65,0.28,1246.23
+AGT-010,agents,35,21,35,0,0.0,40.0,1.0,PASS,False,NONE,0,0,True,Prompt length (13 words) below minimum compressible threshold (20),0.05,1243.24,0.4,1244.08
+AGT-011,agents,38,25,38,0,0.0,34.21,1.0,PASS,False,NONE,0,0,True,Prompt length (16 words) below minimum compressible threshold (20),0.06,1234.71,0.96,1236.13
+AGT-012,agents,31,27,29,2,6.45,12.9,0.9355,PASS,False,NONE,4,4,False,,0.05,1267.68,0.42,6155.6
+AGT-013,agents,40,25,40,0,0.0,37.5,1.0,PASS,False,NONE,0,0,True,Prompt length (17 words) below minimum compressible threshold (20),0.06,1232.86,0.28,1233.48
+AGT-014,agents,15,9,15,0,0.0,40.0,1.0,PASS,False,NONE,0,0,True,Prompt length (10 words) below minimum compressible threshold (20),0.03,1234.81,0.31,1235.49
+AGT-015,agents,30,20,30,0,0.0,33.33,1.0,PASS,False,NONE,0,0,True,Prompt length (18 words) below minimum compressible threshold (20),0.07,1233.47,0.48,1234.42
+COD-001,code,39,20,39,0,0.0,48.72,1.0,PASS,False,NONE,0,0,True,Prompt length (18 words) below minimum compressible threshold (20),0.04,1245.49,0.46,1246.4
+COD-002,code,43,22,43,0,0.0,48.84,1.0,PASS,False,NONE,0,0,True,Prompt length (18 words) below minimum compressible threshold (20),0.04,1247.86,0.47,1248.76
+COD-003,code,54,33,54,0,0.0,38.89,1.0,PASS,False,NONE,0,0,True,Prompt length (17 words) below minimum compressible threshold (20),0.04,1232.35,0.35,1233.08
+COD-004,code,59,39,59,0,0.0,33.9,1.0,PASS,False,NONE,0,0,True,Category 'code' has high structured ratio (82.9%) or high risk of constraint loss,0.03,1222.67,0.34,1223.38
+COD-005,code,30,16,30,0,0.0,46.67,1.0,PASS,False,NONE,0,0,True,Prompt length (14 words) below minimum compressible threshold (20),0.03,1210.87,0.32,1211.54
+COD-006,code,57,36,57,0,0.0,36.84,1.0,PASS,False,NONE,0,0,True,Prompt length (6 words) below minimum compressible threshold (20),0.04,1231.32,0.48,1232.21
+COD-007,code,61,34,61,0,0.0,44.26,1.0,PASS,False,NONE,0,0,True,Category 'code' has high structured ratio (77.0%) or high risk of constraint loss,0.05,1215.36,0.51,1216.36
+COD-008,code,33,22,33,0,0.0,33.33,1.0,PASS,False,NONE,0,0,True,Prompt length (15 words) below minimum compressible threshold (20),0.04,1233.81,0.36,1234.62
+COD-009,code,30,17,30,0,0.0,43.33,1.0,PASS,False,NONE,0,0,True,Prompt length (14 words) below minimum compressible threshold (20),0.04,1216.0,0.33,1216.74
+COD-010,code,50,30,50,0,0.0,40.0,1.0,PASS,False,NONE,0,0,True,Prompt length (18 words) below minimum compressible threshold (20),0.04,1230.04,0.75,1231.13
+COD-011,code,35,21,35,0,0.0,40.0,1.0,PASS,False,NONE,0,0,True,Prompt length (15 words) below minimum compressible threshold (20),0.03,1231.74,0.33,1232.47
+COD-012,code,54,30,54,0,0.0,44.44,1.0,PASS,False,NONE,0,0,True,Prompt length (17 words) below minimum compressible threshold (20),0.04,1221.32,0.4,1222.1
+COD-013,code,33,20,33,0,0.0,39.39,1.0,PASS,False,NONE,0,0,True,Prompt length (13 words) below minimum compressible threshold (20),0.03,1217.43,0.42,1218.28
+COD-014,code,50,29,50,0,0.0,42.0,1.0,PASS,False,NONE,0,0,True,Category 'code' has high structured ratio (82.6%) or high risk of constraint loss,0.08,1231.92,0.39,1232.85
+COD-015,code,57,32,57,0,0.0,43.86,1.0,PASS,False,NONE,0,0,True,Prompt length (15 words) below minimum compressible threshold (20),0.04,1254.85,0.57,1255.89
+COD-016,code,26,14,26,0,0.0,46.15,1.0,PASS,False,NONE,0,0,True,Prompt length (6 words) below minimum compressible threshold (20),0.05,1234.86,0.33,1235.52
+COD-017,code,49,27,49,0,0.0,44.9,1.0,PASS,False,NONE,0,0,True,Prompt length (19 words) below minimum compressible threshold (20),0.03,1237.23,0.59,1238.27
+COD-018,code,28,17,28,0,0.0,39.29,1.0,PASS,False,NONE,0,0,True,Prompt length (11 words) below minimum compressible threshold (20),0.04,1221.78,0.35,1222.55
+COD-019,code,33,19,33,0,0.0,42.42,1.0,PASS,False,NONE,0,0,True,Prompt length (8 words) below minimum compressible threshold (20),0.05,1252.15,0.34,1252.93
+COD-020,code,44,31,44,0,0.0,29.55,1.0,PASS,False,NONE,0,0,True,Prompt length (14 words) below minimum compressible threshold (20),0.04,1241.3,0.38,1242.09
+GEN-001,general,26,17,10,16,61.54,34.62,0.3846,PASS,False,NONE,4,4,False,,0.06,1210.48,0.32,6210.96
+GEN-002,general,25,17,14,11,44.0,32.0,0.56,PASS,False,NONE,4,4,False,,0.05,1231.45,0.36,6220.85
+GEN-003,general,23,15,23,0,0.0,34.78,1.0,PASS,False,NONE,0,0,True,Prompt length (18 words) below minimum compressible threshold (20),0.05,1219.19,0.46,1220.08
+GEN-004,general,31,19,31,0,0.0,38.71,1.0,PASS,False,NONE,0,0,True,Prompt length (13 words) below minimum compressible threshold (20),0.06,1225.76,0.36,1226.58
+GEN-005,general,22,15,22,0,0.0,31.82,1.0,PASS,False,NONE,0,0,True,Prompt length (13 words) below minimum compressible threshold (20),0.05,1214.15,0.27,1214.8
+GEN-006,general,24,18,11,13,54.17,25.0,0.4583,PASS,False,NONE,4,4,False,,0.05,1243.82,0.35,6256.51
+GEN-007,general,30,21,30,0,0.0,30.0,1.0,PASS,False,NONE,0,0,True,Prompt length (16 words) below minimum compressible threshold (20),0.05,1243.83,0.55,1244.79
+GEN-008,general,23,15,23,0,0.0,34.78,1.0,PASS,False,NONE,0,0,True,Prompt length (14 words) below minimum compressible threshold (20),0.05,1241.27,0.29,1241.92
+GEN-009,general,26,17,26,0,0.0,34.62,1.0,PASS,False,NONE,0,0,True,Prompt length (14 words) below minimum compressible threshold (20),0.04,1259.57,0.39,1260.37
+GEN-010,general,17,9,17,0,0.0,47.06,1.0,PASS,False,NONE,0,0,True,Prompt length (13 words) below minimum compressible threshold (20),0.14,1254.15,0.24,1254.8
+GEN-011,general,27,17,27,0,0.0,37.04,1.0,PASS,False,NONE,0,0,True,Prompt length (16 words) below minimum compressible threshold (20),0.04,1243.07,0.41,1243.96
+GEN-012,general,26,16,26,0,0.0,38.46,1.0,PASS,False,NONE,0,0,True,Prompt length (18 words) below minimum compressible threshold (20),0.06,1298.6,0.38,1299.45
+GEN-013,general,32,20,32,0,0.0,37.5,1.0,PASS,False,NONE,0,0,True,Prompt length (17 words) below minimum compressible threshold (20),0.06,1262.99,0.3,1263.66
+GEN-014,general,32,21,32,0,0.0,34.38,1.0,PASS,False,NONE,0,0,True,Prompt length (18 words) below minimum compressible threshold (20),0.04,1225.0,0.34,1225.66
+GEN-015,general,27,15,27,0,0.0,44.44,1.0,PASS,False,NONE,0,0,True,Prompt length (14 words) below minimum compressible threshold (20),0.06,1209.14,0.37,1209.93
+JSN-001,json,43,22,43,0,0.0,48.84,1.0,PASS,False,NONE,0,0,True,Prompt length (12 words) below minimum compressible threshold (20),0.04,1244.61,0.47,1245.52
+JSN-002,json,38,21,38,0,0.0,44.74,1.0,PASS,False,NONE,0,0,True,Prompt length (11 words) below minimum compressible threshold (20),0.04,1217.16,0.48,1218.09
+JSN-003,json,41,22,41,0,0.0,46.34,1.0,PASS,False,NONE,0,0,True,Prompt length (11 words) below minimum compressible threshold (20),0.05,1239.87,0.37,1240.67
+JSN-004,json,29,14,29,0,0.0,51.72,1.0,PASS,False,NONE,0,0,True,Prompt length (11 words) below minimum compressible threshold (20),0.04,1212.29,0.3,1212.92
+JSN-005,json,39,24,39,0,0.0,38.46,1.0,PASS,False,NONE,0,0,True,Prompt length (10 words) below minimum compressible threshold (20),0.05,1224.64,0.44,1225.52
+JSN-006,json,41,26,41,0,0.0,36.59,1.0,PASS,False,NONE,0,0,True,Prompt length (8 words) below minimum compressible threshold (20),0.04,1229.0,0.46,1229.89
+JSN-007,json,36,24,36,0,0.0,33.33,1.0,PASS,False,NONE,0,0,True,Prompt length (10 words) below minimum compressible threshold (20),0.04,1222.51,0.6,1223.53
+JSN-008,json,49,28,49,0,0.0,42.86,1.0,PASS,False,NONE,0,0,True,Prompt length (12 words) below minimum compressible threshold (20),0.04,1224.31,0.51,1225.25
+JSN-009,json,41,23,41,0,0.0,43.9,1.0,PASS,False,NONE,0,0,True,Prompt length (10 words) below minimum compressible threshold (20),0.04,1239.18,0.24,1239.72
+JSN-010,json,44,30,44,0,0.0,31.82,1.0,PASS,False,NONE,0,0,True,Prompt length (8 words) below minimum compressible threshold (20),0.03,1214.21,0.54,1215.12
+JSN-011,json,47,33,47,0,0.0,29.79,1.0,PASS,False,NONE,0,0,True,Prompt length (10 words) below minimum compressible threshold (20),0.05,1214.89,0.39,1215.7
+JSN-012,json,53,27,53,0,0.0,49.06,1.0,PASS,False,NONE,0,0,True,Prompt length (12 words) below minimum compressible threshold (20),0.05,1226.16,0.34,1226.88
+JSN-013,json,41,25,41,0,0.0,39.02,1.0,PASS,False,NONE,0,0,True,Prompt length (11 words) below minimum compressible threshold (20),0.03,1224.34,0.29,1224.95
+JSN-014,json,45,24,45,0,0.0,46.67,1.0,PASS,False,NONE,0,0,True,Prompt length (11 words) below minimum compressible threshold (20),0.04,1225.1,0.54,1226.07
+JSN-015,json,51,34,51,0,0.0,33.33,1.0,PASS,False,NONE,0,0,True,Prompt length (12 words) below minimum compressible threshold (20),0.04,1216.13,0.58,1217.15
+JSN-016,json,44,28,44,0,0.0,36.36,1.0,PASS,False,NONE,0,0,True,Prompt length (12 words) below minimum compressible threshold (20),0.05,1239.44,0.67,1240.52
+JSN-017,json,51,32,51,0,0.0,37.25,1.0,PASS,False,NONE,0,0,True,Prompt length (14 words) below minimum compressible threshold (20),0.04,1246.15,0.44,1247.01
+JSN-018,json,49,26,49,0,0.0,46.94,1.0,PASS,False,NONE,0,0,True,Prompt length (14 words) below minimum compressible threshold (20),0.04,1263.09,0.46,1263.9
+JSN-019,json,46,26,46,0,0.0,43.48,1.0,PASS,False,NONE,0,0,True,Prompt length (12 words) below minimum compressible threshold (20),0.03,1228.53,0.29,1229.15
+JSN-020,json,39,20,39,0,0.0,48.72,1.0,PASS,False,NONE,0,0,True,Prompt length (11 words) below minimum compressible threshold (20),0.05,1243.51,0.55,1244.48
+MLT-001,multi_constraint,51,37,47,4,7.84,27.45,0.9216,PASS,False,NONE,4,4,False,,0.08,1338.75,0.94,6379.71
+MLT-002,multi_constraint,42,29,39,3,7.14,30.95,0.9286,PASS,False,NONE,4,4,False,,0.07,1229.46,0.66,6200.97
+MLT-003,multi_constraint,54,42,41,13,24.07,22.22,0.7593,PASS,False,NONE,4,4,False,,0.07,1231.06,0.85,6148.97
+MLT-004,multi_constraint,37,40,37,0,0.0,-8.11,1.0,FAIL,True,MAX_MODEL_CALLS_REACHED,4,4,False,,0.08,1242.13,0.79,6119.66
+MLT-005,multi_constraint,36,44,36,0,0.0,-22.22,1.0,FAIL,True,MAX_MODEL_CALLS_REACHED,4,4,False,,0.07,1221.4,0.75,6239.55
+MLT-006,multi_constraint,40,35,40,0,0.0,12.5,1.0,FAIL,True,MAX_MODEL_CALLS_REACHED,4,4,False,,0.07,1233.97,1.53,6216.49
+MLT-007,multi_constraint,45,39,36,9,20.0,13.33,0.8,PASS,False,NONE,4,4,False,,0.08,1297.72,0.66,6271.35
+MLT-008,multi_constraint,49,32,44,5,10.2,34.69,0.898,PASS,False,NONE,4,4,False,,0.09,1235.54,0.59,6118.76
+MLT-009,multi_constraint,35,42,35,0,0.0,-20.0,1.0,FAIL,True,MAX_MODEL_CALLS_REACHED,4,4,False,,0.08,1246.87,0.51,6171.84
+MLT-010,multi_constraint,56,34,47,9,16.07,39.29,0.8393,PASS,False,NONE,4,4,False,,0.07,1214.37,0.59,6113.96
+MLT-011,multi_constraint,41,26,34,7,17.07,36.59,0.8293,PASS,False,NONE,4,4,False,,0.05,1242.51,0.75,6171.58
+MLT-012,multi_constraint,46,32,41,5,10.87,30.43,0.8913,PASS,False,NONE,4,4,False,,0.08,1240.29,0.67,6256.23
+MLT-013,multi_constraint,32,30,32,0,0.0,6.25,1.0,FAIL,True,MAX_MODEL_CALLS_REACHED,4,4,False,,0.07,1233.12,0.66,6220.29
+MLT-014,multi_constraint,30,36,30,0,0.0,-20.0,1.0,FAIL,True,MAX_MODEL_CALLS_REACHED,4,4,False,,0.05,1220.83,0.87,6176.72
+MLT-015,multi_constraint,32,35,32,0,0.0,-9.38,1.0,FAIL,True,MAX_MODEL_CALLS_REACHED,4,4,False,,0.08,1229.64,0.87,6166.57
+MLT-016,multi_constraint,34,35,34,0,0.0,-2.94,1.0,FAIL,True,MAX_MODEL_CALLS_REACHED,4,4,False,,0.07,1241.67,0.6,6253.0
+MLT-017,multi_constraint,30,33,30,0,0.0,-10.0,1.0,FAIL,True,MAX_MODEL_CALLS_REACHED,4,4,False,,0.05,1217.76,0.65,6260.16
+MLT-018,multi_constraint,29,28,29,0,0.0,3.45,1.0,FAIL,True,MAX_MODEL_CALLS_REACHED,4,4,False,,0.07,1330.75,0.74,6341.08
+MLT-019,multi_constraint,50,38,48,2,4.0,24.0,0.96,PASS,False,NONE,4,4,False,,0.08,1308.52,0.88,6544.4
+MLT-020,multi_constraint,47,34,36,11,23.4,27.66,0.766,PASS,False,NONE,4,4,False,,0.08,1353.48,0.56,6440.0
+MLT-021,multi_constraint,46,39,41,5,10.87,15.22,0.8913,PASS,False,NONE,4,4,False,,0.07,1228.45,0.62,6126.21
+MLT-022,multi_constraint,31,33,31,0,0.0,-6.45,1.0,FAIL,True,MAX_MODEL_CALLS_REACHED,4,4,False,,0.07,1225.09,0.39,6147.37
+MLT-023,multi_constraint,40,32,32,8,20.0,20.0,0.8,PASS,False,NONE,4,4,False,,0.05,1228.96,0.42,6195.13
+MLT-024,multi_constraint,11,32,9,2,18.18,-190.91,0.8182,PASS,False,NONE,4,4,False,,0.06,1234.74,0.79,6203.93
+MLT-025,multi_constraint,33,36,33,0,0.0,-9.09,1.0,FAIL,True,MAX_MODEL_CALLS_REACHED,4,4,False,,0.08,1260.26,0.74,6181.86
+MLT-026,multi_constraint,45,34,39,6,13.33,24.44,0.8667,PASS,False,NONE,4,4,False,,0.07,1221.34,0.6,6118.77
+MLT-027,multi_constraint,43,35,33,10,23.26,18.6,0.7674,PASS,False,NONE,4,4,False,,0.06,1271.37,0.6,6228.41
+MLT-028,multi_constraint,46,36,39,7,15.22,21.74,0.8478,PASS,False,NONE,4,4,False,,0.08,1273.27,0.57,6325.2
+MLT-029,multi_constraint,39,30,33,6,15.38,23.08,0.8462,PASS,False,NONE,4,4,False,,0.07,1238.78,0.52,6197.41
+MLT-030,multi_constraint,39,38,31,8,20.51,2.56,0.7949,PASS,False,NONE,4,4,False,,0.07,1215.91,0.59,6140.01
+MLT-031,multi_constraint,46,34,38,8,17.39,26.09,0.8261,PASS,False,NONE,4,4,False,,0.09,1231.47,0.68,6081.34
+MLT-032,multi_constraint,28,25,28,0,0.0,10.71,1.0,FAIL,True,MAX_MODEL_CALLS_REACHED,4,4,False,,0.06,1193.0,0.49,6133.3
+MLT-033,multi_constraint,46,32,38,8,17.39,30.43,0.8261,PASS,False,NONE,4,4,False,,0.06,1196.28,0.58,6011.76
+MLT-034,multi_constraint,40,30,36,4,10.0,25.0,0.9,PASS,False,NONE,4,4,False,,0.07,1209.16,0.53,6240.02
+MLT-035,multi_constraint,41,28,39,2,4.88,31.71,0.9512,PASS,False,NONE,4,4,False,,0.07,1230.35,0.7,6164.87
+MLT-036,multi_constraint,31,37,31,0,0.0,-19.35,1.0,FAIL,True,MAX_MODEL_CALLS_REACHED,4,4,False,,0.08,1253.02,0.7,6300.09
+MLT-037,multi_constraint,42,33,38,4,9.52,21.43,0.9048,PASS,False,NONE,4,4,False,,0.07,1231.05,0.62,6217.58
+MLT-038,multi_constraint,33,36,33,0,0.0,-9.09,1.0,FAIL,True,MAX_MODEL_CALLS_REACHED,4,4,False,,0.08,1231.43,0.5,6298.87
+MLT-039,multi_constraint,48,29,43,5,10.42,39.58,0.8958,PASS,False,NONE,4,4,False,,0.07,1238.42,0.62,6352.2
+MLT-040,multi_constraint,28,29,28,0,0.0,-3.57,1.0,FAIL,True,MAX_MODEL_CALLS_REACHED,4,4,False,,0.09,1271.35,0.61,6139.26
+MLT-041,multi_constraint,39,31,32,7,17.95,20.51,0.8205,PASS,False,NONE,4,4,False,,0.07,1245.72,0.54,6150.29
+MLT-042,multi_constraint,47,32,41,6,12.77,31.91,0.8723,PASS,False,NONE,4,4,False,,0.08,1226.65,0.44,6230.51
+MLT-043,multi_constraint,45,30,40,5,11.11,33.33,0.8889,PASS,False,NONE,4,4,False,,0.06,1236.58,0.59,6379.62
+MLT-044,multi_constraint,42,30,39,3,7.14,28.57,0.9286,PASS,False,NONE,4,4,False,,0.08,1260.48,0.73,6367.04
+MLT-045,multi_constraint,42,31,38,4,9.52,26.19,0.9048,PASS,False,NONE,4,4,False,,0.08,1275.11,0.62,6312.71
+MLT-046,multi_constraint,41,28,33,8,19.51,31.71,0.8049,PASS,False,NONE,4,4,False,,0.08,1288.8,0.47,6286.62
+MLT-047,multi_constraint,44,31,39,5,11.36,29.55,0.8864,PASS,False,NONE,4,4,False,,0.05,1286.24,0.5,6312.04
+MLT-048,multi_constraint,30,33,30,0,0.0,-10.0,1.0,FAIL,True,MAX_MODEL_CALLS_REACHED,4,4,False,,0.06,1256.54,0.61,6315.02
+MLT-049,multi_constraint,40,30,31,9,22.5,25.0,0.775,PASS,False,NONE,4,4,False,,0.07,1220.72,0.46,6159.68
+MLT-050,multi_constraint,54,37,49,5,9.26,31.48,0.9074,PASS,False,NONE,4,4,False,,0.07,1266.82,0.52,6150.06
+NEG-001,negation,19,12,19,0,0.0,36.84,1.0,PASS,False,NONE,0,0,True,Prompt length (15 words) below minimum compressible threshold (20),0.04,1206.96,0.32,1207.69
+NEG-002,negation,13,8,13,0,0.0,38.46,1.0,PASS,False,NONE,0,0,True,Prompt length (8 words) below minimum compressible threshold (20),0.04,1227.96,0.3,1228.67
+NEG-003,negation,14,8,14,0,0.0,42.86,1.0,PASS,False,NONE,0,0,True,Prompt length (10 words) below minimum compressible threshold (20),0.04,1228.9,0.29,1229.58
+NEG-004,negation,11,7,11,0,0.0,36.36,1.0,PASS,False,NONE,0,0,True,Prompt length (9 words) below minimum compressible threshold (20),0.04,1217.51,0.23,1218.04
+NEG-005,negation,13,8,13,0,0.0,38.46,1.0,PASS,False,NONE,0,0,True,Prompt length (10 words) below minimum compressible threshold (20),0.04,1201.04,0.77,1202.21
+NEG-006,negation,11,7,11,0,0.0,36.36,1.0,PASS,False,NONE,0,0,True,Prompt length (9 words) below minimum compressible threshold (20),0.04,1265.72,0.3,1266.42
+NEG-007,negation,14,9,14,0,0.0,35.71,1.0,PASS,False,NONE,0,0,True,Prompt length (9 words) below minimum compressible threshold (20),0.04,1228.78,0.31,1229.49
+NEG-008,negation,14,9,14,0,0.0,35.71,1.0,PASS,False,NONE,0,0,True,Prompt length (11 words) below minimum compressible threshold (20),0.04,1222.54,0.23,1223.11
+NEG-009,negation,12,8,12,0,0.0,33.33,1.0,PASS,False,NONE,0,0,True,Prompt length (8 words) below minimum compressible threshold (20),0.03,1201.63,0.28,1202.31
+NEG-010,negation,13,9,13,0,0.0,30.77,1.0,PASS,False,NONE,0,0,True,Prompt length (9 words) below minimum compressible threshold (20),0.04,1207.48,0.23,1208.02
+NEG-011,negation,9,4,9,0,0.0,55.56,1.0,PASS,False,NONE,0,0,True,Prompt length (7 words) below minimum compressible threshold (20),0.02,1199.12,0.21,1199.61
+NEG-012,negation,10,7,10,0,0.0,30.0,1.0,PASS,False,NONE,0,0,True,Prompt length (7 words) below minimum compressible threshold (20),0.03,1259.68,0.24,1260.26
+NEG-013,negation,20,12,20,0,0.0,40.0,1.0,PASS,False,NONE,0,0,True,Prompt length (12 words) below minimum compressible threshold (20),0.04,1191.79,0.32,1192.44
+NEG-014,negation,17,12,17,0,0.0,29.41,1.0,PASS,False,NONE,0,0,True,Prompt length (10 words) below minimum compressible threshold (20),0.03,1215.14,0.28,1215.79
+NEG-015,negation,13,7,13,0,0.0,46.15,1.0,PASS,False,NONE,0,0,True,Prompt length (7 words) below minimum compressible threshold (20),0.04,1204.6,0.31,1205.3
+NEG-016,negation,12,8,12,0,0.0,33.33,1.0,PASS,False,NONE,0,0,True,Prompt length (9 words) below minimum compressible threshold (20),0.04,1224.48,0.26,1225.09
+NEG-017,negation,10,6,10,0,0.0,40.0,1.0,PASS,False,NONE,0,0,True,Prompt length (8 words) below minimum compressible threshold (20),0.03,1225.08,0.19,1225.56
+NEG-018,negation,18,12,18,0,0.0,33.33,1.0,PASS,False,NONE,0,0,True,Prompt length (9 words) below minimum compressible threshold (20),0.02,1236.03,0.29,1236.69
+NEG-019,negation,9,6,9,0,0.0,33.33,1.0,PASS,False,NONE,0,0,True,Prompt length (6 words) below minimum compressible threshold (20),0.04,1187.96,0.26,1188.6
+NEG-020,negation,10,5,10,0,0.0,50.0,1.0,PASS,False,NONE,0,0,True,Prompt length (6 words) below minimum compressible threshold (20),0.03,1201.01,0.17,1201.46
+NEG-021,negation,16,11,16,0,0.0,31.25,1.0,PASS,False,NONE,0,0,True,Prompt length (10 words) below minimum compressible threshold (20),0.03,1202.19,0.35,1202.82
+NEG-022,negation,13,8,13,0,0.0,38.46,1.0,PASS,False,NONE,0,0,True,Prompt length (9 words) below minimum compressible threshold (20),0.03,1195.12,0.28,1195.78
+NEG-023,negation,14,9,14,0,0.0,35.71,1.0,PASS,False,NONE,0,0,True,Prompt length (9 words) below minimum compressible threshold (20),0.04,1180.64,0.28,1181.31
+NEG-024,negation,14,10,14,0,0.0,28.57,1.0,PASS,False,NONE,0,0,True,Prompt length (9 words) below minimum compressible threshold (20),0.04,1181.73,0.22,1182.26
+NEG-025,negation,12,8,12,0,0.0,33.33,1.0,PASS,False,NONE,0,0,True,Prompt length (7 words) below minimum compressible threshold (20),0.03,1202.06,0.54,1202.9
+NEG-026,negation,18,12,18,0,0.0,33.33,1.0,PASS,False,NONE,0,0,True,Prompt length (13 words) below minimum compressible threshold (20),0.03,1189.79,0.34,1190.51
+NEG-027,negation,16,9,16,0,0.0,43.75,1.0,PASS,False,NONE,0,0,True,Prompt length (10 words) below minimum compressible threshold (20),0.05,1191.39,0.31,1192.1
+NEG-028,negation,16,11,16,0,0.0,31.25,1.0,PASS,False,NONE,0,0,True,Prompt length (11 words) below minimum compressible threshold (20),0.04,1203.27,0.73,1204.4
+NEG-029,negation,13,7,13,0,0.0,46.15,1.0,PASS,False,NONE,0,0,True,Prompt length (9 words) below minimum compressible threshold (20),0.04,1205.76,0.72,1206.86
+NEG-030,negation,17,10,17,0,0.0,41.18,1.0,PASS,False,NONE,0,0,True,Prompt length (10 words) below minimum compressible threshold (20),0.04,1202.67,0.75,1203.82
+NEG-031,negation,19,11,19,0,0.0,42.11,1.0,PASS,False,NONE,0,0,True,Prompt length (11 words) below minimum compressible threshold (20),0.04,1184.29,0.3,1184.99
+NEG-032,negation,16,10,16,0,0.0,37.5,1.0,PASS,False,NONE,0,0,True,Prompt length (10 words) below minimum compressible threshold (20),0.04,1192.02,0.77,1193.19
+NEG-033,negation,15,9,15,0,0.0,40.0,1.0,PASS,False,NONE,0,0,True,Prompt length (11 words) below minimum compressible threshold (20),0.04,1176.33,0.82,1177.6
+NEG-034,negation,16,10,16,0,0.0,37.5,1.0,PASS,False,NONE,0,0,True,Prompt length (10 words) below minimum compressible threshold (20),0.04,1187.97,0.24,1188.51
+NEG-035,negation,15,11,15,0,0.0,26.67,1.0,PASS,False,NONE,0,0,True,Prompt length (9 words) below minimum compressible threshold (20),0.03,1187.52,0.75,1188.63
+NEG-036,negation,16,11,16,0,0.0,31.25,1.0,PASS,False,NONE,0,0,True,Prompt length (11 words) below minimum compressible threshold (20),0.04,1217.66,0.81,1218.89
+NEG-037,negation,14,8,14,0,0.0,42.86,1.0,PASS,False,NONE,0,0,True,Prompt length (9 words) below minimum compressible threshold (20),0.04,1179.83,0.3,1180.52
+NEG-038,negation,18,13,18,0,0.0,27.78,1.0,PASS,False,NONE,0,0,True,Prompt length (11 words) below minimum compressible threshold (20),0.05,1199.63,0.59,1200.56
+NEG-039,negation,20,12,20,0,0.0,40.0,1.0,PASS,False,NONE,0,0,True,Prompt length (9 words) below minimum compressible threshold (20),0.03,1204.41,0.63,1205.35
+NEG-040,negation,16,9,16,0,0.0,43.75,1.0,PASS,False,NONE,0,0,True,Prompt length (10 words) below minimum compressible threshold (20),0.03,1223.64,0.77,1224.82
+NEG-041,negation,11,6,11,0,0.0,45.45,1.0,PASS,False,NONE,0,0,True,Prompt length (10 words) below minimum compressible threshold (20),0.04,1208.02,0.27,1208.69
+NEG-042,negation,13,9,13,0,0.0,30.77,1.0,PASS,False,NONE,0,0,True,Prompt length (9 words) below minimum compressible threshold (20),0.04,1239.82,0.31,1240.52
+NEG-043,negation,15,10,15,0,0.0,33.33,1.0,PASS,False,NONE,0,0,True,Prompt length (10 words) below minimum compressible threshold (20),0.04,1248.64,0.24,1249.18
+NEG-044,negation,15,8,15,0,0.0,46.67,1.0,PASS,False,NONE,0,0,True,Prompt length (12 words) below minimum compressible threshold (20),0.03,1209.24,0.34,1209.95
+NEG-045,negation,16,10,16,0,0.0,37.5,1.0,PASS,False,NONE,0,0,True,Prompt length (9 words) below minimum compressible threshold (20),0.04,1216.81,0.78,1217.95
+NEG-046,negation,16,11,16,0,0.0,31.25,1.0,PASS,False,NONE,0,0,True,Prompt length (10 words) below minimum compressible threshold (20),0.05,1204.75,0.31,1205.44
+NEG-047,negation,17,10,17,0,0.0,41.18,1.0,PASS,False,NONE,0,0,True,Prompt length (11 words) below minimum compressible threshold (20),0.04,1240.46,0.86,1241.74
+NEG-048,negation,15,9,15,0,0.0,40.0,1.0,PASS,False,NONE,0,0,True,Prompt length (11 words) below minimum compressible threshold (20),0.04,1237.62,0.25,1238.21
+NEG-049,negation,15,10,15,0,0.0,33.33,1.0,PASS,False,NONE,0,0,True,Prompt length (12 words) below minimum compressible threshold (20),0.03,1210.04,0.3,1210.71
+NEG-050,negation,13,9,13,0,0.0,30.77,1.0,PASS,False,NONE,0,0,True,Prompt length (8 words) below minimum compressible threshold (20),0.04,1254.85,0.58,1255.75
+NUM-001,numeric_constraints,11,6,11,0,0.0,45.45,1.0,PASS,False,NONE,0,0,True,Prompt length (8 words) below minimum compressible threshold (20),0.03,1245.6,0.34,1246.3
+NUM-002,numeric_constraints,11,7,11,0,0.0,36.36,1.0,PASS,False,NONE,0,0,True,Prompt length (8 words) below minimum compressible threshold (20),0.04,1240.96,0.27,1241.63
+NUM-003,numeric_constraints,12,8,12,0,0.0,33.33,1.0,PASS,False,NONE,0,0,True,Prompt length (9 words) below minimum compressible threshold (20),0.04,1215.76,0.37,1216.5
+NUM-004,numeric_constraints,9,6,9,0,0.0,33.33,1.0,PASS,False,NONE,0,0,True,Prompt length (7 words) below minimum compressible threshold (20),0.04,1206.3,0.3,1206.98
+NUM-005,numeric_constraints,11,7,11,0,0.0,36.36,1.0,PASS,False,NONE,0,0,True,Prompt length (9 words) below minimum compressible threshold (20),0.04,1206.27,0.24,1206.81
+NUM-006,numeric_constraints,11,7,11,0,0.0,36.36,1.0,PASS,False,NONE,0,0,True,Prompt length (9 words) below minimum compressible threshold (20),0.03,1204.73,0.3,1205.38
+NUM-007,numeric_constraints,16,10,16,0,0.0,37.5,1.0,PASS,False,NONE,0,0,True,Prompt length (11 words) below minimum compressible threshold (20),0.04,1218.46,0.32,1219.18
+NUM-008,numeric_constraints,10,6,10,0,0.0,40.0,1.0,PASS,False,NONE,0,0,True,Prompt length (9 words) below minimum compressible threshold (20),0.04,1201.42,0.23,1201.96
+NUM-009,numeric_constraints,14,10,14,0,0.0,28.57,1.0,PASS,False,NONE,0,0,True,Prompt length (10 words) below minimum compressible threshold (20),0.03,1230.82,0.29,1231.43
+NUM-010,numeric_constraints,13,6,13,0,0.0,53.85,1.0,PASS,False,NONE,0,0,True,Prompt length (8 words) below minimum compressible threshold (20),0.03,1213.21,0.22,1213.73
+NUM-011,numeric_constraints,14,10,14,0,0.0,28.57,1.0,PASS,False,NONE,0,0,True,Prompt length (9 words) below minimum compressible threshold (20),0.03,1221.42,0.27,1222.0
+NUM-012,numeric_constraints,10,6,10,0,0.0,40.0,1.0,PASS,False,NONE,0,0,True,Prompt length (8 words) below minimum compressible threshold (20),0.03,1218.99,0.21,1219.5
+NUM-013,numeric_constraints,10,7,10,0,0.0,30.0,1.0,PASS,False,NONE,0,0,True,Prompt length (7 words) below minimum compressible threshold (20),0.02,1228.5,0.24,1229.09
+NUM-014,numeric_constraints,11,6,11,0,0.0,45.45,1.0,PASS,False,NONE,0,0,True,Prompt length (8 words) below minimum compressible threshold (20),0.04,1226.42,0.29,1227.09
+NUM-015,numeric_constraints,8,5,8,0,0.0,37.5,1.0,PASS,False,NONE,0,0,True,Prompt length (5 words) below minimum compressible threshold (20),0.03,1225.76,0.16,1226.21
+NUM-016,numeric_constraints,11,6,11,0,0.0,45.45,1.0,PASS,False,NONE,0,0,True,Prompt length (7 words) below minimum compressible threshold (20),0.02,1206.39,0.26,1207.01
+NUM-017,numeric_constraints,14,8,14,0,0.0,42.86,1.0,PASS,False,NONE,0,0,True,Prompt length (9 words) below minimum compressible threshold (20),0.04,1226.41,0.31,1227.17
+NUM-018,numeric_constraints,11,6,11,0,0.0,45.45,1.0,PASS,False,NONE,0,0,True,Prompt length (6 words) below minimum compressible threshold (20),0.03,1218.35,0.23,1218.97
+NUM-019,numeric_constraints,11,7,11,0,0.0,36.36,1.0,PASS,False,NONE,0,0,True,Prompt length (8 words) below minimum compressible threshold (20),0.04,1240.76,0.22,1241.29
+NUM-020,numeric_constraints,11,6,11,0,0.0,45.45,1.0,PASS,False,NONE,0,0,True,Prompt length (7 words) below minimum compressible threshold (20),0.03,1207.62,0.3,1208.21
+NUM-021,numeric_constraints,12,7,12,0,0.0,41.67,1.0,PASS,False,NONE,0,0,True,Prompt length (9 words) below minimum compressible threshold (20),0.03,1236.64,0.28,1237.26
+NUM-022,numeric_constraints,12,8,12,0,0.0,33.33,1.0,PASS,False,NONE,0,0,True,Prompt length (9 words) below minimum compressible threshold (20),0.03,1259.45,0.2,1259.96
+NUM-023,numeric_constraints,14,8,14,0,0.0,42.86,1.0,PASS,False,NONE,0,0,True,Prompt length (9 words) below minimum compressible threshold (20),0.03,1264.33,0.27,1264.92
+NUM-024,numeric_constraints,11,7,11,0,0.0,36.36,1.0,PASS,False,NONE,0,0,True,Prompt length (9 words) below minimum compressible threshold (20),0.03,1231.41,0.3,1232.05
+NUM-025,numeric_constraints,12,8,12,0,0.0,33.33,1.0,PASS,False,NONE,0,0,True,Prompt length (9 words) below minimum compressible threshold (20),0.04,1241.85,0.43,1242.67
+NUM-026,numeric_constraints,12,7,12,0,0.0,41.67,1.0,PASS,False,NONE,0,0,True,Prompt length (10 words) below minimum compressible threshold (20),0.04,1307.78,0.33,1308.51
+NUM-027,numeric_constraints,13,8,13,0,0.0,38.46,1.0,PASS,False,NONE,0,0,True,Prompt length (10 words) below minimum compressible threshold (20),0.04,1335.16,0.31,1335.86
+NUM-028,numeric_constraints,10,6,10,0,0.0,40.0,1.0,PASS,False,NONE,0,0,True,Prompt length (7 words) below minimum compressible threshold (20),0.03,1307.86,0.21,1308.37
+NUM-029,numeric_constraints,13,8,13,0,0.0,38.46,1.0,PASS,False,NONE,0,0,True,Prompt length (8 words) below minimum compressible threshold (20),0.05,1383.94,0.35,1384.72
+NUM-030,numeric_constraints,14,10,14,0,0.0,28.57,1.0,PASS,False,NONE,0,0,True,Prompt length (9 words) below minimum compressible threshold (20),0.05,1307.04,0.44,1307.89
+NUM-031,numeric_constraints,13,7,13,0,0.0,46.15,1.0,PASS,False,NONE,0,0,True,Prompt length (8 words) below minimum compressible threshold (20),0.04,1259.47,0.4,1260.24
+NUM-032,numeric_constraints,12,8,12,0,0.0,33.33,1.0,PASS,False,NONE,0,0,True,Prompt length (9 words) below minimum compressible threshold (20),0.03,1253.8,0.31,1254.46
+NUM-033,numeric_constraints,9,5,9,0,0.0,44.44,1.0,PASS,False,NONE,0,0,True,Prompt length (7 words) below minimum compressible threshold (20),0.03,1261.51,0.24,1262.11
+NUM-034,numeric_constraints,12,7,12,0,0.0,41.67,1.0,PASS,False,NONE,0,0,True,Prompt length (8 words) below minimum compressible threshold (20),0.04,1238.99,0.28,1239.65
+NUM-035,numeric_constraints,12,7,12,0,0.0,41.67,1.0,PASS,False,NONE,0,0,True,Prompt length (8 words) below minimum compressible threshold (20),0.04,1232.55,0.29,1233.24
+NUM-036,numeric_constraints,11,7,11,0,0.0,36.36,1.0,PASS,False,NONE,0,0,True,Prompt length (9 words) below minimum compressible threshold (20),0.04,1229.86,0.36,1230.65
+NUM-037,numeric_constraints,9,6,9,0,0.0,33.33,1.0,PASS,False,NONE,0,0,True,Prompt length (7 words) below minimum compressible threshold (20),0.04,1214.08,0.24,1214.62
+NUM-038,numeric_constraints,14,9,14,0,0.0,35.71,1.0,PASS,False,NONE,0,0,True,Prompt length (8 words) below minimum compressible threshold (20),0.03,1266.66,0.3,1267.34
+NUM-039,numeric_constraints,10,6,10,0,0.0,40.0,1.0,PASS,False,NONE,0,0,True,Prompt length (7 words) below minimum compressible threshold (20),0.04,1267.56,0.25,1268.11
+NUM-040,numeric_constraints,10,6,10,0,0.0,40.0,1.0,PASS,False,NONE,0,0,True,Prompt length (9 words) below minimum compressible threshold (20),0.03,1240.8,0.3,1241.47
+NUM-041,numeric_constraints,13,9,13,0,0.0,30.77,1.0,PASS,False,NONE,0,0,True,Prompt length (8 words) below minimum compressible threshold (20),0.05,1238.57,0.23,1239.15
+NUM-042,numeric_constraints,14,10,14,0,0.0,28.57,1.0,PASS,False,NONE,0,0,True,Prompt length (9 words) below minimum compressible threshold (20),0.03,1285.04,0.23,1285.57
+NUM-043,numeric_constraints,12,8,12,0,0.0,33.33,1.0,PASS,False,NONE,0,0,True,Prompt length (9 words) below minimum compressible threshold (20),0.03,1264.5,0.25,1265.15
+NUM-044,numeric_constraints,9,6,9,0,0.0,33.33,1.0,PASS,False,NONE,0,0,True,Prompt length (7 words) below minimum compressible threshold (20),0.04,1264.7,0.25,1265.33
+NUM-045,numeric_constraints,11,6,11,0,0.0,45.45,1.0,PASS,False,NONE,0,0,True,Prompt length (7 words) below minimum compressible threshold (20),0.05,1231.16,0.26,1231.81
+NUM-046,numeric_constraints,14,7,14,0,0.0,50.0,1.0,PASS,False,NONE,0,0,True,Prompt length (7 words) below minimum compressible threshold (20),0.04,1286.28,0.21,1286.81
+NUM-047,numeric_constraints,15,9,15,0,0.0,40.0,1.0,PASS,False,NONE,0,0,True,Prompt length (8 words) below minimum compressible threshold (20),0.03,1263.52,0.28,1264.18
+NUM-048,numeric_constraints,11,6,11,0,0.0,45.45,1.0,PASS,False,NONE,0,0,True,Prompt length (8 words) below minimum compressible threshold (20),0.04,1247.86,0.2,1248.38
+NUM-049,numeric_constraints,10,5,10,0,0.0,50.0,1.0,PASS,False,NONE,0,0,True,Prompt length (8 words) below minimum compressible threshold (20),0.02,1227.15,0.26,1227.77
+NUM-050,numeric_constraints,10,7,10,0,0.0,30.0,1.0,PASS,False,NONE,0,0,True,Prompt length (7 words) below minimum compressible threshold (20),0.04,1249.06,0.22,1249.58
+FMT-001,output_formats,9,5,9,0,0.0,44.44,1.0,PASS,False,NONE,0,0,True,Prompt length (6 words) below minimum compressible threshold (20),0.02,1300.46,0.29,1301.03
+FMT-002,output_formats,12,6,12,0,0.0,50.0,1.0,PASS,False,NONE,0,0,True,Prompt length (10 words) below minimum compressible threshold (20),0.04,1255.72,0.62,1256.66
+FMT-003,output_formats,22,14,22,0,0.0,36.36,1.0,PASS,False,NONE,0,0,True,Prompt length (12 words) below minimum compressible threshold (20),0.03,1217.93,0.33,1218.65
+FMT-004,output_formats,13,8,13,0,0.0,38.46,1.0,PASS,False,NONE,0,0,True,Prompt length (11 words) below minimum compressible threshold (20),0.04,1241.01,0.31,1241.68
+FMT-005,output_formats,20,11,20,0,0.0,45.0,1.0,PASS,False,NONE,0,0,True,Prompt length (11 words) below minimum compressible threshold (20),0.04,1216.48,0.35,1217.25
+FMT-006,output_formats,17,12,17,0,0.0,29.41,1.0,PASS,False,NONE,0,0,True,Prompt length (9 words) below minimum compressible threshold (20),0.05,1258.72,0.23,1259.29
+FMT-007,output_formats,17,12,17,0,0.0,29.41,1.0,PASS,False,NONE,0,0,True,Prompt length (11 words) below minimum compressible threshold (20),0.03,1224.28,0.32,1224.99
+FMT-008,output_formats,15,10,15,0,0.0,33.33,1.0,PASS,False,NONE,0,0,True,Prompt length (10 words) below minimum compressible threshold (20),0.05,1237.65,0.24,1238.28
+FMT-009,output_formats,16,8,16,0,0.0,50.0,1.0,PASS,False,NONE,0,0,True,Prompt length (10 words) below minimum compressible threshold (20),0.04,1244.55,0.32,1245.31
+FMT-010,output_formats,13,8,13,0,0.0,38.46,1.0,PASS,False,NONE,0,0,True,Prompt length (11 words) below minimum compressible threshold (20),0.04,1254.17,0.29,1254.85
+FMT-011,output_formats,15,8,15,0,0.0,46.67,1.0,PASS,False,NONE,0,0,True,Prompt length (11 words) below minimum compressible threshold (20),0.04,1241.83,0.26,1242.49
+FMT-012,output_formats,20,13,20,0,0.0,35.0,1.0,PASS,False,NONE,0,0,True,Prompt length (11 words) below minimum compressible threshold (20),0.04,1235.08,0.37,1235.84
+FMT-013,output_formats,15,10,15,0,0.0,33.33,1.0,PASS,False,NONE,0,0,True,Prompt length (10 words) below minimum compressible threshold (20),0.04,1278.52,0.24,1279.07
+FMT-014,output_formats,14,9,14,0,0.0,35.71,1.0,PASS,False,NONE,0,0,True,Prompt length (10 words) below minimum compressible threshold (20),0.03,1230.42,0.23,1230.97
+FMT-015,output_formats,14,8,14,0,0.0,42.86,1.0,PASS,False,NONE,0,0,True,Prompt length (9 words) below minimum compressible threshold (20),0.03,1222.31,0.36,1223.09
+FMT-016,output_formats,13,8,13,0,0.0,38.46,1.0,PASS,False,NONE,0,0,True,Prompt length (9 words) below minimum compressible threshold (20),0.05,1231.93,0.27,1232.58
+FMT-017,output_formats,13,9,13,0,0.0,30.77,1.0,PASS,False,NONE,0,0,True,Prompt length (8 words) below minimum compressible threshold (20),0.04,1214.7,0.18,1215.19
+FMT-018,output_formats,14,9,14,0,0.0,35.71,1.0,PASS,False,NONE,0,0,True,Prompt length (10 words) below minimum compressible threshold (20),0.03,1220.1,0.73,1221.19
+FMT-019,output_formats,16,9,16,0,0.0,43.75,1.0,PASS,False,NONE,0,0,True,Prompt length (8 words) below minimum compressible threshold (20),0.03,1225.08,0.31,1225.73
+FMT-020,output_formats,13,9,13,0,0.0,30.77,1.0,PASS,False,NONE,0,0,True,Prompt length (8 words) below minimum compressible threshold (20),0.03,1236.72,0.23,1237.23
+FMT-021,output_formats,12,8,12,0,0.0,33.33,1.0,PASS,False,NONE,0,0,True,Prompt length (8 words) below minimum compressible threshold (20),0.03,1200.9,0.36,1201.6
+FMT-022,output_formats,11,6,11,0,0.0,45.45,1.0,PASS,False,NONE,0,0,True,Prompt length (10 words) below minimum compressible threshold (20),0.03,1249.56,0.27,1250.21
+FMT-023,output_formats,15,9,15,0,0.0,40.0,1.0,PASS,False,NONE,0,0,True,Prompt length (10 words) below minimum compressible threshold (20),0.04,1265.02,0.31,1265.74
+FMT-024,output_formats,11,8,11,0,0.0,27.27,1.0,PASS,False,NONE,0,0,True,Prompt length (7 words) below minimum compressible threshold (20),0.04,1226.1,0.23,1226.7
+FMT-025,output_formats,13,7,13,0,0.0,46.15,1.0,PASS,False,NONE,0,0,True,Prompt length (10 words) below minimum compressible threshold (20),0.04,1254.78,0.26,1255.43
+FMT-026,output_formats,16,8,16,0,0.0,50.0,1.0,PASS,False,NONE,0,0,True,Prompt length (10 words) below minimum compressible threshold (20),0.04,1253.27,0.31,1253.95
+FMT-027,output_formats,13,9,13,0,0.0,30.77,1.0,PASS,False,NONE,0,0,True,Prompt length (9 words) below minimum compressible threshold (20),0.04,1262.55,0.24,1263.17
+FMT-028,output_formats,13,8,13,0,0.0,38.46,1.0,PASS,False,NONE,0,0,True,Prompt length (7 words) below minimum compressible threshold (20),0.04,1285.69,0.28,1286.34
+FMT-029,output_formats,16,7,16,0,0.0,56.25,1.0,PASS,False,NONE,0,0,True,Prompt length (9 words) below minimum compressible threshold (20),0.04,1294.85,0.27,1295.46
+FMT-030,output_formats,13,9,13,0,0.0,30.77,1.0,PASS,False,NONE,0,0,True,Prompt length (7 words) below minimum compressible threshold (20),0.04,1280.15,0.29,1280.81
+FMT-031,output_formats,10,6,10,0,0.0,40.0,1.0,PASS,False,NONE,0,0,True,Prompt length (7 words) below minimum compressible threshold (20),0.03,1280.79,0.26,1281.37
+FMT-032,output_formats,15,11,15,0,0.0,26.67,1.0,PASS,False,NONE,0,0,True,Prompt length (8 words) below minimum compressible threshold (20),0.04,1315.38,0.33,1316.19
+FMT-033,output_formats,12,7,12,0,0.0,41.67,1.0,PASS,False,NONE,0,0,True,Prompt length (9 words) below minimum compressible threshold (20),0.04,1258.88,0.3,1259.54
+FMT-034,output_formats,13,8,13,0,0.0,38.46,1.0,PASS,False,NONE,0,0,True,Prompt length (10 words) below minimum compressible threshold (20),0.04,1261.49,0.35,1262.22
+FMT-035,output_formats,15,9,15,0,0.0,40.0,1.0,PASS,False,NONE,0,0,True,Prompt length (9 words) below minimum compressible threshold (20),0.04,1232.64,0.4,1233.42
+FMT-036,output_formats,11,5,11,0,0.0,54.55,1.0,PASS,False,NONE,0,0,True,Prompt length (7 words) below minimum compressible threshold (20),0.04,1237.49,0.24,1238.17
+FMT-037,output_formats,12,8,12,0,0.0,33.33,1.0,PASS,False,NONE,0,0,True,Prompt length (9 words) below minimum compressible threshold (20),0.03,1216.68,0.24,1217.3
+FMT-038,output_formats,11,7,11,0,0.0,36.36,1.0,PASS,False,NONE,0,0,True,Prompt length (8 words) below minimum compressible threshold (20),0.03,1233.43,0.26,1234.03
+FMT-039,output_formats,13,8,13,0,0.0,38.46,1.0,PASS,False,NONE,0,0,True,Prompt length (8 words) below minimum compressible threshold (20),0.04,1255.34,0.26,1255.99
+FMT-040,output_formats,15,11,15,0,0.0,26.67,1.0,PASS,False,NONE,0,0,True,Prompt length (9 words) below minimum compressible threshold (20),0.04,1238.7,0.3,1239.39
+FMT-041,output_formats,14,9,14,0,0.0,35.71,1.0,PASS,False,NONE,0,0,True,Prompt length (9 words) below minimum compressible threshold (20),0.04,1224.44,0.22,1224.95
+FMT-042,output_formats,16,10,16,0,0.0,37.5,1.0,PASS,False,NONE,0,0,True,Prompt length (10 words) below minimum compressible threshold (20),0.03,1220.26,0.3,1220.96
+FMT-043,output_formats,13,8,13,0,0.0,38.46,1.0,PASS,False,NONE,0,0,True,Prompt length (9 words) below minimum compressible threshold (20),0.04,1231.49,0.22,1232.04
+FMT-044,output_formats,14,10,14,0,0.0,28.57,1.0,PASS,False,NONE,0,0,True,Prompt length (9 words) below minimum compressible threshold (20),0.03,1206.71,0.24,1207.31
+FMT-045,output_formats,13,9,13,0,0.0,30.77,1.0,PASS,False,NONE,0,0,True,Prompt length (9 words) below minimum compressible threshold (20),0.04,1260.99,0.25,1261.63
+FMT-046,output_formats,16,11,16,0,0.0,31.25,1.0,PASS,False,NONE,0,0,True,Prompt length (10 words) below minimum compressible threshold (20),0.04,1287.79,0.25,1288.38
+FMT-047,output_formats,14,10,14,0,0.0,28.57,1.0,PASS,False,NONE,0,0,True,Prompt length (9 words) below minimum compressible threshold (20),0.03,1258.99,0.29,1259.7
+FMT-048,output_formats,17,11,17,0,0.0,35.29,1.0,PASS,False,NONE,0,0,True,Prompt length (12 words) below minimum compressible threshold (20),0.03,1252.03,0.27,1252.73
+FMT-049,output_formats,15,8,15,0,0.0,46.67,1.0,PASS,False,NONE,0,0,True,Prompt length (10 words) below minimum compressible threshold (20),0.04,1271.42,0.31,1272.13
+FMT-050,output_formats,16,9,16,0,0.0,43.75,1.0,PASS,False,NONE,0,0,True,Prompt length (11 words) below minimum compressible threshold (20),0.04,1228.08,0.32,1228.78
+RAG-001,rag,56,35,52,4,7.14,37.5,0.9286,PASS,False,NONE,3,3,False,,0.07,1219.3,0.47,4976.55
+RAG-002,rag,60,37,60,0,0.0,38.33,1.0,FAIL,True,CONSTRAINT_VALIDATION_FAILURE,4,4,False,,0.07,1210.95,0.5,6150.59
+RAG-003,rag,44,26,44,0,0.0,40.91,1.0,PASS,False,NONE,0,0,False,,0.06,1232.84,0.42,1233.82
+RAG-004,rag,52,35,51,1,1.92,32.69,0.9808,PASS,False,NONE,4,4,False,,0.04,1221.34,0.64,6174.1
+RAG-005,rag,46,34,37,9,19.57,26.09,0.8043,PASS,False,NONE,1,1,False,,0.07,1272.73,0.36,2487.21
+RAG-006,rag,38,24,38,0,0.0,36.84,1.0,FAIL,True,CONSTRAINT_VALIDATION_FAILURE,4,4,False,,0.06,1222.11,0.51,6150.39
+RAG-007,rag,32,21,32,0,0.0,34.38,1.0,FAIL,True,CONSTRAINT_VALIDATION_FAILURE,4,4,False,,0.06,1232.25,0.61,6229.03
+RAG-008,rag,43,24,43,0,0.0,44.19,1.0,FAIL,True,CONSTRAINT_VALIDATION_FAILURE,4,4,False,,0.06,1224.12,0.62,6317.42
+RAG-009,rag,31,20,28,3,9.68,35.48,0.9032,PASS,False,NONE,3,3,False,,0.06,1324.7,0.32,5292.03
+RAG-010,rag,39,25,39,0,0.0,35.9,1.0,PASS,False,NONE,0,0,False,,0.04,1281.59,0.5,1282.73
+RAG-011,rag,32,22,32,0,0.0,31.25,1.0,PASS,False,NONE,0,0,True,Prompt length (18 words) below minimum compressible threshold (20),0.05,1270.03,0.57,1271.04
+RAG-012,rag,36,25,36,0,0.0,30.56,1.0,PASS,False,NONE,0,0,True,Prompt length (17 words) below minimum compressible threshold (20),0.06,1283.85,0.41,1284.63
+RAG-013,rag,32,22,32,0,0.0,31.25,1.0,PASS,False,NONE,0,0,True,Prompt length (16 words) below minimum compressible threshold (20),0.04,1271.5,0.64,1272.56
+RAG-014,rag,39,22,39,0,0.0,43.59,1.0,FAIL,True,CONSTRAINT_VALIDATION_FAILURE,4,4,False,,0.07,1304.29,0.34,6484.29
+RAG-015,rag,27,15,27,0,0.0,44.44,1.0,PASS,False,NONE,0,0,True,Prompt length (16 words) below minimum compressible threshold (20),0.05,1282.3,0.59,1283.35
+RNG-001,ranges,8,5,8,0,0.0,37.5,1.0,PASS,False,NONE,0,0,True,Prompt length (6 words) below minimum compressible threshold (20),0.04,1319.64,0.32,1320.38
+RNG-002,ranges,13,7,13,0,0.0,46.15,1.0,PASS,False,NONE,0,0,True,Prompt length (7 words) below minimum compressible threshold (20),0.04,1297.71,0.2,1298.23
+RNG-003,ranges,13,9,13,0,0.0,30.77,1.0,PASS,False,NONE,0,0,True,Prompt length (9 words) below minimum compressible threshold (20),0.03,1318.39,0.43,1319.21
+RNG-004,ranges,9,7,9,0,0.0,22.22,1.0,PASS,False,NONE,0,0,True,Prompt length (8 words) below minimum compressible threshold (20),0.03,1309.87,0.33,1310.59
+RNG-005,ranges,11,8,11,0,0.0,27.27,1.0,PASS,False,NONE,0,0,True,Prompt length (7 words) below minimum compressible threshold (20),0.04,1301.06,0.28,1301.73
+RNG-006,ranges,9,5,9,0,0.0,44.44,1.0,PASS,False,NONE,0,0,True,Prompt length (7 words) below minimum compressible threshold (20),0.03,1297.23,0.36,1297.95
+RNG-007,ranges,12,6,12,0,0.0,50.0,1.0,PASS,False,NONE,0,0,True,Prompt length (9 words) below minimum compressible threshold (20),0.04,1310.22,0.29,1310.92
+RNG-008,ranges,14,10,14,0,0.0,28.57,1.0,PASS,False,NONE,0,0,True,Prompt length (8 words) below minimum compressible threshold (20),0.04,1312.94,0.27,1313.61
+RNG-009,ranges,10,6,10,0,0.0,40.0,1.0,PASS,False,NONE,0,0,True,Prompt length (8 words) below minimum compressible threshold (20),0.04,1310.81,0.41,1311.79
+RNG-010,ranges,13,8,13,0,0.0,38.46,1.0,PASS,False,NONE,0,0,True,Prompt length (9 words) below minimum compressible threshold (20),0.05,1326.2,0.23,1326.83
+RNG-011,ranges,15,10,15,0,0.0,33.33,1.0,PASS,False,NONE,0,0,True,Prompt length (9 words) below minimum compressible threshold (20),0.04,1294.21,0.26,1294.86
+RNG-012,ranges,13,8,13,0,0.0,38.46,1.0,PASS,False,NONE,0,0,True,Prompt length (11 words) below minimum compressible threshold (20),0.04,1342.34,0.46,1343.21
+RNG-013,ranges,12,8,12,0,0.0,33.33,1.0,PASS,False,NONE,0,0,True,Prompt length (8 words) below minimum compressible threshold (20),0.04,1363.61,0.39,1364.38
+RNG-014,ranges,13,8,13,0,0.0,38.46,1.0,PASS,False,NONE,0,0,True,Prompt length (8 words) below minimum compressible threshold (20),0.04,1305.47,0.23,1306.11
+RNG-015,ranges,14,8,14,0,0.0,42.86,1.0,PASS,False,NONE,0,0,True,Prompt length (9 words) below minimum compressible threshold (20),0.04,1291.13,0.23,1291.75
+RNG-016,ranges,12,8,12,0,0.0,33.33,1.0,PASS,False,NONE,0,0,True,Prompt length (9 words) below minimum compressible threshold (20),0.04,1274.05,0.32,1274.75
+RNG-017,ranges,11,7,11,0,0.0,36.36,1.0,PASS,False,NONE,0,0,True,Prompt length (8 words) below minimum compressible threshold (20),0.04,1297.18,0.33,1297.87
+RNG-018,ranges,12,8,12,0,0.0,33.33,1.0,PASS,False,NONE,0,0,True,Prompt length (8 words) below minimum compressible threshold (20),0.03,1299.62,0.23,1300.23
+RNG-019,ranges,14,8,14,0,0.0,42.86,1.0,PASS,False,NONE,0,0,True,Prompt length (10 words) below minimum compressible threshold (20),0.04,1317.05,0.26,1317.73
+RNG-020,ranges,12,9,12,0,0.0,25.0,1.0,PASS,False,NONE,0,0,True,Prompt length (8 words) below minimum compressible threshold (20),0.04,1322.61,0.48,1323.49
+RNG-021,ranges,11,6,11,0,0.0,45.45,1.0,PASS,False,NONE,0,0,True,Prompt length (7 words) below minimum compressible threshold (20),0.05,1301.26,0.36,1301.99
+RNG-022,ranges,12,6,12,0,0.0,50.0,1.0,PASS,False,NONE,0,0,True,Prompt length (9 words) below minimum compressible threshold (20),0.04,1273.56,0.37,1274.31
+RNG-023,ranges,13,8,13,0,0.0,38.46,1.0,PASS,False,NONE,0,0,True,Prompt length (10 words) below minimum compressible threshold (20),0.07,1253.79,0.27,1254.43
+RNG-024,ranges,11,7,11,0,0.0,36.36,1.0,PASS,False,NONE,0,0,True,Prompt length (8 words) below minimum compressible threshold (20),0.03,1282.74,0.29,1283.38
+RNG-025,ranges,13,8,13,0,0.0,38.46,1.0,PASS,False,NONE,0,0,True,Prompt length (9 words) below minimum compressible threshold (20),0.03,1319.29,0.3,1319.99
+REA-001,reasoning,23,23,23,0,0.0,0.0,1.0,FAIL,True,MAX_MODEL_CALLS_REACHED,4,4,False,,0.06,1307.67,0.4,6875.53
+REA-002,reasoning,39,24,37,2,5.13,38.46,0.9487,PASS,False,NONE,4,4,False,,0.07,1351.8,0.54,6616.31
+REA-003,reasoning,29,20,11,18,62.07,31.03,0.3793,PASS,False,NONE,4,4,False,,0.08,1324.56,0.23,6270.64
+REA-004,reasoning,25,17,11,14,56.0,32.0,0.44,PASS,False,NONE,4,4,False,,0.03,1250.61,0.3,6251.07
+REA-005,reasoning,26,17,26,0,0.0,34.62,1.0,PASS,False,NONE,0,0,True,Prompt length (13 words) below minimum compressible threshold (20),0.05,1268.19,0.49,1269.1
+REA-006,reasoning,33,21,33,0,0.0,36.36,1.0,PASS,False,NONE,0,0,True,High constraint density in short prompt; compression risks constraint loss,0.05,1237.17,0.48,1238.15
+REA-007,reasoning,24,15,24,0,0.0,37.5,1.0,PASS,False,NONE,0,0,True,Prompt length (14 words) below minimum compressible threshold (20),0.04,1278.66,0.33,1279.39
+REA-008,reasoning,26,17,26,0,0.0,34.62,1.0,PASS,False,NONE,0,0,True,Prompt length (13 words) below minimum compressible threshold (20),0.05,1288.77,0.32,1289.56
+REA-009,reasoning,20,14,20,0,0.0,30.0,1.0,PASS,False,NONE,0,0,True,Prompt length (14 words) below minimum compressible threshold (20),0.05,1295.67,0.4,1296.51
+REA-010,reasoning,24,15,24,0,0.0,37.5,1.0,PASS,False,NONE,0,0,True,Prompt length (14 words) below minimum compressible threshold (20),0.05,1289.9,0.34,1290.82
+REA-011,reasoning,32,20,32,0,0.0,37.5,1.0,PASS,False,NONE,0,0,True,Prompt length (19 words) below minimum compressible threshold (20),0.06,1369.74,0.43,1370.71
+REA-012,reasoning,31,19,29,2,6.45,38.71,0.9355,PASS,False,NONE,4,4,False,,0.06,1304.75,0.47,6411.29
+REA-013,reasoning,28,16,28,0,0.0,42.86,1.0,PASS,False,NONE,0,0,True,Prompt length (18 words) below minimum compressible threshold (20),0.05,1249.41,0.52,1250.37
+REA-014,reasoning,29,17,29,0,0.0,41.38,1.0,PASS,False,NONE,0,0,True,Prompt length (17 words) below minimum compressible threshold (20),0.05,1304.86,0.33,1305.63
+REA-015,reasoning,32,24,32,0,0.0,25.0,1.0,PASS,False,NONE,0,0,True,High constraint density in short prompt; compression risks constraint loss,0.06,1229.62,0.35,1230.48
+ROL-001,roles,21,15,21,0,0.0,28.57,1.0,PASS,False,NONE,0,0,True,Prompt length (12 words) below minimum compressible threshold (20),0.04,1255.72,0.31,1256.43
+ROL-002,roles,14,8,14,0,0.0,42.86,1.0,PASS,False,NONE,0,0,True,Prompt length (10 words) below minimum compressible threshold (20),0.04,1249.25,0.27,1249.94
+ROL-003,roles,17,8,17,0,0.0,52.94,1.0,PASS,False,NONE,0,0,True,Prompt length (10 words) below minimum compressible threshold (20),0.04,1289.56,0.28,1290.25
+ROL-004,roles,14,9,14,0,0.0,35.71,1.0,PASS,False,NONE,0,0,True,Prompt length (11 words) below minimum compressible threshold (20),0.04,1271.3,0.28,1271.95
+ROL-005,roles,17,11,17,0,0.0,35.29,1.0,PASS,False,NONE,0,0,True,Prompt length (12 words) below minimum compressible threshold (20),0.04,1337.86,0.3,1338.68
+ROL-006,roles,16,9,16,0,0.0,43.75,1.0,PASS,False,NONE,0,0,True,Prompt length (11 words) below minimum compressible threshold (20),0.05,1287.76,0.28,1288.45
+ROL-007,roles,18,11,18,0,0.0,38.89,1.0,PASS,False,NONE,0,0,True,Prompt length (13 words) below minimum compressible threshold (20),0.04,1325.79,0.31,1326.5
+ROL-008,roles,24,14,24,0,0.0,41.67,1.0,PASS,False,NONE,0,0,True,Prompt length (12 words) below minimum compressible threshold (20),0.05,1348.74,0.31,1349.47
+ROL-009,roles,12,8,12,0,0.0,33.33,1.0,PASS,False,NONE,0,0,True,Prompt length (9 words) below minimum compressible threshold (20),0.04,1301.3,0.35,1302.15
+ROL-010,roles,20,13,20,0,0.0,35.0,1.0,PASS,False,NONE,0,0,True,Prompt length (12 words) below minimum compressible threshold (20),0.06,1311.96,0.32,1312.74
+ROL-011,roles,15,9,15,0,0.0,40.0,1.0,PASS,False,NONE,0,0,True,Prompt length (11 words) below minimum compressible threshold (20),0.04,1253.36,0.27,1254.02
+ROL-012,roles,15,9,15,0,0.0,40.0,1.0,PASS,False,NONE,0,0,True,Prompt length (13 words) below minimum compressible threshold (20),0.04,1255.0,0.29,1255.73
+ROL-013,roles,14,9,14,0,0.0,35.71,1.0,PASS,False,NONE,0,0,True,Prompt length (9 words) below minimum compressible threshold (20),0.04,1234.25,0.26,1234.92
+ROL-014,roles,16,10,16,0,0.0,37.5,1.0,PASS,False,NONE,0,0,True,Prompt length (10 words) below minimum compressible threshold (20),0.04,1273.97,0.3,1274.69
+ROL-015,roles,15,8,15,0,0.0,46.67,1.0,PASS,False,NONE,0,0,True,Prompt length (11 words) below minimum compressible threshold (20),0.04,1266.12,0.28,1266.8
+URL-001,urls_paths,32,20,32,0,0.0,37.5,1.0,PASS,False,NONE,0,0,True,Prompt length (5 words) below minimum compressible threshold (20),0.05,1245.91,0.32,1246.62
+URL-002,urls_paths,30,12,30,0,0.0,60.0,1.0,PASS,False,NONE,0,0,True,Prompt length (5 words) below minimum compressible threshold (20),0.04,1233.49,0.35,1234.22
+URL-003,urls_paths,20,16,20,0,0.0,20.0,1.0,PASS,False,NONE,0,0,True,Prompt length (5 words) below minimum compressible threshold (20),0.05,1261.84,0.18,1262.31
+URL-004,urls_paths,21,14,21,0,0.0,33.33,1.0,PASS,False,NONE,0,0,True,Prompt length (5 words) below minimum compressible threshold (20),0.03,1238.29,0.32,1238.96
+URL-005,urls_paths,26,16,26,0,0.0,38.46,1.0,PASS,False,NONE,0,0,True,Prompt length (5 words) below minimum compressible threshold (20),0.04,1244.82,0.29,1245.51
+URL-006,urls_paths,23,15,23,0,0.0,34.78,1.0,PASS,False,NONE,0,0,True,Prompt length (4 words) below minimum compressible threshold (20),0.05,1352.13,0.31,1352.82
+URL-007,urls_paths,19,14,19,0,0.0,26.32,1.0,PASS,False,NONE,0,0,True,Prompt length (5 words) below minimum compressible threshold (20),0.04,1293.53,0.21,1294.03
+URL-008,urls_paths,26,13,26,0,0.0,50.0,1.0,PASS,False,NONE,0,0,True,Prompt length (4 words) below minimum compressible threshold (20),0.05,1298.49,0.31,1299.2
+URL-009,urls_paths,19,7,19,0,0.0,63.16,1.0,PASS,False,NONE,0,0,True,Prompt length (6 words) below minimum compressible threshold (20),0.04,1273.05,0.18,1273.51
+URL-010,urls_paths,25,18,25,0,0.0,28.0,1.0,PASS,False,NONE,0,0,True,Prompt length (4 words) below minimum compressible threshold (20),0.03,1275.49,0.27,1276.16
+URL-011,urls_paths,41,23,41,0,0.0,43.9,1.0,PASS,False,NONE,0,0,True,Prompt length (6 words) below minimum compressible threshold (20),0.05,1245.87,0.26,1246.52
+URL-012,urls_paths,22,10,22,0,0.0,54.55,1.0,PASS,False,NONE,0,0,True,Prompt length (7 words) below minimum compressible threshold (20),0.04,1311.87,0.27,1312.5
+URL-013,urls_paths,21,14,21,0,0.0,33.33,1.0,PASS,False,NONE,0,0,True,Prompt length (7 words) below minimum compressible threshold (20),0.04,1273.31,0.25,1273.95
+URL-014,urls_paths,36,24,36,0,0.0,33.33,1.0,PASS,False,NONE,0,0,True,Prompt length (5 words) below minimum compressible threshold (20),0.05,1271.79,0.32,1272.5
+URL-015,urls_paths,32,10,32,0,0.0,68.75,1.0,PASS,False,NONE,0,0,True,Prompt length (6 words) below minimum compressible threshold (20),0.05,1284.92,0.3,1285.64

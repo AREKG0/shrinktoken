@@ -1,0 +1,463 @@
+[
+  {
+    "id": "FMT-001",
+    "category": "output_formats",
+    "prompt": "Return output strictly as valid JSON.",
+    "constraints": [
+      "output format: valid json"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "FMT-002",
+    "category": "output_formats",
+    "prompt": "Return exactly 5 bullet points with no intro or conclusion.",
+    "constraints": [
+      "exactly 5 bullet points",
+      "no intro",
+      "no conclusion"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "FMT-003",
+    "category": "output_formats",
+    "prompt": "Format response as a Markdown table with columns: ID, Name, Status, Latency.",
+    "constraints": [
+      "markdown table",
+      "4 specific columns"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "FMT-004",
+    "category": "output_formats",
+    "prompt": "Return only the final answer as a single floating point number.",
+    "constraints": [
+      "only final answer",
+      "single float"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "FMT-005",
+    "category": "output_formats",
+    "prompt": "Output valid JSON with these exact fields: name, age, active, roles.",
+    "constraints": [
+      "valid json",
+      "exact fields: name, age, active, roles"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "FMT-006",
+    "category": "output_formats",
+    "prompt": "Format key-value pairs using YAML structure with 2-space indentation.",
+    "constraints": [
+      "yaml structure",
+      "2-space indentation"
+    ],
+    "expected_risk": "medium"
+  },
+  {
+    "id": "FMT-007",
+    "category": "output_formats",
+    "prompt": "Provide output as CSV format with comma delimiter and header row.",
+    "constraints": [
+      "csv format",
+      "header row"
+    ],
+    "expected_risk": "medium"
+  },
+  {
+    "id": "FMT-008",
+    "category": "output_formats",
+    "prompt": "Enclose code response inside triple backtick block tagged with python.",
+    "constraints": [
+      "triple backtick block",
+      "python tag"
+    ],
+    "expected_risk": "medium"
+  },
+  {
+    "id": "FMT-009",
+    "category": "output_formats",
+    "prompt": "Output response as raw XML wrapped in <response> root tag.",
+    "constraints": [
+      "raw xml",
+      "<response> root tag"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "FMT-010",
+    "category": "output_formats",
+    "prompt": "Provide response formatted as a numbered list from 1 to 10.",
+    "constraints": [
+      "numbered list 1 to 10"
+    ],
+    "expected_risk": "medium"
+  },
+  {
+    "id": "FMT-011",
+    "category": "output_formats",
+    "prompt": "Return output as a valid YAML document with root key 'config'.",
+    "constraints": [
+      "yaml document",
+      "root key 'config'"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "FMT-012",
+    "category": "output_formats",
+    "prompt": "Format response as a 3-column CSV with headers: name, email, role.",
+    "constraints": [
+      "3-column csv",
+      "headers: name, email, role"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "FMT-013",
+    "category": "output_formats",
+    "prompt": "Return output strictly as a JSON array of string objects.",
+    "constraints": [
+      "json array of strings"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "FMT-014",
+    "category": "output_formats",
+    "prompt": "Format final answer as a single bulleted list in Markdown.",
+    "constraints": [
+      "single bulleted list"
+    ],
+    "expected_risk": "medium"
+  },
+  {
+    "id": "FMT-015",
+    "category": "output_formats",
+    "prompt": "Return response as valid XML enclosed in <data> tags.",
+    "constraints": [
+      "valid xml in <data> tags"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "FMT-016",
+    "category": "output_formats",
+    "prompt": "Output answer inside a fenced python code block only.",
+    "constraints": [
+      "fenced python code block only"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "FMT-017",
+    "category": "output_formats",
+    "prompt": "Format output as key-value lines separated by colon.",
+    "constraints": [
+      "key-value lines separated by colon"
+    ],
+    "expected_risk": "medium"
+  },
+  {
+    "id": "FMT-018",
+    "category": "output_formats",
+    "prompt": "Return only the raw SQL query with no markdown wrapper.",
+    "constraints": [
+      "raw sql query with no markdown"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "FMT-019",
+    "category": "output_formats",
+    "prompt": "Output JSON with fields: status, code, data, error.",
+    "constraints": [
+      "json with fields: status, code, data, error"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "FMT-020",
+    "category": "output_formats",
+    "prompt": "Format response as an HTML table with border='1'.",
+    "constraints": [
+      "html table with border='1'"
+    ],
+    "expected_risk": "medium"
+  },
+  {
+    "id": "FMT-021",
+    "category": "output_formats",
+    "prompt": "Return output as an OpenAPI 3.0 YAML specification.",
+    "constraints": [
+      "openapi 3.0 yaml spec"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "FMT-022",
+    "category": "output_formats",
+    "prompt": "Format output as a numbered list from 1 to 5.",
+    "constraints": [
+      "numbered list 1 to 5"
+    ],
+    "expected_risk": "medium"
+  },
+  {
+    "id": "FMT-023",
+    "category": "output_formats",
+    "prompt": "Return only a valid regex pattern enclosed in forward slashes.",
+    "constraints": [
+      "valid regex in forward slashes"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "FMT-024",
+    "category": "output_formats",
+    "prompt": "Format response as a GraphQL schema definition.",
+    "constraints": [
+      "graphql schema definition"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "FMT-025",
+    "category": "output_formats",
+    "prompt": "Return output as plain text with line breaks between paragraphs.",
+    "constraints": [
+      "plain text with line breaks"
+    ],
+    "expected_risk": "low"
+  },
+  {
+    "id": "FMT-026",
+    "category": "output_formats",
+    "prompt": "Output answer strictly as a JSON object matching OpenAPI schema.",
+    "constraints": [
+      "json matching openapi schema"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "FMT-027",
+    "category": "output_formats",
+    "prompt": "Format response as a Markdown checklist with checkbox items.",
+    "constraints": [
+      "markdown checklist with checkboxes"
+    ],
+    "expected_risk": "medium"
+  },
+  {
+    "id": "FMT-028",
+    "category": "output_formats",
+    "prompt": "Return response enclosed in <result> XML tags.",
+    "constraints": [
+      "xml <result> tags"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "FMT-029",
+    "category": "output_formats",
+    "prompt": "Output response as raw Bash script starting with #!/bin/bash.",
+    "constraints": [
+      "raw bash script starting with #!/bin/bash"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "FMT-030",
+    "category": "output_formats",
+    "prompt": "Format output as a two-column Markdown table.",
+    "constraints": [
+      "two-column markdown table"
+    ],
+    "expected_risk": "medium"
+  },
+  {
+    "id": "FMT-031",
+    "category": "output_formats",
+    "prompt": "Return output strictly in TOML file format.",
+    "constraints": [
+      "toml file format"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "FMT-032",
+    "category": "output_formats",
+    "prompt": "Format response as JSON with top-level key 'payload'.",
+    "constraints": [
+      "json with top-level key 'payload'"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "FMT-033",
+    "category": "output_formats",
+    "prompt": "Return only a single integer number representing total count.",
+    "constraints": [
+      "single integer number"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "FMT-034",
+    "category": "output_formats",
+    "prompt": "Format response as a bulleted summary with exactly 4 points.",
+    "constraints": [
+      "bulleted summary with exactly 4 points"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "FMT-035",
+    "category": "output_formats",
+    "prompt": "Output response as a valid JSON Schema draft-07 object.",
+    "constraints": [
+      "json schema draft-07 object"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "FMT-036",
+    "category": "output_formats",
+    "prompt": "Return output formatted as Apache configuration directives.",
+    "constraints": [
+      "apache config directives"
+    ],
+    "expected_risk": "medium"
+  },
+  {
+    "id": "FMT-037",
+    "category": "output_formats",
+    "prompt": "Format output as a Markdown blockquote starting with >.",
+    "constraints": [
+      "markdown blockquote starting with >"
+    ],
+    "expected_risk": "low"
+  },
+  {
+    "id": "FMT-038",
+    "category": "output_formats",
+    "prompt": "Return response as a JSON array of numbers.",
+    "constraints": [
+      "json array of numbers"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "FMT-039",
+    "category": "output_formats",
+    "prompt": "Output answer inside triple backticks tagged with typescript.",
+    "constraints": [
+      "triple backticks tagged with typescript"
+    ],
+    "expected_risk": "medium"
+  },
+  {
+    "id": "FMT-040",
+    "category": "output_formats",
+    "prompt": "Format response as a CSV table using semicolon delimiter.",
+    "constraints": [
+      "csv table using semicolon delimiter"
+    ],
+    "expected_risk": "medium"
+  },
+  {
+    "id": "FMT-041",
+    "category": "output_formats",
+    "prompt": "Return output as valid Markdown headers H1 through H3.",
+    "constraints": [
+      "markdown headers H1 through H3"
+    ],
+    "expected_risk": "low"
+  },
+  {
+    "id": "FMT-042",
+    "category": "output_formats",
+    "prompt": "Format output as a JSON object containing keys: id, result.",
+    "constraints": [
+      "json object with keys: id, result"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "FMT-043",
+    "category": "output_formats",
+    "prompt": "Return answer strictly as a boolean true or false.",
+    "constraints": [
+      "boolean true or false"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "FMT-044",
+    "category": "output_formats",
+    "prompt": "Format output as a sequence of SQL INSERT statements.",
+    "constraints": [
+      "sequence of sql insert statements"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "FMT-045",
+    "category": "output_formats",
+    "prompt": "Return output as a valid Nginx server block directive.",
+    "constraints": [
+      "nginx server block directive"
+    ],
+    "expected_risk": "medium"
+  },
+  {
+    "id": "FMT-046",
+    "category": "output_formats",
+    "prompt": "Format response as a JSON object with array field 'items'.",
+    "constraints": [
+      "json object with array field 'items'"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "FMT-047",
+    "category": "output_formats",
+    "prompt": "Return output as a Markdown table with aligned columns.",
+    "constraints": [
+      "markdown table with aligned columns"
+    ],
+    "expected_risk": "medium"
+  },
+  {
+    "id": "FMT-048",
+    "category": "output_formats",
+    "prompt": "Format answer as a list of key-value pairs in INI file format.",
+    "constraints": [
+      "key-value pairs in ini file format"
+    ],
+    "expected_risk": "medium"
+  },
+  {
+    "id": "FMT-049",
+    "category": "output_formats",
+    "prompt": "Return output strictly as a JSON API v1 specification object.",
+    "constraints": [
+      "json api v1 specification object"
+    ],
+    "expected_risk": "high"
+  },
+  {
+    "id": "FMT-050",
+    "category": "output_formats",
+    "prompt": "Output response as a single formatted log line in Syslog standard.",
+    "constraints": [
+      "single log line in syslog standard"
+    ],
+    "expected_risk": "medium"
+  }
+]
