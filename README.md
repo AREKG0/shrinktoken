@@ -243,17 +243,17 @@ shrinktoken/
 
 <!-- GITHUB STATS CARDS -->
   <a href="https://github.com/AREKG0">
-    <img src="https://github-readme-stats.vercel.app/api?username=AREKG0&show_icons=true&theme=radical&hide_border=true&bg_color=111113&title_color=00e5ff&icon_color=b900ff&text_color=ffffff" alt="GitHub Stats" />
+    <img src="https://github-readme-stats.vercel.app/api?username=AREKG0&show_icons=true&theme=dark&hide_border=true&bg_color=111113&title_color=00e5ff&icon_color=b900ff&text_color=ffffff" alt="GitHub Stats" />
   </a>
   <br /><br />
   <a href="https://github.com/AREKG0">
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=AREKG0&layout=compact&theme=tokyonight&hide_border=true&bg_color=111113&title_color=ff007f&text_color=ffffff" alt="Top Languages" />
+    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=AREKG0&layout=compact&theme=dark&hide_border=true&bg_color=111113&title_color=ff007f&text_color=ffffff" alt="Top Languages" />
   </a>
   <br /><br />
 
 <!-- STREAK STATS -->
   <a href="https://github.com/AREKG0">
-    <img src="https://github-readme-streak-stats.herokuapp.com/?user=AREKG0&theme=dark&background=111113&ring=00e5ff&fire=ff007f&currStreakLabel=b900ff&border=111113" alt="GitHub Streak" />
+    <img src="https://streak-stats.demolab.com/?user=AREKG0&theme=dark&background=111113&ring=00e5ff&fire=ff007f&currStreakLabel=b900ff&border=111113" alt="GitHub Streak" />
   </a>
   <br /><br />
 
@@ -265,7 +265,7 @@ shrinktoken/
 <!-- CONTRIBUTION SNAKE ANIMATION -->
   <h3>🐍 GitHub Action Contribution Grid Snake 🐍</h3>
   <p><em>A customized automated snake traversing and consuming GitHub contribution commits!</em></p>
-  <img src="https://raw.githubusercontent.com/platika/platika/master/github-contribution-grid-snake-dark.svg" width="800" alt="Contribution Snake Animation" />
+  <img src="https://raw.githubusercontent.com/aelassas/aelassas/master/assets/github-contribution-grid-snake-dark.svg" width="800" alt="Contribution Snake Animation" />
 </div>
 
 ---
